@@ -1,0 +1,28 @@
+#summary Current State of the BridJ project
+
+= Tested Platforms =
+
+Binaries are currently available and routinely tested for the following platforms :
+  * Windows (32 & 64 bits)
+  * MacOS X (Universal : PPC, Intel 32 & 64 bits)
+  * Linux (32 bits)
+
+= Working Features =
+
+  * JNAerator support
+  * C functions calls with __cdecl and __stdcall conventions
+  * typed opaque pointers
+  * feature-full Pointer class (reified generic)
+  * Type-safe enums (ValuedEnum + FlagSet classes)
+  * COM object creation and calls (tested on Win 64 bits only)
+  * lightweight structs
+
+= Features in progress = 
+
+  * C++ classes fields
+  * varargs
+  * assembly-optimized raw calls (for Win32, Win64, Mac64, Lin32)
+
+= Planned features = 
+
+  * pass and return structs by value
