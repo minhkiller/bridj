@@ -12,12 +12,12 @@ Binaries are currently available and routinely tested for the following platform
   * JNAerator support
   * C functions calls with __cdecl and __stdcall conventions
   * C++ method calls
+  * lazy signatures annotation support (exact symbols are optional)
   * Define C callbacks out of Java instances + calling native C callbacks from Java
-  * typed opaque pointers
-  * feature-full Pointer class (reified generic)
-  * Type-safe enums (ValuedEnum + FlagSet classes)
+  * Complete Pointer API (with typed opaque pointers, array accessible + iterable reified generic Pointer base class...)
+  * Type-safe enums (ValuedEnum + FlagSet classes) : unifies singleton and multi-flags patterns
   * COM object creation and calls (tested on Win 64 bits only)
-  * lightweight structs
+  * lightweight and fast structs (no memory duplication nor update issues between Java and the native side)
 
 = Features in progress = 
 
