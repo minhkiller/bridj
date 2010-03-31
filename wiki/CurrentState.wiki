@@ -12,7 +12,7 @@ Binaries are currently available and routinely tested for the following platform
   * JNAerator support
   * C functions calls with __cdecl and __stdcall conventions
   * C++ method calls
-  * C callbacks
+  * Define C callbacks out of Java instances + calling native C callbacks from Java
   * typed opaque pointers
   * feature-full Pointer class (reified generic)
   * Type-safe enums (ValuedEnum + FlagSet classes)
