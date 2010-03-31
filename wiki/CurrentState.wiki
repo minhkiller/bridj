@@ -27,8 +27,8 @@ Binaries are currently available and routinely tested for the following platform
   * C++ templates (functions and 
   * generic callback types (`Func0<R>`, `Func1<R, A1>`...)
   * varargs
-  * assembly-optimized raw calls (for Win32, Win64, Mac64, Lin32)
-  * ObjectiveC methods calls
+  * assembly-optimized raw calls (for Win32, Win64, Mac64)
+  * ObjectiveC methods calls (objc_msgSend) : hope to draw interest from Rococoa developers
 
 = Planned features = 
 
