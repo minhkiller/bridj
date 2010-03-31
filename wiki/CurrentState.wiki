@@ -11,6 +11,8 @@ Binaries are currently available and routinely tested for the following platform
 
   * JNAerator support
   * C functions calls with __cdecl and __stdcall conventions
+  * C++ method calls
+  * C callbacks
   * typed opaque pointers
   * feature-full Pointer class (reified generic)
   * Type-safe enums (ValuedEnum + FlagSet classes)
@@ -20,9 +22,15 @@ Binaries are currently available and routinely tested for the following platform
 = Features in progress = 
 
   * C++ classes fields
+  * C++ subclassing (virtual __thiscall and __fastcall callbacks, vtable synthetization)
+  * C++ templates (functions and 
+  * generic callback types (Func0<R>, Func1<R, A1>...)
   * varargs
   * assembly-optimized raw calls (for Win32, Win64, Mac64, Lin32)
+  * ObjectiveC methods calls
 
 = Planned features = 
 
   * pass and return structs by value
+  * Mono/CLR interop
+  * MS/.NET interop
