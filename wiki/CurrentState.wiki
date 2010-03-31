@@ -4,8 +4,9 @@
 
 Binaries are currently available and routinely tested for the following platforms :
   * Windows (32 & 64 bits)
-  * MacOS X (Universal : PPC, Intel 32 & 64 bits)
+  * MacOS X (Universal : PPC, Intel 32 & 64 bits) ; only tested in 64 bits mode so far
   * Linux (32 bits)
+(plans are to support Linux 64 bits and FreeBSD 32/64 soon)
 
 = Working Features =
 
