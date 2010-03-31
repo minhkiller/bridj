@@ -24,7 +24,7 @@ Binaries are currently available and routinely tested for the following platform
   * C++ classes fields
   * C++ subclassing (virtual __thiscall and __fastcall callbacks, vtable synthetization)
   * C++ templates (functions and 
-  * generic callback types (Func0<R>, Func1<R, A1>...)
+  * generic callback types (`Func0<R>`, `Func1<R, A1>`...)
   * varargs
   * assembly-optimized raw calls (for Win32, Win64, Mac64, Lin32)
   * ObjectiveC methods calls
