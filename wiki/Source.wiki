@@ -1,0 +1,5 @@
+#summary Source code for BridJ
+
+BridJ's source code is currently hosted at the NativeLibs4Java project.
+
+[http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ You can browse it from here]
