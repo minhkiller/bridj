@@ -23,6 +23,8 @@ Binaries are currently available and routinely tested for the following platform
 
 = Known limitations =
 
+  * structs by value not supported yet
+
 Tests currently failing in the test suite : 
   * demangling of function taking only a byte parameter with GCC.
 
