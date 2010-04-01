@@ -12,4 +12,4 @@ With BridJ, mapping was kept to its simplest form : if a type is a pointer, it w
 || wchar_t || char || char ||
 || `struct S*` || `Pointer<S>` || S ||
 || struct S || S || S.ByReference ||
-|| enum E || ValuedEnum<E> || int ||
+|| enum E || `ValuedEnum<E>` || int ||
