@@ -1,0 +1,12 @@
+#summary Summary of Java / C++ type mapping with BridJ
+
+= Introduction =
+
+If it's a pointer, it's a Pointer !
+
+|| C/C++ type || Java/BridJ ||
+| int*, int&, int[] | Pointer<Integer> |
+| void** | Pointer<Pointer<?>> |
+| wchar_t | char |
+| struct S* | Pointer<S> |
+| struct S | S |
