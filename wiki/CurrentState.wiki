@@ -21,6 +21,11 @@ Binaries are currently available and routinely tested for the following platform
   * COM object creation and calls (tested on Win 64 bits only)
   * lightweight and fast structs (no memory duplication nor update issues between Java and the native side)
 
+= Known limitations =
+
+Tests currently failing in the test suite : 
+  * demangling of function taking only a byte parameter with GCC.
+
 = Features in progress = 
 
   * C++ classes fields
