@@ -40,6 +40,7 @@ Tests currently failing in the test suite :
 
 = Planned features = 
 
+  * native threadlocal mechanism (pthread vs win) for much faster calls
   * pass and return structs by value
   * *some* amount of built-in support for STL types (strings and vector at least, in debug/release mode, for GNU's STL, STLPort and MS VC++9's STL)
   * Full MFC Runtime (with annotations-based message map creation)
