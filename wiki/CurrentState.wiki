@@ -1,4 +1,5 @@
 #summary Current State of the BridJ project
+#labels Featured
 
 = Supported Platforms =
 
