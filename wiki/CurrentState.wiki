@@ -23,7 +23,8 @@ Binaries are currently available and routinely tested for the following platform
 
 = Known limitations =
 
-  * structs by value not supported yet
+  * structs by value not supported yet (neither as function arguments nor as function return values)
+  * requires Java 1.5 or more recent (if you need 1.4 compatibility, you shoud JNA instead)
 
 Tests currently failing in the test suite : 
   * demangling of function taking only a byte parameter with GCC.
@@ -40,7 +41,7 @@ Tests currently failing in the test suite :
 
 = Planned features = 
 
-  * native threadlocal mechanism (pthread vs win) for much faster calls
+  * native threadlocal mechanism on unix for much faster calls (already ok on windows)
   * pass and return structs by value
   * *some* amount of built-in support for STL types (strings and vector at least, in debug/release mode, for GNU's STL, STLPort and MS VC++9's STL)
   * Full MFC Runtime (with annotations-based message map creation)
