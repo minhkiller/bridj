@@ -1,0 +1,8 @@
+#summary Links to download BridJ
+#labels Featured
+
+[http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/0.1-SNAPSHOT/ Binary snapshots]
+
+[http://nativelibs4java.sourceforge.net/sites/bridj JavaDoc]
+
+[http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp You can try BridJ quickly] through [http://jnaerator.googlecode.com/ JNAerator] (just select "BridJ" in the "Runtime" combobox).
