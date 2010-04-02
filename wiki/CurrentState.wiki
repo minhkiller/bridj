@@ -24,6 +24,8 @@ Binaries are currently available and routinely tested for the following platform
 
 = Known limitations =
 
+  * destructors are not yet called on C++ classes
+  * only default C++ constructors are supported so far (not those with arguments)
   * structs by value not supported yet (neither as function arguments nor as function return values)
   * requires Java 1.5 or more recent (if you need 1.4 compatibility, you shoud JNA instead)
 
@@ -32,8 +34,12 @@ Tests currently failing in the test suite :
 
 = Features in progress = 
 
-  * C++ classes fields
-  * C++ subclassing (virtual __thiscall and __fastcall callbacks, vtable synthetization)
+  * native threadlocal mechanism on unix for much faster calls (already ok on windows)
+  * finish C++ classes :
+    * support fields (mix existing code for structs)
+    * call destructors from finalize() when appropriate
+    * call arbitrary constructors (with args)
+    * subclassing from Java (virtual __thiscall and __fastcall callbacks, vtable synthetization)
   * C++ templates for functions and classes (combination of generics and extra args/fields for types reification and last-minute lookup of actual symbols)
   * generic callback types (`Func0<R>`, `Func1<R, A1>`...)
   * varargs
@@ -42,7 +48,6 @@ Tests currently failing in the test suite :
 
 = Planned features = 
 
-  * native threadlocal mechanism on unix for much faster calls (already ok on windows)
   * pass and return structs by value
   * *some* amount of built-in support for STL types (strings and vector at least, in debug/release mode, for GNU's STL, STLPort and MS VC++9's STL)
   * Full MFC Runtime (with annotations-based message map creation)
