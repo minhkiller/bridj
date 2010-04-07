@@ -54,3 +54,9 @@ Tests currently failing in the test suite :
   * Mono/CLR interop (see [http://ochafik.free.fr/blog/?p=165 my previous hack])
   * MS/.NET interop
   * reverse-engineering helper (struct sizes guesses can be eased up a bit, and there's already a good demangler)
+
+= Features Not Planned / Ruled Out =
+
+Why limiting the scope of this project so early ?
+
+Err... ok, BridJ will *never* make coffee.
