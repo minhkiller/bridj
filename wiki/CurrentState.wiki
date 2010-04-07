@@ -12,7 +12,7 @@ Binaries are currently available and routinely tested for the following platform
 = Working Features =
 
   * thread-safe design (including reentrant calls)
-  * JNAerator support on par with JNA's
+  * [http://jnaerator.googlecode.com/ JNAerator] support on par with JNA's
   * C functions calls with __cdecl and __stdcall conventions
   * C++ method calls (including virtual methods)
   * lazy signatures annotation support (exact symbols are optional)
