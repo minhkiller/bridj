@@ -51,7 +51,7 @@ Binaries are currently available and routinely tested for the following platform
   * MS/.NET interop
   * reverse-engineering helper (struct sizes guesses can be eased up a bit, and there's already a good demangler)
 
-= Library dependencies =
+= Dynamic Library dependencies =
 
 On Windows :
 - C runtime + DbgHelp
