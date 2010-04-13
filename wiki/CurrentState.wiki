@@ -29,12 +29,9 @@ Binaries are currently available and routinely tested for the following platform
   * structs by value not supported yet (neither as function arguments nor as function return values)
   * requires Java 1.5 or more recent (if you need 1.4 compatibility, you shoud JNA instead)
 
-Tests currently failing in the test suite : 
-  * demangling of function taking only a byte parameter with GCC.
-
 = Features in progress = 
 
-  * native threadlocal mechanism on unix for much faster calls (already ok on windows)
+  * assembly-optimized raw calls (for Win32, Win64, Mac64) : mac ok except for floats/doubles
   * finish C++ classes :
     * support fields (mix existing code for structs)
     * call destructors from finalize() when appropriate
@@ -43,7 +40,6 @@ Tests currently failing in the test suite :
   * C++ templates for functions and classes (combination of generics and extra args/fields for types reification and last-minute lookup of actual symbols)
   * generic callback types (`Func0<R>`, `Func1<R, A1>`...)
   * varargs
-  * assembly-optimized raw calls (for Win32, Win64, Mac64)
   * ObjectiveC methods calls (objc_msgSend) : hope to draw interest from Rococoa developers
 
 = Planned features = 
@@ -54,6 +50,17 @@ Tests currently failing in the test suite :
   * Mono/CLR interop (see [http://ochafik.free.fr/blog/?p=165 my previous hack])
   * MS/.NET interop
   * reverse-engineering helper (struct sizes guesses can be eased up a bit, and there's already a good demangler)
+
+= Library dependencies =
+
+On Windows :
+- C runtime + DbgHelp
+
+On MacOS X :
+- C runtime + libobjc + pthreads
+
+On other Unix platforms : 
+- C runtime + pthreads
 
 = Features Not Planned / Ruled Out =
 
