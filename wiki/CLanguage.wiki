@@ -8,6 +8,12 @@ struct S {
      int a;
      void* p;
 };
+
+void funVal(struct S byVal);
+struct S myStruct;
+struct S* pS = &myStruct;
+funVal(myStruct);
+funVal(*myStruct);
 }}}
 
 Equivalent Java/BridJ code :
@@ -20,17 +26,7 @@ public class S extends StructObject {
      public static native Pointer<?> p;
      public static native S p(Pointer<?> p);
 }
-}}}
 
-{{{
-void funVal(struct S byVal);
-struct S myStruct;
-struct S* pS = &myStruct;
-funVal(myStruct);
-funVal(*myStruct);
-}}}
-
-{{{
 S myStruct = new S(); // maybe chained with setters : new S().a(10).b(12).c(55);
 Pointer<S> pS = Pointer.getPeer(myStruct);
 funVal(myStruct);
