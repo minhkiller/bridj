@@ -1,0 +1,24 @@
+#summary COM support in BridJ
+
+= Introduction =
+
+COM defines interfaces and registers implementations of these interfaceS.
+
+Interfaces are identified by their IID, and implementations are registered in the COM runtime using their CLSID.
+
+In most cases with BridJ you don't need to know more about COM internals.
+
+= Example =
+
+{{{
+public class ITaskbarList extends IUnknown {
+
+        @Virtual(0) public native void HrInit();
+        @Virtual(1) public native void AddTab(Pointer<Integer> hWnd);
+        @Virtual(2) public native void DeleteTab(Pointer<Integer> hWnd);
+        @Virtual(3) public native void ActivateTab(Pointer<Integer> hWnd);
+        @Virtual(4) public native void SetActiveAlt(Pointer<Integer> hWnd);
+}
+}}}
+
+[See a complete example here|http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/java/com/bridj/demos/TaskbarListDemo.java].
