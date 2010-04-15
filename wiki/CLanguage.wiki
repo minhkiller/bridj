@@ -1,0 +1,38 @@
+#summary C support in BridJ
+
+= Structs =
+
+C code :
+{{{
+struct S {
+     int a;
+     void* p;
+};
+}}}
+
+Equivalent Java/BridJ code :
+{{{
+public class S extends StructObject {
+     @Field(0) // gives index of field in struct, as Java gives no guarantee on the method order
+     public static native int a();
+     public static native S a(int a); // BridJ setters return this to allow invocation chaining, but void would also work fine
+     @Field(1)
+     public static native Pointer<?> p;
+     public static native S p(Pointer<?> p);
+}
+}}}
+
+{{{
+void funVal(struct S byVal);
+struct S myStruct;
+struct S* pS = &myStruct;
+funVal(myStruct);
+funVal(*myStruct);
+}}}
+
+{{{
+S myStruct = new S(); // maybe chained with setters : new S().a(10).b(12).c(55);
+Pointer<S> pS = Pointer.getPeer(myStruct);
+funVal(myStruct);
+funVal(myStruct.get()); // pointer is a reified generic class, so get() returns a correct S instance
+}}}
