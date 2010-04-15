@@ -21,4 +21,4 @@ public class ITaskbarList extends IUnknown {
 }
 }}}
 
-[See a complete example here|http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/java/com/bridj/demos/TaskbarListDemo.java].
+[http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/java/com/bridj/demos/TaskbarListDemo.java See a complete example here].
