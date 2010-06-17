@@ -18,8 +18,8 @@ With BridJ, mapping was kept to its simplest form : if a type is a pointer, it w
 = Enums = 
 
 Enums don't mean the same in Java and C/C++.
-- In Java, an enum item is a singleton subclass of the enum class. It has no associated value besides its index within the list of enum items but is a real class and can implement interfaces and define new fields / methods
-- In C/C++, enums are just typed integers (in C++ they're not restricted to int), so you can combine them with bitwise operators `&`, `|`, `^`, `!`...
+  * In Java, an enum item is a singleton subclass of the enum class. It has no associated value besides its index within the list of enum items but is a real class and can implement interfaces and define new fields / methods
+  * In C/C++, enums are just typed integers (in C++ they're not restricted to int), so you can combine them with bitwise operators `&`, `|`, `^`, `!`...
 
 This means that we'd like to benefit from the enum / singleton Java pattern and still be able to pass multiple values to C code expecting enums.
 
