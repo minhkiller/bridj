@@ -13,3 +13,38 @@ With BridJ, mapping was kept to its simplest form : if a type is a pointer, it w
 || `struct S*` || `Pointer<S>` || S ||
 || struct S || S || S.ByReference ||
 || enum E || `ValuedEnum<E>` || int ||
+
+
+= Enums = 
+
+Enums don't mean the same in Java and C/C++.
+- In Java, an enum item is a singleton subclass of the enum class. It has no associated value besides its index within the list of enum items but is a real class and can implement interfaces and define new fields / methods
+- In C/C++, enums are just typed integers (in C++ they're not restricted to int), so you can combine them with bitwise operators `&`, `|`, `^`, `!`...
+
+This means that we'd like to benefit from the enum / singleton Java pattern and still be able to pass multiple values to C code expecting enums.
+
+In BridJ, this is made possible with the `ValuedEnum<E>` interface (and `IntValuedEnum<E>` subinterface) :
+{{{
+public enum SimpleEnum implements IntValuedEnum<SimpleEnum > {
+	First(0),
+	Second(10),
+	Last(11);
+	
+	final long value;
+	SimpleEnum(long value) { this.value = value; }
+	@Override
+	public long value() { return this.value; }
+	public static IntValuedEnum<SimpleEnum> fromValue(long value) { 
+		return FlagSet.fromValue(SimpleEnum.class, value); 
+	}
+};
+public static native void doSomething(IntValuedEnum<SimpleEnum> value);
+
+import static SimpleEnum.*;
+public void test {
+	doSomething(First);
+
+	// Pass ORed flags : 'First | Value'
+	doSomething(SimpleEnum.fromValue(First.value() | Second.value()));
+}
+}}}
