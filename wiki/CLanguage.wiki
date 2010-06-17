@@ -28,7 +28,7 @@ public class S extends StructObject {
 }
 
 S myStruct = new S(); // maybe chained with setters : new S().a(10).b(12).c(55);
-Pointer<S> pS = Pointer.getPeer(myStruct);
+Pointer<S> pS = Pointer.getPointer(myStruct);
 funVal(myStruct);
 funVal(myStruct.get()); // pointer is a reified generic class, so get() returns a correct S instance
 }}}
