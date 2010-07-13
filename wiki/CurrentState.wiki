@@ -45,6 +45,7 @@ Binaries are currently available and routinely tested for the following platform
 = Planned features = 
 
   * pass and return structs by value
+  * COM JNAeration
   * *some* amount of built-in support for STL types (strings and vector at least, in debug/release mode, for GNU's STL, STLPort and MS VC++9's STL)
   * Full MFC Runtime (with annotations-based message map creation)
   * Mono/CLR interop (see [http://ochafik.free.fr/blog/?p=165 my previous hack])
