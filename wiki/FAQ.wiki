@@ -5,11 +5,13 @@
 == JNA ==
 
 Things BridJ aims at doing better than JNA :
-  * Cleaner API with Java 1.5 generics : typed Pointer<T>, typed enums (that are still flag-ORing-capable)...
+  * Supports C++ (really : 
+  * Cleaner API with Java 1.5 generics : typed `Pointer<T>`, typed enums (that are still flag-ORing-capable)
   * Vastly better structs support : lightweight structs without any data duplication
   * Better performance for most cases : direct mode is the default with BridJ, and it makes use of handwritten assembly to reach near-JNI performance in cases amenable for optimization.
 
 Where JNA wins over BridJ :
+  * BridJ doesn't handle structs by value in function calls yet (neither in arguments nor in return value). This is being worked on, though.
   * JNA is Java 1.4 compatible (while BridJ requires Java 1.5+)
   * JNA is mature and stable, used by *many* projects
   * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86 for now)
