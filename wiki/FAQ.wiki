@@ -1,5 +1,28 @@
-#summary Frequently Asked Questions about BridJ
+#summary BridJ's Frequently Asked Questions
 #labels Featured
+<wiki:toc max_depth="1" />
+
+= What is BridJ ? =
+
+BridJ is a library that lets you call C, C++ and Objective-C libraries from Java as if you were writing native code.
+
+With the help of JNAerator, it provides clean and unambiguous mappings to C/C++ code and a very straightforward and highly typed API to manipulate pointers, classes, structs, unions...
+
+It bridges Java's gap when it comes to native-world interoperability.
+
+For instance, you can allocate a `new float[10]` almost as in C++ :
+{{{
+float* array = new float[10];
+float value = array[4];
+delete[] array;
+}}}
+{{{
+import static com.bridj.Pointer.*;
+...
+Pointer<Float> array = allocateFloats(10);
+float value = array.get(4);
+array.release(); // optional : will be eventually called by the Garbage Collector
+}}}
 
 = How is BridJ different from... =
 
