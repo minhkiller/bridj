@@ -7,7 +7,18 @@
 
 Things BridJ aims at doing better than JNA :
   * Supports C++ (really : virtual methods, inheritance, templates and everything), without any symbol issue (you don't need to mess with C++ decoration)
-  * Cleaner API with Java 1.5 generics : typed `Pointer<T>`, typed enums (that are still flag-ORing-capable)
+  * Supports COM by default (special case of C++ support)
+  * Cleaner API with Java 1.5 generics : typed `Pointer<T>`, typed enums (that are still flag-ORing-capable).
+  This API is less ambiguous and less verbose : there's no Pointer vs. Memory vs. IntByReference issues :
+{{{
+import static com.bridj.Pointer.*;
+...
+Pointer<Integer> p = pointerToInts(1, 2, 3, 4);
+for (int v : p)
+  System.out.println("Next value : " + v);
+}}}
+  No more .ByReference vs. .ByValue issues : if a function accepts a pointer to MyStruct, it's gonna be `f(Pointer<MyStruct> s)`, if it accepts a MyStruct by value it will be `f(MyStruct s)`. Simple.
+  Wanna cast a pointer to a function pointer ? `ptr.as(MyFunctionPointer.class)`.
   * Vastly better structs support : lightweight structs without any data duplication
   * Better performance for most cases : direct mode is the default with BridJ, and it makes use of handwritten assembly to reach near-JNI performance in cases amenable for optimization.
 
@@ -16,4 +27,5 @@ Where JNA wins over BridJ :
   * JNA is Java 1.4 compatible (while BridJ requires Java 1.5+)
   * JNA is mature and stable, used by *many* projects
   * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86 for now)
+  * BridJ interfaces are harder to write by hand than JNA's. But JNAerator supports both JNA and BridJ outputs (with BridJ output being less verbose because there's only one way to bind things), so you won't need to write any interface by hand anyway.
   * JNA has tons of working examples
