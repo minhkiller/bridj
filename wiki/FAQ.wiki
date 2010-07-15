@@ -38,6 +38,7 @@ Things BridJ aims at doing better than JNA :
 import static com.bridj.Pointer.*;
 ...
 Pointer<Integer> p = pointerToInts(1, 2, 3, 4);
+p.set(0, 10);
 for (int v : p)
   System.out.println("Next value : " + v);
 }}}
