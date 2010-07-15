@@ -1,11 +1,12 @@
 #summary Frequently Asked Questions about BridJ
+#labels Featured
 
 = How is this different from... =
 
 == JNA ==
 
 Things BridJ aims at doing better than JNA :
-  * Supports C++ (really : 
+  * Supports C++ (really : virtual methods, inheritance, templates and everything), without any symbol issue (you don't need to mess with C++ decoration)
   * Cleaner API with Java 1.5 generics : typed `Pointer<T>`, typed enums (that are still flag-ORing-capable)
   * Vastly better structs support : lightweight structs without any data duplication
   * Better performance for most cases : direct mode is the default with BridJ, and it makes use of handwritten assembly to reach near-JNI performance in cases amenable for optimization.
