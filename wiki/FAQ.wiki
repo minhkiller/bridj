@@ -18,7 +18,10 @@ for (int v : p)
   System.out.println("Next value : " + v);
 }}}
   No more .ByReference vs. .ByValue issues : if a function accepts a pointer to MyStruct, it's gonna be `f(Pointer<MyStruct> s)`, if it accepts a MyStruct by value it will be `f(MyStruct s)`. Simple.
-  Wanna cast a pointer to a function pointer ? `ptr.as(MyFunctionPointer.class)`.
+
+  Wanna cast a pointer to a function pointer ? 
+  `ptr.as(MyFunctionPointer.class)`.
+  * Built-in support for different endiannesses in Pointer : if you retrieved a pointer to some GPU-filled memory and you know the GPU is little-endian (while your CPU is big-endian), you can just call myPtr.order(ByteOrder.LITTLE_ENDIAN). You can then retrieve data from it as usual, and even cast to a struct pointer : it will just work as intended.
   * Vastly better structs support : lightweight structs without any data duplication
   * Better performance for most cases : direct mode is the default with BridJ, and it makes use of handwritten assembly to reach near-JNI performance in cases amenable for optimization.
 
