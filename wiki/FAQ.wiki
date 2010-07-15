@@ -4,9 +4,9 @@
 
 = What is BridJ ? =
 
-BridJ is a library that lets you call C, C++ and Objective-C libraries from Java as if you were writing native code.
+BridJ is a library that lets you call [CLanguage C], [CPlusPlus C++] and [ObjectiveC Objective-C] libraries from Java as if you were writing native code.
 
-With the help of JNAerator, it provides clean and unambiguous mappings to C/C++ code and a very straightforward and highly typed API to manipulate pointers, classes, structs, unions...
+With the help of [http://jnaerator.googlecode.com/ JNAerator], it provides [TypeMapping clean and unambiguous mappings] to C/C++ code and a very straightforward and highly typed API to manipulate pointers, classes, structs, unions...
 
 It bridges Java's gap when it comes to native-world interoperability.
 
@@ -53,7 +53,7 @@ Where JNA wins over BridJ :
   * JNA is Java 1.4 compatible (while BridJ requires Java 1.5+)
   * JNA is mature and stable, used by *many* projects
   * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86 for now)
-  * BridJ interfaces are harder to write by hand than JNA's. But JNAerator supports both JNA and BridJ outputs (with BridJ output being less verbose because there's only one way to bind things), so you won't need to write any interface by hand anyway.
+  * BridJ interfaces are harder to write by hand than JNA's. But [http://jnaerator.googlecode.com/ JNAerator] supports both JNA and BridJ outputs (with BridJ output being less verbose because there's only one way to bind things), so you won't need to write any interface by hand anyway.
   * JNA has tons of working examples
 
 == SWIG == 
