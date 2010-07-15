@@ -29,10 +29,11 @@ array.release(); // optional : will be eventually called by the Garbage Collecto
 == JNA ==
 
 Things BridJ aims at doing better than JNA :
-  * [CPlusPlus Supports C++] (really : virtual methods, inheritance, templates and everything), without any symbol issue (you don't need to mess with C++ decoration)
-  * [COM Supports COM] by default (special case of C++ support)
-  * Cleaner API with Java 1.5 generics : typed `Pointer<T>`, typed enums (that are still flag-ORing-capable).
-  This API is less ambiguous and less verbose : there's no Pointer vs. Memory vs. IntByReference issues :
+  * BridJ is BSD-licensed (while JNA is LGPL)
+  * [CPlusPlus Supports C++] (really : virtual methods, inheritance, templates...)
+  * [COM Supports COM] (special case of C++ support) : lets you use "real" Windows APIs (IShellFolder, ITaskBarList3...)
+  * Cleaner API with Java 1.5 generics : 
+    * Iterable and typed `Pointer<T>`
 {{{
 import static com.bridj.Pointer.*;
 ...
@@ -40,13 +41,15 @@ Pointer<Integer> p = pointerToInts(1, 2, 3, 4);
 for (int v : p)
   System.out.println("Next value : " + v);
 }}}
-  No more .ByReference vs. .ByValue issues : if a function accepts a pointer to MyStruct, it's gonna be `f(Pointer<MyStruct> s)`, if it accepts a MyStruct by value it will be `f(MyStruct s)`. Simple.
-
-  Wanna cast a pointer to a function pointer ? 
-  `ptr.as(MyFunctionPointer.class)`.
-  * Built-in support for different endiannesses in Pointer : if you retrieved a pointer to some GPU-filled memory and you know the GPU is little-endian (while your CPU is big-endian), you can just call myPtr.order(ByteOrder.LITTLE_ENDIAN). You can then retrieve data from it as usual, and even cast to a struct pointer : it will just work as intended.
-  * Vastly better structs support : lightweight structs without any data duplication
-  * Better performance for most cases : direct mode is the default with BridJ, and it makes use of handwritten assembly to reach near-JNI performance in cases amenable for optimization.
+    * Typed enums (that can still be combined as flags)
+    * No such thing as IntByReference, LongByReference... Simply use `Pointer<Integer>`, `Pointer<Long>`...
+    * No such thing as Structure.ByReference vs. Structure.ByValue : if a function accepts a pointer to MyStruct, it's gonna be `f(Pointer<MyStruct> s)`, if it accepts a MyStruct by value it will be `f(MyStruct s)`. Simple.
+    * Wanna cast a pointer to a function pointer ? `ptr.as(MyFunctionPointer.class)`.
+  * Pervasive multiple endianness support : if you retrieved a pointer to some GPU-filled memory and you know the GPU is little-endian while your CPU is big-endian, you can just call `myPtr.order(ByteOrder.LITTLE_ENDIAN)`. You can then retrieve data from it as usual, and even cast to a struct pointer : it will just work as intended.
+  * Vastly better structs : lightweight, fast, without any data duplication
+  * Better performance for most function calls : 
+    * Direct mode is the default
+    * Some calls are optimized with handwritten assembly code to reach near-JNI performance
 
 Where JNA wins over BridJ :
   * BridJ doesn't handle structs by value in function calls yet (neither in arguments nor in return value). This is being worked on, though.
