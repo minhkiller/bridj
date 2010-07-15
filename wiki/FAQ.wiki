@@ -29,8 +29,8 @@ array.release(); // optional : will be eventually called by the Garbage Collecto
 == JNA ==
 
 Things BridJ aims at doing better than JNA :
-  * Supports C++ (really : virtual methods, inheritance, templates and everything), without any symbol issue (you don't need to mess with C++ decoration)
-  * Supports COM by default (special case of C++ support)
+  * [CPlusPlus Supports C++] (really : virtual methods, inheritance, templates and everything), without any symbol issue (you don't need to mess with C++ decoration)
+  * [COM Supports COM] by default (special case of C++ support)
   * Cleaner API with Java 1.5 generics : typed `Pointer<T>`, typed enums (that are still flag-ORing-capable).
   This API is less ambiguous and less verbose : there's no Pointer vs. Memory vs. IntByReference issues :
 {{{
