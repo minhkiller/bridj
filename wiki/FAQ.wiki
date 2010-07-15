@@ -1,7 +1,7 @@
 #summary Frequently Asked Questions about BridJ
 #labels Featured
 
-= How is this different from... =
+= How is BridJ different from... =
 
 == JNA ==
 
@@ -32,3 +32,15 @@ Where JNA wins over BridJ :
   * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86 for now)
   * BridJ interfaces are harder to write by hand than JNA's. But JNAerator supports both JNA and BridJ outputs (with BridJ output being less verbose because there's only one way to bind things), so you won't need to write any interface by hand anyway.
   * JNA has tons of working examples
+
+== SWIG == 
+
+BridJ is better because :
+  * it only requires you to build your Java program, whereas SWIG requires a painful native build on every target platform
+  * the resulting API is generally nicer looking, without any manual configuration involved
+  * you work directly with the original C/C++ headers, no need to write special header as with SWIG
+
+SWIG is better because :
+  * it's C++ support is much more solid : once it compiles, you're pretty sure it's gonna work
+  * it has support for STL types (std::string, std::vector...)
+  * it's more mature and stable
