@@ -1,5 +1,6 @@
 #summary Current State of the BridJ project
 #labels Featured
+<wiki:toc max_depth="3" />
 
 = Supported Platforms =
 
