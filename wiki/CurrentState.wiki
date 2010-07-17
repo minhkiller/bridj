@@ -21,6 +21,7 @@ Binaries are currently available and routinely tested for the following platform
   * Type-safe enums (ValuedEnum + FlagSet classes) : unifies singleton and multi-flags patterns
   * COM object creation and calls (tested on Win 64 bits only)
   * lightweight and fast structs (no memory duplication nor update issues between Java and the native side)
+  * [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/com/bridj/jawt/JAWTUtils.html Getting the native handler to an AWT Component's peer]
 
 = Known limitations =
 
