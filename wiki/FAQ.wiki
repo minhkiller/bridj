@@ -24,11 +24,11 @@ float value = array.get(4);
 array.release(); // optional : will be eventually called by the Garbage Collector
 }}}
 
-= What is BridJ's development status = 
+= What is BridJ's development status ? = 
 
 Please read [CurrentState]
 
-= What platforms does BridJ support = 
+= What platforms does BridJ support ? = 
 
 Please read [CurrentState]
 
