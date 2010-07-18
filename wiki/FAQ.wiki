@@ -32,6 +32,10 @@ Please read [CurrentState]
 
 Please read [CurrentState]
 
+= Where can I get support for BridJ ? =
+
+On [groups.google.com/group/nativelibs4java NativeLibs4Java's mailing-list].
+
 = How is BridJ different from... =
 
 == JNA ==
