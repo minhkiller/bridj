@@ -95,7 +95,7 @@ Where JNA wins over BridJ :
   * BridJ doesn't handle structs by value in function calls yet (neither in arguments nor in return value). This is being worked on, though.
   * JNA is Java 1.4 compatible (while BridJ requires Java 1.5+)
   * JNA is mature and stable, used by *many* projects
-  * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86 for now)
+  * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86/amd64 for now)
   * BridJ interfaces are harder to write by hand than JNA's. But [http://jnaerator.googlecode.com/ JNAerator] supports both JNA and BridJ outputs (with BridJ output being less verbose because there's only one way to bind things), so you won't need to write any interface by hand anyway.
   * JNA has tons of working examples
 
