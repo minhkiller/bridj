@@ -37,5 +37,5 @@ public static native int f(long a, short b, int c);
 Examples of non-optimizable function :
 {{{
 public static native int fWithPointer(Pointer<?> p);
-public static native int fTooManyArgs(long a, short b, int c, int d, int e, int f, int g, int h);
+public static native int fTooManyArgs(long a, short b, int c, int d, int e, int f, int g, int h, int i);
 }}}
