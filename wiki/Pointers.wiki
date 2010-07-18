@@ -1,9 +1,9 @@
 #summary How to use pointers in BridJ
 <wiki:toc max_depth="3" />
 
-Please read through the [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/com/bridj/Pointer.html Pointer class' Javadoc].
-
 = Anatomy of a pointer =
+
+Please read through the [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/com/bridj/Pointer.html Pointer class' Javadoc].
 
 In BridJ, each pointer exposes the following data :
   * a peer, which is the long value of the memory address it points to.
