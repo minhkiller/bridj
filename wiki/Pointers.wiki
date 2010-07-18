@@ -47,6 +47,13 @@ allocateShort(3).get(3); // will throw : allocated 3 shorts, reading short at in
 allocateInts(2).next(1).get(-1); // will not throw : allocated 2 ints, offsetting a pointer by 1 element and reading the element before (nulling the offset)
 }}}
 
+One can iterate over a pointer :
+{{{
+Pointer<Integer> pInts = pointerToInts(1, 2, 3, 4, 5);
+for (int v : pInts)
+  System.out.println(v);
+}}}
+
 TODO
 
 = Typed pointers =
