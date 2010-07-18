@@ -1,11 +1,16 @@
 #summary Details about BridJ's design
+#labels Featured
 
 = Introduction =
 
-BridJ was designed with both performance and usability as golden objectives.
+[http://jna.dev.java.net/ JNA] made it trivial to access to native libraries from Java. Together with [http://code.google.com/p/jnaerator/ JNAerator], it effectively lowered the entry cost of native developments, when compared to [http://en.wikipedia.org/wiki/Java_Native_Interface JNI].
+
+However, JNA was designed in the pre-Java 1.5 era and has made some design choices that hinder both performance and usability.
+
+BridJ was written from scratch to replace JNA with both performance and usability as golden objectives (as well as support for C++).
 
 Performance :
-  * Lightweight structs : no code duplication
+  * Lightweight structs : no data duplication nor synchronization issues
   * Pervasive "direct" mode (heavy use of "native" Java methods)
   * Assembler-optimized calls in some simple cases on select plaforms (see details below)
 
