@@ -89,3 +89,34 @@ public void test {
 	doSomething(SimpleEnum.fromValue(First.value() | Second.value()));
 }
 }}}
+
+= C++ Class =
+
+C++ code (compiled in test.dll / libtest.dylib / test.so) :
+{{{
+TEST_EXPORT class MyClass {
+public:
+    virtual ~MyClass();
+    int someMethod();
+    virtual int someVirtualMethod();
+};
+void test() {
+    MyClass inst;
+    inst.someMethod();
+}
+}}}
+
+BridJ equivalent :
+{{{
+public class Example {
+    @Library("test")
+    public static class MyClass extends CPPObject {
+        public native int someMethod();
+        @Virtual(0) public native int someVirtualMethod();
+    }
+    public static void test() {
+        MyClass inst = new MyClass();
+        inst.someMethod();
+    }
+}
+}}}
