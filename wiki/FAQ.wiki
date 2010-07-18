@@ -43,6 +43,17 @@ Please read [CurrentState]
 
 Sure, please read [Build].
 
+= What is BridJ's license ? =
+
+BridJ is distributed under the very liberal BSD license.
+Should you feel it does not fit your needs, the author is very open to dual-licensing it to any other license compatible with its dependencies (Apache, LGPL...).
+
+= What are BridJ's runtime dependencies ? =
+
+Outside of the NativeLibs4Java realm, BridJ depends on the following libraries :
+  * [http://asm.ow2.org/ ASM] (under [http://asm.ow2.org/license.html a BSD-style license])
+  * [http://dyncall.org Dyncall] (under [http://dyncall.org/license.shtml an ISC-style license])
+
 = Where can I get support for BridJ ? =
 
 On [http://groups.google.com/group/nativelibs4java NativeLibs4Java's mailing-list].
