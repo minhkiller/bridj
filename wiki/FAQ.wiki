@@ -4,7 +4,7 @@
 
 = What is BridJ ? =
 
-BridJ is a library that lets you call [CLanguage C], [CPlusPlus C++] and [ObjectiveC Objective-C] libraries from Java as if you were writing native code.
+BridJ is a library that lets you call [CLanguage C], [CPlusPlus C++] and [ObjectiveC Objective-C] libraries from Java as if you were writing native code. It is a recent alternative to [http://jna.dev.java.net JNA].
 
 With the help of [http://jnaerator.googlecode.com/ JNAerator], it provides [TypeMapping clean and unambiguous mappings] to C/C++ code and a very straightforward and highly typed API to manipulate pointers, classes, structs, unions...
 
