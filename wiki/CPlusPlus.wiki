@@ -2,40 +2,10 @@
 
 Please see [CurrentState].
 
-= Simple example =
+BridJ only supports calling C++ code compiled with GCC4 and Visual C++ 9.0.
 
-C++ code (compiled in test.dll) :
-{{{
-TEST_EXPORT class MyClass {
-public:
-    virtual ~MyClass();
-    int someMethod();
-    virtual int someVirtualMethod();
-};
-void test() {
-    MyClass inst;
-    inst.someMethod();
-}
-}}}
+BridJ supports creating C++ class instances, calling C++ methods (including virtual and static).
 
-Java/BridJ equivalent :
-{{{
-public class Example {
-    @Library("test")
-    public static class MyClass extends CPPObject {
-        public native int someMethod();
-        @Virtual(0) public native int someVirtualMethod();
-    }
-    public static void test() {
-        MyClass inst = new MyClass();
-        inst.someMethod();
-    }
-}
-}}}
+It will soon support subclassing C++ classes from Java. 
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+See [TypeMapping] for more details.
