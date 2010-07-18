@@ -51,8 +51,8 @@ Should you feel it does not fit your needs, the author is very open to dual-lice
 = What are BridJ's runtime dependencies ? =
 
 BridJ depends on the following libraries :
-  * [http://asm.ow2.org/ ASM] (under [http://asm.ow2.org/license.html a BSD-style license])
-  * [http://dyncall.org Dyncall] (under [http://dyncall.org/license.shtml an ISC-style license])
+  * [http://asm.ow2.org/ ASM], distributed under [http://asm.ow2.org/license.html a BSD-style license] (see [http://en.wikipedia.org/wiki/BSD_Licence Wikipedia's page about the BSD license])
+  * [http://dyncall.org Dyncall], distributed under [http://dyncall.org/license.shtml an ISC-style license] (see [http://en.wikipedia.org/wiki/ISC_license Wikipedia's page about the ISC license])
 
 = Where can I get support for BridJ ? =
 
