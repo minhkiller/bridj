@@ -1,5 +1,7 @@
 #summary C support in BridJ
 
+Please see [CurrentState].
+
 BridJ supports functions, callbacks (Java to native, native to java), enums, pointers, structs, globals...
 
 See [TypeMapping] for more information.
