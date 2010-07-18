@@ -7,7 +7,7 @@
 Binaries are currently available and routinely tested for the following platforms :
   * Windows (32 & 64 bits)
   * MacOS X (Universal : PPC, Intel 32 & 64 bits) ; only tested in 64 bits mode so far
-  * Linux (32 bits)
+  * Linux (32 & 64 bits *(NEW)*)
 (plans are to support Linux 64 bits and FreeBSD 32/64 soon)
 
 = Working Features =
@@ -34,7 +34,7 @@ Binaries are currently available and routinely tested for the following platform
 = Features in progress = 
 
   * JNAeration of callbacks
-  * assembly-optimized raw calls (for Win32, Win64, Mac64) : mac ok except for floats/doubles
+  * assembly-optimized raw calls (for Win32, Win64, Mac64, Linux64) : mac and linux ok except for floats/doubles
   * finish C++ classes :
     * support fields (mix existing code for structs)
     * call destructors from finalize() when appropriate
