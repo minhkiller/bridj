@@ -1,0 +1,26 @@
+#summary Details about BridJ's design
+
+= Introduction =
+
+BridJ was designed with both performance and usability as golden objectives.
+
+Performance :
+  * Lightweight structs : no code duplication
+  * Pervasive "direct" mode (heavy use of "native" Java methods)
+  * Assembler-optimized calls in some simple cases on select plaforms (see details below)
+
+Usability :
+  * Pointer class behaves pretty much like C pointers (automatic translation is trivial)
+  * Enums are typed while letting users combine them as flags
+  * Create a C++ object with `new MyCPPObject()`, subclass it with `new MyCPPObject() { public void myOverriddenMethod() {} }`...
+  * Structs have chainable setters : `new MyStruct().a(10).b(12)`
+
+= Assembler optimizations =
+
+Concerns only the native C functions with primitive arguments that match the platform's size.
+
+Supported platforms :
+  * MacOS X 64 bits (float + double disabled)
+  * Linux 64 bits (float + double disabled)
+  * Windows 32 bits (currently disabled)
+  * Windows 64 bits (currently disabled)
