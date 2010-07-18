@@ -30,6 +30,7 @@ Read more about :
   * [CLanguage]
   * [CPlusPlus]
   * [COM]
+  * [Design]
 
 = What is BridJ's development status ? = 
 
