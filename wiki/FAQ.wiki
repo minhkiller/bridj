@@ -32,9 +32,9 @@ Read more about :
   * [COM]
   * [Design]
 
-= Why another interop library ? What were BridJ's goals ? =
+= Why another interop library ? =
 
-In two words : [Design Performance and Usability]
+In three words : [Design C++, Performance and Usability]
 
 = What is BridJ's development status ? = 
 
