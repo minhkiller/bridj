@@ -35,6 +35,18 @@ TODO
 
 = Memory bounds, offsets, iteration = 
 
+== Offsets ==
+
+In C, one can increment a pointer with `ptr++`. The expression `ptr + x`, where `x` is an integer, gives a pointer to the same memory location as `ptr` shifted by `x` elements.
+
+If `ptr` is an int pointer, the address pointed by `ptr + 1` is the address pointed by `ptr` plus 4 bytes.
+
+With BridJ, given a pointer `ptr`, one can get `ptr + 1` with `ptr.next(1)`.
+
+The method `ptr.offset(1)` shifts the pointer by 1 byte, whereas `ptr.next(1)` shifts the pointer by 1 element (4 bytes if the target type of the pointer is Integer).
+
+== Bounds ==
+
 Memory allocated from Java using Pointer.allocateXXX and Pointer.pointerToXXX methods has known valid bounds. Pointers that wrap direct NIO buffers also have known valid bounds that they take from the buffer.
 
 Read/write operations on such "bounded" pointers are bounds-checked and throw exceptions when indexes are out of bounds :
@@ -47,6 +59,16 @@ allocateShort(3).get(3); // will throw : allocated 3 shorts, reading short at in
 allocateInts(2).next(1).get(-1); // will not throw : allocated 2 ints, offsetting a pointer by 1 element and reading the element before (nulling the offset)
 }}}
 
+It is possible to ask a pointer how many valid bytes are available from its pointed location :
+{{{
+Pointer<Short> p = allocateShorts(4); // allocate 4 * 2 bytes = 8 bytes
+System.out.println(p.getRemainingBytes()); // 8
+Pointer<Short> p2 = p.next(); // shift pointer by 1 short = 2 bytes.
+System.out.println(p2.getRemainingBytes()); // 6
+}}}
+
+== Iteration ==
+
 One can iterate over a pointer :
 {{{
 Pointer<Integer> pInts = pointerToInts(1, 2, 3, 4, 5);
@@ -54,7 +76,7 @@ for (int v : pInts)
   System.out.println(v);
 }}}
 
-TODO
+If the pointer's bounds are unknown, iteration will be infinite (until illegal memory access is attempted, which will most likely crash the JVM).
 
 = Typed pointers =
 
