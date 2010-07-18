@@ -1,4 +1,5 @@
 #summary Summary of Java / C++ type mapping with BridJ
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
@@ -14,6 +15,38 @@ With BridJ, mapping was kept to its simplest form : if a type is a pointer, it w
 || struct S || S || `S.ByReference` ||
 || enum E || `ValuedEnum<E>` || int ||
 
+= Structs =
+
+C code :
+{{{
+struct S {
+     int a;
+     void* p;
+};
+
+void funVal(struct S byVal);
+struct S myStruct;
+struct S* pS = &myStruct;
+funVal(myStruct);
+funVal(*myStruct);
+}}}
+
+Equivalent Java/BridJ code :
+{{{
+public class S extends StructObject {
+     @Field(0) // gives index of field in struct, as Java gives no guarantee on the method order
+     public static native int a();
+     public static native S a(int a); // BridJ setters return this to allow invocation chaining, but void would also work fine
+     @Field(1)
+     public static native Pointer<?> p;
+     public static native S p(Pointer<?> p);
+}
+
+S myStruct = new S(); // maybe chained with setters : new S().a(10).b(12).c(55);
+Pointer<S> pS = Pointer.getPointer(myStruct);
+funVal(myStruct);
+funVal(myStruct.get()); // pointer is a reified generic class, so get() returns a correct S instance
+}}}
 
 = Enums = 
 
