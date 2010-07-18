@@ -14,6 +14,15 @@ TODO
 
 = Reading / Writing data = 
 
+{{{
+Pointer<Integer> pInt = ...;
+// Here are 4 ways to get the int value pointed directly by pInt :
+int v = pInt.get();
+v = pInt.get(0); // element offset (in ints)
+v = pInt.getInt();
+v = pInt.getInt(0); // byte offset (in bytes)
+}}}
+
 TODO
 
 = Allocating memory =
