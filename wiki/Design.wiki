@@ -18,6 +18,7 @@ Usability :
 = Assembler optimizations =
 
 Concerns only the native C functions with primitive arguments that match the platform's size.
+Supports calls with a maximum number of arguments that depends on the platform (typically, 4).
 
 Supported platforms :
   * MacOS X 64 bits (float + double disabled)
