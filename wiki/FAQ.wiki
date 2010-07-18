@@ -110,3 +110,9 @@ SWIG is better because :
   * it's C++ support is much more solid : once it compiles, you're pretty sure it's gonna work (with BridJ
   * it has support for STL types (std::string, std::vector...)
   * it's more mature and stable
+
+= Who is using BridJ ? =
+
+  * [http://javacl.googlecode.com/ JavaCL] has an experimental port to BridJ (over from JNA) which is fully functional.
+
+Please let us know if you want your project to be listed here :-)
