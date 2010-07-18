@@ -1,0 +1,25 @@
+#summary How to use pointers in BridJ
+
+= Anatomy of a pointer =
+
+TODO
+
+= Allocating memory =
+
+TODO
+
+= Wrapping memory =
+
+TODO
+
+= Endianness =
+
+TODO
+
+= Reading / Writing = 
+
+TODO
+
+= Casting =
+
+TODO
