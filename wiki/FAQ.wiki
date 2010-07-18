@@ -39,6 +39,10 @@ Please read [CurrentState]
 
 Please read [CurrentState]
 
+= Can I build BridJ from sources ? =
+
+Sure, please read [Build].
+
 = Where can I get support for BridJ ? =
 
 On [http://groups.google.com/group/nativelibs4java NativeLibs4Java's mailing-list].
