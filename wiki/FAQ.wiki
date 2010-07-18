@@ -32,6 +32,10 @@ Read more about :
   * [COM]
   * [Design]
 
+= Why another interop library ? What were BridJ's goals ? =
+
+In two words : [Design Performance and Usability]
+
 = What is BridJ's development status ? = 
 
 Please read [CurrentState]
@@ -49,15 +53,15 @@ Sure, please read [Build].
 BridJ is distributed under the very liberal BSD license.
 Should you feel it does not fit your needs, the author is very open to dual-licensing it to any other license compatible with its dependencies (Apache, LGPL...).
 
-= How do I bind C / C++ function / struct / class / type XXX with BridJ ? =
-
-Just paste your C header [http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp into JNAerator], choose BridJ as runtime and click on JNAerate.
-
 = What are BridJ's runtime dependencies ? =
 
 BridJ depends on the following libraries :
   * [http://asm.ow2.org/ ASM], distributed under [http://asm.ow2.org/license.html a 3-clauses BSD-style license] (see [http://en.wikipedia.org/wiki/BSD_Licence Wikipedia's page about the BSD license])
   * [http://dyncall.org Dyncall], distributed under [http://dyncall.org/license.shtml an ISC-style license] (see [http://en.wikipedia.org/wiki/ISC_license Wikipedia's page about the ISC license])
+
+= How do I bind C / C++ function / struct / class / type XXX with BridJ ? =
+
+Just paste your C header [http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp into JNAerator], choose BridJ as runtime and click on JNAerate.
 
 = Where can I get support for BridJ ? =
 
