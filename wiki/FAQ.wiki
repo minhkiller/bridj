@@ -24,6 +24,13 @@ float value = array.get(4);
 array.release(); // optional : will be eventually called by the Garbage Collector
 }}}
 
+Read more about :
+  * [Pointers]
+  * [TypeMapping]
+  * [CLanguage]
+  * [CPlusPlus]
+  * [COM]
+
 = What is BridJ's development status ? = 
 
 Please read [CurrentState]
