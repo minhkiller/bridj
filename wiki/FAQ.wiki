@@ -49,6 +49,10 @@ Sure, please read [Build].
 BridJ is distributed under the very liberal BSD license.
 Should you feel it does not fit your needs, the author is very open to dual-licensing it to any other license compatible with its dependencies (Apache, LGPL...).
 
+= How do I bind C / C++ function / struct / class / type XXX with BridJ ? =
+
+Just paste your C header [http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp into JNAerator], choose BridJ as runtime and click on JNAerate.
+
 = What are BridJ's runtime dependencies ? =
 
 BridJ depends on the following libraries :
