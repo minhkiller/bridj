@@ -15,10 +15,10 @@ Performance :
   * Assembler-optimized calls in some simple cases on select plaforms (see details below)
 
 Usability :
-  * Pointer class behaves pretty much like C pointers (automatic translation is trivial)
-  * Enums are typed while letting users combine them as flags
-  * Create a C++ object with `new MyCPPObject()`, subclass it with `new MyCPPObject() { public void myOverriddenMethod() {} }`...
-  * Structs have chainable setters : `new MyStruct().a(10).b(12)`
+  * [Pointers Pointer] class behaves pretty much like C pointers (automatic translation is trivial)
+  * [TypeMapping Enums] are typed while letting users combine them as flags
+  * [CPlusPlus Create a C++ object] with `new MyCPPObject()`, subclass it with `new MyCPPObject() { public void myOverriddenMethod() {} }`...
+  * [TypeMapping Structs] have chainable setters : `new MyStruct().a(10).b(12)`
 
 = Assembler optimizations =
 
