@@ -19,6 +19,8 @@ Usability :
 
 These optimization are turned on when all conditions are met, which might be rarely or never.
 
+Without these optimizations, BridJ's performance is about the same as JNA in direct mode (without structs, where BridJ is much faster). With the optimizations, BridJ is about 10% slower than pure JNI.
+
 Concerns only the native C functions with primitive arguments that match the platform's size.
 
 Supports calls with a maximum number of arguments that depends on the platform (typically, 4).
