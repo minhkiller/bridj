@@ -2,6 +2,15 @@
 
 = Anatomy of a pointer =
 
+In BridJ, each pointer exposes the following data :
+  * a peer, which is the long value of the memory address it points to.
+  * a target type, which is null for `Pointer<?>` instances.
+  * a byte order (as NIO buffers), which states whether data will be read from this pointer in big endian or little endian mode
+
+TODO
+
+= Reading / Writing data = 
+
 TODO
 
 = Allocating memory =
@@ -12,11 +21,17 @@ TODO
 
 TODO
 
-= Endianness =
+= Typed pointers =
+
+A typed pointer is a subclass of the `Pointer<?>` class that corresponds in C to some void pointer or opaque pointer typedef :
+{{{
+typedef void* HWND;
+typedef struct _S* S;
+}}}
 
 TODO
 
-= Reading / Writing = 
+= Endianness =
 
 TODO
 
