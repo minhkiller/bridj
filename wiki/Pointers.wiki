@@ -24,6 +24,22 @@ TODO
 
 TODO
 
+= Memory bounds, offsets, iteration = 
+
+Memory allocated from Java using Pointer.allocateXXX and Pointer.pointerToXXX methods has known valid bounds. Pointers that wrap direct NIO buffers also have known valid bounds that they take from the buffer.
+
+Read/write operations on such "bounded" pointers are bounds-checked and throw exceptions when indexes are out of bounds :
+
+{{{
+import static com.bridj.Pointer.*;
+...
+allocateInt().getLong(); // will throw : allocated an int = 4 bytes, reading a long = 8 bytes
+allocateShort(3).get(3); // will throw : allocated 3 shorts, reading short at index 3
+allocateInts(2).next(1).get(-1); // will not throw : allocated 2 ints, offsetting a pointer by 1 element and reading the element before (nulling the offset)
+}}}
+
+TODO
+
 = Typed pointers =
 
 A typed pointer is a subclass of the `Pointer<?>` class that corresponds in C to some void pointer or opaque pointer typedef :
