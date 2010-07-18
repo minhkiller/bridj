@@ -18,7 +18,7 @@ Binaries are currently available and routinely tested for the following platform
   * C++ method calls (including virtual methods)
   * lazy signatures annotation support (exact symbols are optional)
   * Call C callbacks from Java and call Java-implemented callbacks from C
-  * Complete [Pointer] API (with typed opaque pointers, array accessible + iterable reified generic Pointer base class...)
+  * Complete [Pointers] API (with typed opaque pointers, array accessible + iterable reified generic Pointer base class...)
   * Type-safe enums (ValuedEnum + [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/com/bridj/FlagSet.html FlagSet] classes) : unifies singleton and multi-flags patterns
   * COM object creation and calls (tested on Win 64 bits only)
   * lightweight and fast structs (no memory duplication nor update issues between Java and the native side)
