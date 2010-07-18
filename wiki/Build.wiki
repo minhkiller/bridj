@@ -1,0 +1,55 @@
+#summary How to build BridJ
+#labels Featured
+
+BridJ is built as part of the NativeLibs4Java sub-projects.
+
+= Full build (first time) =
+
+This will build all of NativeLibs4Java's projects, including JNAerator.
+It will take some time, so you'll want to have a coffee during the build (if you've never used Maven before, this can take up to 15 minutes, so that might be enough for two coffees).
+
+Subsequent builds will be much quicker (see next section), and can be launched from your Maven-aware IDE of choice.
+
+  * First, [http://maven.apache.org/download.html install Maven].
+  * Checkout [http://code.google.com/p/nativelibs4java/source/browse/#svn/trunk/libraries nativelibs4java files] :
+    {{{
+svn checkout http://nativelibs4java.googlecode.com/svn/trunk/libraries nativelibs4java
+cd nativelibs4java
+}}}
+  * Run the following Maven command :
+    {{{
+mvn install -Dmaven.test.skip=true
+}}}
+
+BridJ's JAR is `Runtime/Bridj/target/bridj-x.x-SNAPSHOT-shaded.jar`.
+
+= Incremental build =
+
+{{{
+cd Runtime/BridJ
+mvn clean install
+}}}
+
+= Building BridJ's native library =
+
+BridJ depends on [http://dyncall.org Dyncall], so you'll need to check it out and apply some BridJ-specific patches (beware: DYNCALL_HOME must point to the dyncall directory inside the dyncall directory the following command checks out) :
+{{{
+svn co https://dyncall.org/svn/dyncall/trunk dyncall
+export DYNCALL_HOME=pathToDyncall/dyncall
+cd dyncall
+patch < pathToBridJ/src/main/cpp/bridj/dyncall.patch
+}}}
+You may need to clean the patch up for it to apply correctly.
+
+Then you can build BridJ's shared library (and its test library) :
+{{{
+cd Runtime/BridJ
+sh CleanNative ; sh BuildNative
+}}}
+
+If it's not a platform already supported by BridJ, you must update `Runtime/BridJ/src/main/velocity/com/bridj/JNI.java` so it can find your binary at runtime (search for `getEmbeddedLibraryResource` in [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/velocity/com/bridj/JNI.java]).
+
+To run the tests on your new binary :
+{{{
+mvn test
+}}}
