@@ -17,7 +17,10 @@ Usability :
 
 = Assembler optimizations =
 
+These optimization are turned on when all conditions are met, which might be rarely or never.
+
 Concerns only the native C functions with primitive arguments that match the platform's size.
+
 Supports calls with a maximum number of arguments that depends on the platform (typically, 4).
 
 Supported platforms :
@@ -25,3 +28,14 @@ Supported platforms :
   * Linux 64 bits (float + double disabled)
   * Windows 32 bits (currently disabled)
   * Windows 64 bits (currently disabled)
+
+Example of optimizable function :
+{{{
+public static native int f(long a, short b, int c);
+}}}
+
+Examples of non-optimizable function :
+{{{
+public static native int fWithPointer(Pointer<?> p);
+public static native int fTooManyArgs(long a, short b, int c, int d, int e, int f, int g, int h);
+}}}
