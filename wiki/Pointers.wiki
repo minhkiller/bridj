@@ -6,21 +6,16 @@
 Please read through the [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/com/bridj/Pointer.html Pointer class' Javadoc].
 
 In BridJ, each pointer exposes the following data :
-  * a peer, which is the long value of the memory address it points to.
-  * a target type, which is null for `Pointer<?>` instances.
-  * a byte order (as NIO buffers), which states whether data will be read from this pointer in big endian or little endian mode
-
-TODO
+  * a peer, which is the long value of the memory address it points to. It is never equal to zero (the NULL pointer is represented with the Java null value).
+  * a target type, which is null for `Pointer<?>` instances and Integer.class for `Pointer<Integer>` instances.
+  * a byte order (as for [http://download.oracle.com/docs/cd/E17409_01/javase/6/docs/api/java/nio/ByteBuffer.html NIO buffers]), which states whether data will be read from this pointer in [http://fr.wikipedia.org/wiki/Endianness big endian or little endian] mode
 
 = Reading / Writing data = 
 
 {{{
 Pointer<Integer> pInt = ...;
-// Here are 4 ways to get the int value pointed directly by pInt :
-int v = pInt.get();
-v = pInt.get(0); // element offset (in ints)
+int v = pInt.get(); // generic way of getting the pointed element
 v = pInt.getInt();
-v = pInt.getInt(0); // byte offset (in bytes)
 }}}
 
 TODO
