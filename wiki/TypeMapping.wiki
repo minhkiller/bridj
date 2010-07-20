@@ -8,13 +8,13 @@ If it's a pointer, it's a Pointer !
 With BridJ, mapping was kept to its simplest form : if a type is a pointer, it will be mapped to com.bridj.Pointer in Java (or to a subclass of it). This is very different from JNA where there are many possible mappings for the same native type.
 
 || `C/C++` type || Java/BridJ || JNA ||
-|| `int*`, `int&`, `int[]` || `Pointer<Integer>` || IntegerByReference, Pointer, `int[]`, IntBuffer... ||
-|| `void**` || `Pointer<Pointer<?>>` || PointerByReference, Pointer ||
-|| wchar_t || char || char ||
-|| `struct S*` || `Pointer<S>` || S ||
-|| struct S || S || `S.ByReference` ||
-|| enum E || `ValuedEnum<E>` || int ||
-|| const char* || `Pointer<Byte>` (use getCString() to get the string) || `String`, `Pointer`, `ByteByReference` ||
+|| `int*`, `int&`, `int[]` || `Pointer<Integer>` || `IntegerByReference`, `Pointer`, `int[]`, `IntBuffer`... ||
+|| `void**` || `Pointer<Pointer<?>>` || `PointerByReference`, `Pointer` ||
+|| `wchar_t` || `char` || `char` ||
+|| `struct S*` || `Pointer<S>` || `S` ||
+|| `struct S` || `S` || `S.ByReference` ||
+|| `enum E` || `ValuedEnum<E>` || `int` ||
+|| `const char*` || `Pointer<Byte>` (use getCString() to get the string) || `String`, `Pointer`, `ByteByReference` , `ByteBuffer`, `byte[]` ||
 
 = Structs =
 
