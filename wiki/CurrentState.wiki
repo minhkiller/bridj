@@ -7,7 +7,7 @@
 Binaries are currently available and routinely tested for the following platforms :
   * Windows (32 & 64 bits), tested on XP 32 bits and Windows 7 64 bits.
   * MacOS X (Universal : PPC, Intel 32 & 64 bits), tested on x86_64.
-  * Linux (32 & 64 bits *(NEW)*), tested on Ubuntu 9.10 x86 and x64.
+  * Linux (x86 & x86_64 *(NEW)*), tested on Ubuntu 9.10 x86 and x86_64.
 (plans are to support FreeBSD 32/64 soon)
 
 = Working Features =
