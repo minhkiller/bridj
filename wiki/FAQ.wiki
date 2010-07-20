@@ -75,8 +75,8 @@ Things BridJ aims at doing better than JNA :
   * BridJ is BSD-licensed (while JNA is LGPL)
   * [CPlusPlus Supports C++] (really : virtual methods, inheritance, templates...)
   * [COM Supports COM] (special case of C++ support) : lets you use "real" Windows APIs (IShellFolder, ITaskBarList3...)
-  * Cleaner API with Java 1.5 generics : 
-    * Iterable and typed `Pointer<T>`
+  * [TypeMapping] Cleaner API with Java 1.5 generics : 
+    * [Pointers Iterable and typed `Pointer<T>`]
 {{{
 import static com.bridj.Pointer.*;
 ...
