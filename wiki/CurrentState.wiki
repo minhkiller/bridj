@@ -33,6 +33,8 @@ Binaries are currently available and routinely tested for the following platform
 
 = Features in progress = 
 
+  * Struct fields in structs !
+  * Enum fields in structs !
   * JNAeration of enums (TODO add values(), fromValue(long), fix function enum args : not int !)
   * assembly-optimized raw calls (for Win32, Win64, Mac64, Linux32, Linux64) : win64 is buggy, lin32 is TODO, mac is buggy with floats and doubles (of course, buggy implies disabled)
   * finish C++ classes :
