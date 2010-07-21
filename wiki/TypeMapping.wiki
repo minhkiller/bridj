@@ -20,6 +20,10 @@ Please make sure to also read the [FAQ]
 
 = Structs =
 
+BridJ structs were designed to be performant and easy to use.
+
+Using [http://code.google.com/p/jnaerator/ JNAerator] to create them out of C definitions is strongly advised.
+
 C code :
 {{{
 struct S {
