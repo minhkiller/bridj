@@ -1,7 +1,7 @@
 #summary Ideas of subjects for Google Summer of Code internships
 #labels Featured
 
-BridJ is a project that opens many doors in the Java interop world, but exploring all these doors will require a lot of help. 
+BridJ is a young project that opens many doors in the Java interop world, but exploring all these doors will require a lot of help. 
 
 We describe here some of the projects on which we would love to mentor students or passionate individuals, should they be sponsored through the [http://code.google.com/intl/fr/soc/ Google Summer of Code] program or not.
 
