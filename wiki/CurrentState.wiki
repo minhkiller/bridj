@@ -49,6 +49,8 @@ Binaries are currently available and routinely tested for the following platform
 
 = Planned features = 
 
+(also see [GoogleSummerOfCode] for projects on which we'd love to receive help, from students or passionate individuals)
+
   * pass and return structs by value
   * COM JNAeration : need to hook into Anarres preprocessor to retrieve CLSID and IID before they're swallowed out by their respective macros
   * *some* amount of built-in support for STL types (strings and vector at least, in debug/release mode, for GNU's STL, STLPort and MS VC++9's STL)
