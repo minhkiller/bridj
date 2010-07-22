@@ -1,6 +1,12 @@
 #summary Ideas of subjects for Google Summer of Code internships
 #labels Featured
 
+BridJ is a project that opens many doors in the Java interop world, but exploring all these doors will require a lot of help. 
+
+We describe here some of the projects on which we would love to mentor passionate students, should they be sponsored through the Google Summer of Code program or not.
+
+<wiki:toc max_depth="3" />
+
 = Library interceptor generator = 
 
 Library calls interception is a (hacking) technique that consists in hooking to all the calls to a existing function from a shared library. This allows for logging, behaviour altering, etc...
