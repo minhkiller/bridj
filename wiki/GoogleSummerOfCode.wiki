@@ -30,13 +30,13 @@ Setting the `-Dcom.bridj.shadow=log` Java property will install a logging hooks 
 
 = JNA to BridJ Converter =
 
-Using the Eclipse compiler API, one could create a Java code converter between JNA and BridJ client code.
+Using the [http://www.jarvana.com/jarvana/view/org/eclipse/jdt/doc/isv/3.2.1-r321_v20060907/isv-3.2.1-r321_v20060907.jar!/reference/api/org/eclipse/jdt/core/dom/AST.html Eclipse compiler API] (also see [http://publib.boulder.ibm.com/infocenter/iadthelp/v6r0/index.jsp?topic=/org.eclipse.jdt.doc.isv/guide/jdt_api_manip.htm here], one could create a Java code converter between JNA and BridJ client code.
 
 As JNA does not use generics and BridJ does, some amount of type inference will be needed, and in general pattern matching on the Java DOM will be used.
 
 = BridJ / .NET =
 
-A Java to Mono proof-of-concept binding was done some while ago, using the Mono C API.
+A Java to Mono proof-of-concept binding [http://ochafik.free.fr/blog/?p=165 was done some while ago, using the Mono C API].
 
 Here, we're targetting the Microsoft .NET runtime, which does not have such a clean C API. Hence, we need to write one :-)
 
