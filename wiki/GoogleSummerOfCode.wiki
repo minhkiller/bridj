@@ -67,7 +67,7 @@ On the model of Microsoft's [http://en.wikipedia.org/wiki/C%2B%2B/CLI C++/CLI la
 This is a big project that can be split in more than one internships.
 
 Here are its milestones :
-  * Add support for the C++/CLI syntax subset needed to manipulate JVM objects (for instance, supporting the out or ref C++/CLI keywords makes no sense) to JNAerator 
+  * Add support for the C++/CLI syntax subset needed to manipulate JVM objects (for instance, supporting the out or ref C++/CLI keywords makes no sense) to JNAerator or LLVM (one could even JNAerate bindings for LLVM so as to pilot it from Java)
   * Create a code generator that will read the C++/JVM code and output two files : one with pure C++ code (to be then compiled with GCC or Microsoft Visual C++ using dyncall's build scripts) and one with pure Java code. The pure C++ code will call the Java code using JNI.
   * Create line mappings between the original code and the generated code (both in Java and in C++), use ASM to alter the Java code and insert "fake" line information that traces back to the original C++ / JVM files, so that debuggers can follow the code execution in the original files.
   * Plug into Visual C++'s debugger API and into GDB to provide a Java Debugging API implementation that will allow mixt debugging : stepping into both native and Java code, as what Microsoft provides with C++/CLI.
