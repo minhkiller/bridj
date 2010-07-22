@@ -7,6 +7,8 @@ We describe here some of the projects on which we would love to mentor passionat
 
 <wiki:toc max_depth="3" />
 
+(also see the [CurrentState] page for a list of features either in progress or planned)
+
 = Library interceptor generator = 
 
 Library calls interception is a (hacking) technique that consists in hooking to all the calls to a existing function from a shared library. This allows for logging, behaviour altering, etc...
