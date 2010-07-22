@@ -53,3 +53,11 @@ The JNAerator parser will require fixes to support the C / C++ syntax completely
 This is a other approach to the C++ to Java conversion project.
 
 On the model of Microsoft's C++/CLI language, which retains full C++ compatibility while adding support for .NET/CLR objects manipulation, one could add JVM objects creation to C++.
+
+This is a big project that can be split in more than one internships.
+
+Here are its milestones :
+  * Add documented support for the C++/CLI syntax subset needed to manipulate JVM objects (for instance, supporting the out or ref C++/CLI keywords makes no sense)
+  * Create a code generator that will read the C++/JVM code and output two files : one with pure C++ code (to be then compiled with GCC or Microsoft Visual C++ using dyncall's build scripts) and one with pure Java code. The pure C++ code will call the Java code using JNI.
+  * Create line mappings between the original code and the generated code (both in Java and in C++), use ASM to alter the Java code and insert "fake" line information that traces back to the original C++ / JVM files, so that debuggers can follow the code execution in the original files.
+  * Plug into Visual C++'s debugger API and into GDB to provide a Java Debugging API implementation that will allow mixt debugging : stepping into both native and Java code, as what Microsoft provides with C++/CLI.
