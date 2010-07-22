@@ -34,6 +34,8 @@ Using the [http://www.jarvana.com/jarvana/view/org/eclipse/jdt/doc/isv/3.2.1-r32
 
 As JNA does not use generics and BridJ does, some amount of type inference will be needed, and in general pattern matching on the Java DOM will be used.
 
+The code rewrite logic could be generalized, maybe using a Scala DSL or some sort of rewrite template matching / replacement grammar.
+
 = BridJ / .NET =
 
 A Java to Mono proof-of-concept binding [http://ochafik.free.fr/blog/?p=165 was done some while ago, using the Mono C API].
