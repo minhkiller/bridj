@@ -1,0 +1,55 @@
+#summary Ideas of subjects for Google Summer of Code internships
+#labels Featured
+
+= Library interceptor generator = 
+
+Library calls interception is a (hacking) technique that consists in hooking to all the calls to a existing function from a shared library. This allows for logging, behaviour altering, etc...
+
+There are some system-dependent dynamic approaches, but here we could provide a static approach : we could generate a shared library (or generate the code to compile and link such a library) that would "shadow" the actual library (would appear first on the path), would expose the same public symbols and would actually call Java callbacks for each function, letting the function decide to call the actual library or just handle the call the way it wants.
+
+This internship would require writing a code generator based on JNAerator.
+
+Possible steps :
+  * test this technique using a test library and a test hand-written shadow library. Forward the calls to Java using JNI and validate the approach
+  * get used to JNAerator's internals, write code generation engine to create the shadow definitions
+  * use the excellent [http://dyncall.org Dyncall] native cross-platform build scripts (used by BridJ) to make the compilation of generated shadow libraries very easy (or even automatic, provided that the necessary build tools are detected locally)
+
+Final result :
+{{{
+java -jar shadow.jar mydll.dll
+}}}
+Will output `shadow\mydll.dll` and `shadow\mydll.jar` : the JAR contains the hook interfaces and structure definitions in the `com.bridj.shadow.mydll` package, and the DLL should be put in the path before the actual DLL (but the actuall DLL must also be present in the path, so the shadow DLL can call it).
+
+Setting the `-Dcom.bridj.shadow=log` Java property will install a logging hooks that will output logging data with function name, argument values (including dump of structures if applicable), return values, timestamp... 
+
+= JNA to BridJ Converter =
+
+Using the Eclipse compiler API, one could create a Java code converter between JNA and BridJ client code.
+
+As JNA does not use generics and BridJ does, some amount of type inference will be needed, and in general pattern matching on the Java DOM will be used.
+
+= BridJ / .NET =
+
+A Java to Mono proof-of-concept binding was done some while ago, using the Mono C API.
+
+Here, we're targetting the Microsoft .NET runtime, which does not have such a clean C API. Hence, we need to write one :-)
+
+Using the BridJ modular architecture, the ultimate goal is to have C# / CLR classes that look and behave like Java classes, including with respect to subclassing.
+
+Dark points are around mixed GC interaction (GC from the JVM vs. .NET GC), crossed inheritance and bridge performance.
+
+The Java ASM and .NET Emit frameworks will also be put to high use.
+
+= C++ to Java Converter = 
+
+JNAerator converts C / C++ signatures to Java bindings.
+
+The next step is to also convert the code (not only the signatures), so that one can bind a whole library and convert all of its samples and demos directly to Java / BridJ.
+
+The JNAerator parser will require fixes to support the C / C++ syntax completely, and some pattern matching on its DOM will be needed to convert to proper Java / BridJ constructs.
+
+= New C++ / JVM Language = 
+
+This is a other approach to the C++ to Java conversion project.
+
+On the model of Microsoft's C++/CLI language, which retains full C++ compatibility while adding support for .NET/CLR objects manipulation, one could add JVM objects creation to C++.
