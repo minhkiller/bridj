@@ -33,7 +33,7 @@ Supports calls with a maximum number of arguments that depends on the platform (
 Supported platforms :
   * MacOS X 64 bits (float + double disabled)
   * Linux 64 bits (float + double disabled)
-  * Windows 32 bits (currently disabled)
+  * Windows 32 bits (enabled)
   * Windows 64 bits (currently disabled)
 
 Example of optimizable function :
