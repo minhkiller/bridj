@@ -17,3 +17,5 @@ However, it still features `apply` and `update` methods, partly to avoid having 
 = Structs = 
 
 When using JNAerator to create BridJ structs, you can use the `-scalaSetters` switch to generate setters in the form `MyStruct.myField_=` that are treated like setters by Scala.
+
+These setters do not replace the usual generated setters, they're final and just call the usual setters.
