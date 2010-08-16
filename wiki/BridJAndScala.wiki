@@ -1,0 +1,15 @@
+#summary Details on accommodations for Scala made in BridJ
+
+= Introduction =
+
+BridJ is a Java `<->` C / C++ / Objective-C / C# interop library.
+
+This means Java the language but also more widely the JVM and its hosted languages.
+
+This page describes what was done in BridJ to specifically ease up use from Scala.
+
+= Pointer =
+
+BridJ's pointer was designed to behave like a list, so provided you import `scala.collection.JavaConversions._` you'll already feel at home.
+
+However, it still features `apply` and `update` methods, partly to avoid having to use `JavaConversions` (for instance in pre-2.8.x Scala, where it does not exist) and partly to allow for `Long` index instead of `java.util.List.get(int)`'s limited `Int` index.
