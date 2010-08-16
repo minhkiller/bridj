@@ -42,9 +42,16 @@ patch < pathToBridJ/src/main/cpp/bridj/dyncall.patch
 You may need to clean the patch up for it to apply correctly.
 
 Then you can build BridJ's shared library (and its test library) :
-{{{
+  * On Unix/Linux/MacOS X :
+  {{{
 cd Runtime/BridJ
 sh CleanNative ; sh BuildNative
+}}}
+  * On Windows :
+  {{{
+cd Runtime\BridJ
+CleanNative
+BuildNative
 }}}
 
 If it's not a platform already supported by BridJ, you must update `Runtime/BridJ/src/main/velocity/com/bridj/JNI.java` so it can find your binary at runtime (search for `getEmbeddedLibraryResource` in [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/velocity/com/bridj/JNI.java]).
