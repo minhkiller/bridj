@@ -2,6 +2,8 @@
 #labels Featured
 <wiki:toc max_depth="3" />
 
+Display [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/CHANGELOG the CHANGELOG]
+
 = Supported Platforms =
 
 Binaries are currently available and routinely tested for the following platforms :
