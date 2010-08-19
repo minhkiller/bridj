@@ -1,5 +1,4 @@
 #summary BridJ's Frequently Asked Questions
-#labels Featured
 <wiki:toc max_depth="3" />
 
 = What is BridJ ? =
@@ -42,7 +41,11 @@ Please read [CurrentState]
 
 = What platforms does BridJ support ? = 
 
-Please read [CurrentState]
+  * Windows (x86, x64)
+  * Linux (x86, x64)
+  * Mac OS X (x86, x64, ppc)
+
+... with plans for FreeBSD and Solaris ([CreditsAndLicense help and / or test hardward welcome])
 
 = Can I build BridJ from sources ? =
 
@@ -50,14 +53,15 @@ Sure, please read [Build].
 
 = What is BridJ's license ? =
 
-BridJ is distributed under the very liberal BSD license.
-Should you feel it does not fit your needs, the author is very open to dual-licensing it to any other license compatible with its dependencies (Apache, LGPL...).
+BridJ is [CreditsAndLicense dual-licensed under a very liberal BSD license and the very liberal Apache 2.0 license].
 
 = What are BridJ's runtime dependencies ? =
 
-BridJ depends on the following libraries :
-  * [http://asm.ow2.org/ ASM], distributed under [http://asm.ow2.org/license.html a 3-clauses BSD-style license] (see [http://en.wikipedia.org/wiki/BSD_Licence Wikipedia's page about the BSD license])
-  * [http://dyncall.org Dyncall], distributed under [http://dyncall.org/license.shtml an ISC-style license] (see [http://en.wikipedia.org/wiki/ISC_license Wikipedia's page about the ISC license])
+BridJ is released as a self-contained JAR.
+
+However, it includes a copy of the [http://asm.ow2.org/ ASM] library and its native library are statically linked with a modified version of [http://dyncall.org Dyncall].
+
+More details here : [CreditsAndLicense].
 
 = How do I bind C / C++ function / struct / class / type XXX with BridJ ? =
 
