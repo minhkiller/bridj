@@ -15,7 +15,7 @@ Binaries are currently available and routinely tested for the following platform
   * thread-safe design (including reentrant calls)
   * [http://jnaerator.googlecode.com/ JNAerator] support on par with JNA's
   * C functions calls with __cdecl and __stdcall conventions
-  * C++ method calls (including virtual methods)
+  * C++ method calls and destructores (including virtual methods)
   * lazy signatures annotation support (exact symbols are optional)
   * Call C callbacks from Java and call Java-implemented callbacks from C
   * Complete [Pointers] API (with typed opaque pointers, array accessible + iterable reified generic Pointer base class...)
@@ -26,7 +26,6 @@ Binaries are currently available and routinely tested for the following platform
 
 = Known limitations =
 
-  * destructors are not yet called on C++ classes on all platforms
   * only default C++ constructors are supported so far (not those with arguments)
   * structs by value not supported yet (neither as function arguments nor as function return values)
   * requires Java 1.5 or more recent (if you need 1.4 compatibility, you shoud JNA instead)
@@ -39,7 +38,6 @@ Binaries are currently available and routinely tested for the following platform
   * assembly-optimized raw calls (for Win32, Win64, Mac64, Linux32, Linux64) : win64 is buggy, lin32 is TODO, mac is buggy with floats and doubles (of course, buggy implies disabled)
   * finish C++ classes :
     * support fields (mix existing code for structs)
-    * call destructors when appropriate (not tested on all platforms yet, enable with -Dbridj.destructors=true)
     * call arbitrary constructors (with args)
     * subclassing from Java (virtual __thiscall and __fastcall callbacks, vtable synthetization)
   * C++ templates for functions and classes (combination of generics and extra args/fields for types reification and last-minute lookup of actual symbols)
