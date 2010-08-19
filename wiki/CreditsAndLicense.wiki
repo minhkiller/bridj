@@ -19,9 +19,11 @@ None !
 
 = Projects Used =
 
-[http://www.dyncall.org DynCall]
+BridJ uses the following libraries :
+  * [http://asm.ow2.org/ ASM], distributed under [http://asm.ow2.org/license.html a 3-clauses BSD-style license] (see [http://en.wikipedia.org/wiki/BSD_Licence Wikipedia's page about the BSD license])
+  * [http://dyncall.org Dyncall], distributed under [http://dyncall.org/license.shtml an ISC-style license] (see [http://en.wikipedia.org/wiki/ISC_license Wikipedia's page about the ISC license])
 
-[http://asm.ow2.org/ ASM]
+Note that BridJ ships with these libraries, so you don't need to put them in the path or install them to your system : *BridJ's JAR file is self-contained.*
 
 = License (dual BSD-like / Apache 2.0) =
 
