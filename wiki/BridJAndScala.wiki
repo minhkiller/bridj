@@ -1,4 +1,5 @@
 #summary Details on accommodations for Scala made in BridJ
+#labels Featured
 
 = Introduction =
 
