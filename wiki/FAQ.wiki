@@ -1,4 +1,5 @@
 #summary BridJ's Frequently Asked Questions
+#labels Featured
 <wiki:toc max_depth="3" />
 
 = What is BridJ ? =
@@ -78,6 +79,10 @@ On [http://groups.google.com/group/nativelibs4java NativeLibs4Java's mailing-lis
 Things BridJ aims at doing better than JNA :
   * BridJ is BSD-licensed (while JNA is LGPL)
   * [CPlusPlus Supports C++] (really : virtual methods, inheritance, templates...)
+  * Vastly better structs : lightweight, fast (one or two orders of magnitude faster to create), without any data duplication
+  * Better performance for most function calls : 
+    * Direct mode is the default
+    * Some calls are optimized with handwritten assembly code to reach near-JNI performance
   * [COM Supports COM] (special case of C++ support) : lets you use "real" Windows APIs (IShellFolder, ITaskBarList3...)
   * [TypeMapping Cleaner API] with Java 1.5 generics : 
     * [Pointers Iterable and typed `Pointer<T>`]
@@ -94,10 +99,6 @@ for (int v : p)
     * No such thing as Structure.ByReference vs. Structure.ByValue : if a function accepts a pointer to MyStruct, it's gonna be `f(Pointer<MyStruct> s)`, if it accepts a MyStruct by value it will be `f(MyStruct s)`. Simple.
     * Wanna cast a pointer to a function pointer ? `ptr.as(MyFunctionPointer.class)`.
   * Pervasive multiple endianness support : if you retrieved a pointer to some GPU-filled memory and you know the GPU is little-endian while your CPU is big-endian, you can just call `myPtr.order(ByteOrder.LITTLE_ENDIAN)`. You can then retrieve data from it as usual, and even cast to a struct pointer : it will just work as intended.
-  * Vastly better structs : lightweight, fast, without any data duplication
-  * Better performance for most function calls : 
-    * Direct mode is the default
-    * Some calls are optimized with handwritten assembly code to reach near-JNI performance
 
 Where JNA wins over BridJ :
   * BridJ doesn't handle structs by value in function calls yet (neither in arguments nor in return value). This is being worked on, though.
