@@ -1,0 +1,22 @@
+#summary List of dependencies, contributors and sponsors
+#labels Featured
+
+= Main author = 
+
+Olivier Chafik (also author of [http://code.google.com/p/jnaerator/ JNAerator] and [http://code.google.com/p/javacl/ JavaCL])
+
+= Contributors =
+
+Rémi Emonet : enhancements in GCC demangler
+
+= Sponsors = 
+
+None !
+
+[http://groups.google.fr/group/nativelibs4java Become a sponsor !]
+
+= Projects Used =
+
+[http://www.dyncall.org DynCall]
+
+[http://asm.ow2.org/ ASM]
