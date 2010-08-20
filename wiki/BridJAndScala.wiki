@@ -23,7 +23,7 @@ pointer(index) = value
 }}}
 
 <table><tr valign="top"><td colspan="2">
-C code :
+C code that demonstrates multi-dimensional arrays declarations and usage :
 {{{
 float array1d[100];
 float array2d[100][200];
