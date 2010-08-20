@@ -10,21 +10,36 @@ With the help of [http://jnaerator.googlecode.com/ JNAerator], it provides [Type
 
 It bridges Java's gap when it comes to native-world interoperability.
 
+<table><tr valign="top"><td colspan="2">
 For instance, you can allocate a `new float[10]` almost as in C++ :
 {{{
 float* array = new float[10];
 float value = array[4];
 delete[] array;
 }}}
+</td></tr><tr valign="top"><td>
+Scala code :
 {{{
+import org.bridj.Pointer._
+
+val array = allocateFloats(10);
+val value = array.get(4);
+array.release // optional : will be eventually called by the Garbage Collector
+}}}
+</td><td>
+Java code :
+{{{
+import org.bridj.Pointer;
 import static org.bridj.Pointer.*;
 ...
 Pointer<Float> array = allocateFloats(10);
 float value = array.get(4);
 array.release(); // optional : will be eventually called by the Garbage Collector
 }}}
+</td></tr></table>
 
 Read more about :
+  * [BridJAndScala]
   * [Pointers]
   * [TypeMapping]
   * [CLanguage]
