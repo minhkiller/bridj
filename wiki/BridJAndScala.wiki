@@ -39,9 +39,9 @@ Scala code :
 {{{
 import org.bridj.Pointer._
 
-val array1d = pointerToFloats(100)
-val array2d = pointerToFloats(100, 200)
-val array3d = pointerToFloats(100, 200, 300)
+val array1d = allocateFloats(100)
+val array2d = allocateFloats(100, 200)
+val array3d = allocateFloats(100, 200, 300)
 
 val v1 = array1d(10)
 val v2 = array2d(10)(20)
@@ -54,12 +54,14 @@ Java code :
 import org.bridj.Pointer;
 import static org.bridj.Pointer.*;
 ...
-Pointer<Float> array1d = 
-    pointerToFloats(100);
-Pointer<Pointer<Float>> array2d = 
-    pointerToFloats(100, 200);
-Pointer<Pointer<Pointer<Float>>> array3d = 
-    pointerToFloats(100, 200, 300);
+Pointer<Float> 
+	array1d = allocateFloats(100);
+    
+Pointer<Pointer<Float>> 
+	array2d = allocateFloats(100, 200);
+
+Pointer<Pointer<Pointer<Float>>> 
+	array3d = allocateFloats(100, 200, 300);
 
 float v1 = array1d.get(10);
 float v2 = array2d.get(10).get(20);
