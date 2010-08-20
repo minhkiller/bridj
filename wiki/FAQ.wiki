@@ -50,13 +50,13 @@ array.release();
 </td></tr></table>
 
 Read more about :
-  * [BridJAndScala]
   * [Pointers]
   * [TypeMapping]
   * [CLanguage]
   * [CPlusPlus]
   * [COM]
   * [Design]
+  * [BridJAndScala Using BridJ with Scala]
 
 = Why another interop library ? =
 
