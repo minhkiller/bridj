@@ -71,10 +71,13 @@ for (int index = 0; index < 10; index++) {
   System.out.println("%i\n".format(ptr.get()));
   ptr = ptr.next();
 }
-// Note that we could iterate directly on the pointer :
-// for (int value : array)
-//   System.out.println("%i\n".format(value));
 array.release(); // optional
+}}}
+
+Note that we could iterate directly on the pointer :
+{{{
+for (int value : array)
+   System.out.println("%i\n".format(value));
 }}}  
 
 == Bounds ==
