@@ -16,7 +16,7 @@ BridJ's pointer was designed to behave like a list, so provided you import `scal
 It also implements apply and update, so it's really simple to use from Scala.
 
 <table>
-<tr><td colspan="2">
+<tr valign="top"><td colspan="2">
 C code :
 {{{
 float array1d[100];
@@ -27,7 +27,7 @@ float v1 = array1d[10];
 float v2 = array2d[10][20];
 float v3 = array3d[10][20][30];
 }}}
-</td></tr><tr><td>
+</td></tr><tr valign="top"><td>
 Scala code :
 {{{
 import org.bridj.Pointer._
