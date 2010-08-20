@@ -54,7 +54,7 @@ CleanNative
 BuildNative
 }}}
 
-If it's not a platform already supported by BridJ, you must update `Runtime/BridJ/src/main/velocity/com/bridj/JNI.java` so it can find your binary at runtime (search for `getEmbeddedLibraryResource` in [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/velocity/com/bridj/JNI.java]).
+If it's not a platform already supported by BridJ, you must update `Runtime/BridJ/src/main/velocity/org/bridj/JNI.java` so it can find your binary at runtime (search for `getEmbeddedLibraryResource` in [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/velocity/org/bridj/JNI.java]).
 
 To run the tests on your new binary :
 {{{

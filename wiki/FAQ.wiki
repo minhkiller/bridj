@@ -17,7 +17,7 @@ float value = array[4];
 delete[] array;
 }}}
 {{{
-import static com.bridj.Pointer.*;
+import static org.bridj.Pointer.*;
 ...
 Pointer<Float> array = allocateFloats(10);
 float value = array.get(4);
@@ -87,7 +87,7 @@ Things BridJ aims at doing better than JNA :
   * [TypeMapping Cleaner API] with Java 1.5 generics : 
     * [Pointers Iterable and typed `Pointer<T>`]
 {{{
-import static com.bridj.Pointer.*;
+import static org.bridj.Pointer.*;
 ...
 Pointer<Integer> p = pointerToInts(1, 2, 3, 4);
 p.set(0, 10);

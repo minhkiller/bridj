@@ -5,7 +5,7 @@
 
 If it's a pointer, it's a Pointer !
 
-With BridJ, mapping was kept to its simplest form : if a type is a pointer, it will be mapped to com.bridj.Pointer in Java (or to a subclass of it). This is very different from JNA where there are many possible mappings for the same native type.
+With BridJ, mapping was kept to its simplest form : if a type is a pointer, it will be mapped to org.bridj.Pointer in Java (or to a subclass of it). This is very different from JNA where there are many possible mappings for the same native type.
 
 || `C/C++` type || Java/BridJ || JNA ||
 || `int*`, `int&`, `int[]` || `Pointer<Integer>` || `IntegerByReference`, `Pointer`, `int[]`, `IntBuffer`... ||

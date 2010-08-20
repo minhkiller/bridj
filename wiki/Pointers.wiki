@@ -3,7 +3,7 @@
 
 = Anatomy of a pointer =
 
-Please read through the [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/com/bridj/Pointer.html Pointer class' Javadoc].
+Please read through the [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html Pointer class' Javadoc].
 
 In BridJ, each pointer exposes the following data :
   * a peer, which is the long value of the memory address it points to. It is never equal to zero (the NULL pointer is represented with the Java null value).
@@ -63,7 +63,7 @@ delete[] array;
   
 Here is an equivalent in Java :
 {{{
-import static com.bridj.Pointer.*;
+import static org.bridj.Pointer.*;
 ...
 Pointer<Integer> array = allocateInts(10);
 Pointer<Integer> ptr = array;
@@ -84,7 +84,7 @@ Memory allocated from Java using Pointer.allocateXXX and Pointer.pointerToXXX me
 Read/write operations on such "bounded" pointers are bounds-checked and throw exceptions when indexes are out of bounds :
 
 {{{
-import static com.bridj.Pointer.*;
+import static org.bridj.Pointer.*;
 ...
 allocateInt().getLong(); // will throw : allocated an int = 4 bytes, reading a long = 8 bytes
 allocateShort(3).get(3); // will throw : allocated 3 shorts, reading short at index 3
