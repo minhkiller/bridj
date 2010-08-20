@@ -49,8 +49,8 @@ val array2d = pointerToFloats(100, 200)
 val array3d = pointerToFloats(100, 200, 300)
 
 val v1 = array1d(10)
-val v2 = array1d(10)(20)
-val v3 = array1d(10)(20)(30)
+val v2 = array2d(10)(20)
+val v3 = array3d(10)(20)(30)
 }}}
 
 = Structs = 
