@@ -113,6 +113,15 @@ for (int v : pInts)
 
 If the pointer's bounds are unknown, iteration will be infinite (until illegal memory access is attempted, which will most likely crash the JVM).
 
+One case where we don't know bounds yet want to iterate, though, is for C string length computation :
+{{{
+long length = 0;
+Pointer<Byte> pString = ...;
+while (pString.get() != 0)
+    length++;
+}}}
+(note that you can read a C string from a pointer with the method [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html#getCString() Pointer.getCString()])
+
 = Typed pointers =
 
 A typed pointer is a subclass of the `Pointer<?>` class that corresponds in C to some void pointer or opaque pointer typedef :
@@ -125,7 +134,7 @@ TODO
 
 = Endianness =
 
-TODO
+With the method [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html#order(ByteOrder) Pointer.order(ByteOrder)], it is possible to create a clone of a pointer that uses a different byte order to read and write to / from memory.
 
 = Casting =
 
