@@ -40,14 +40,33 @@ funVal(*myStruct);
 
 Equivalent Java/BridJ code :
 {{{
-public class S extends StructObject {
-     @Field(0) // gives index of field in struct, as Java gives no guarantee on the method order
-     public static native int a();
-     public static native S a(int a); // BridJ setters return this to allow invocation chaining, but void would also work fine
-     @Field(1)
-     public static native Pointer<?> p;
-     public static native S p(Pointer<?> p);
-}
+public static class S extends StructObject {
+	public S() {
+		super();
+	}
+	public S(Pointer pointer) {
+		super(pointer);
+	}
+	@Field(0) 
+	public int a() {
+		return this.io.getIntField(this, 0);
+	}
+	// BridJ setters return this to allow invocation chaining
+	@Field(0) 
+	public S a(int a) {
+		this.io.setIntField(this, 0, a);
+		return this;
+	}
+	@Field(1) 
+	public Pointer<? > p() {
+		return this.io.getPointerField(this, 1, ?.class);
+	}
+	@Field(1) 
+	public S p(Pointer<? > p) {
+		this.io.setPointerField(this, 1, p);
+		return this;
+	}
+};
 
 S myStruct = new S(); // maybe chained with setters : new S().a(10).b(12).c(55);
 Pointer<S> pS = Pointer.getPointer(myStruct);
