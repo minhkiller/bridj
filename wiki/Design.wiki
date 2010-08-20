@@ -36,7 +36,7 @@ Supported platforms :
   * Windows 32 bits (enabled)
   * Windows 64 bits (currently disabled)
 
-Example of optimizable function :
+Example of optimizable functions :
 {{{
 public static native int f(long a, short b, int c);
 public static native int fWithPointer(@Ptr long p);
