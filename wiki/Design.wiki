@@ -39,6 +39,7 @@ Supported platforms :
 Example of optimizable function :
 {{{
 public static native int f(long a, short b, int c);
+public static native int fWithPointer(@Ptr long p);
 }}}
 
 Examples of non-optimizable function :
