@@ -1,5 +1,6 @@
 #summary Details on accommodations for Scala made in BridJ
 #labels Featured
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
@@ -60,7 +61,7 @@ float v3 = array3d.get(10).get(20).get(30);
 
 = Structs = 
 
-When using JNAerator to create BridJ structs, you can use the `-scalaSetters` switch to generate setters in the form `MyStruct.myField_=` that are treated like setters by Scala.
+When using [http://code.google.com/p/jnaerator/ JNAerator] to create BridJ structs, you can use the `-scalaSetters` switch to generate setters in the form `MyStruct.myField_=` that are treated like setters by Scala.
 
 These setters do not replace the usual generated setters, they're final and just call the usual setters.
 
