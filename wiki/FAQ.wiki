@@ -24,7 +24,9 @@ import org.bridj.Pointer._
 
 val array = allocateFloats(10);
 val value = array.get(4);
-array.release // optional : will be eventually called by the Garbage Collector
+
+// optional : will be eventually called by the Garbage Collector
+array.release 
 }}}
 </td><td>
 Java code :
@@ -34,7 +36,7 @@ import static org.bridj.Pointer.*;
 ...
 Pointer<Float> array = allocateFloats(10);
 float value = array.get(4);
-array.release(); // optional : will be eventually called by the Garbage Collector
+array.release();
 }}}
 </td></tr></table>
 
