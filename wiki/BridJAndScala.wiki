@@ -15,7 +15,7 @@ BridJ's pointer was designed to behave like a list, so provided you import `scal
 
 It also implements apply and update, so it's really simple to use from Scala.
 
-C struct and code :
+C code :
 {{{
 float array1d[100];
 float array2d[100][200];
