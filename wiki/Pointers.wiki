@@ -134,7 +134,7 @@ TODO
 
 = Endianness =
 
-With the method [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html#order(ByteOrder) Pointer.order(ByteOrder)], it is possible to create a clone of a pointer that uses a different byte order to read and write to / from memory.
+With the method [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html#order(java.nio.ByteOrder) Pointer.order(ByteOrder)], it is possible to create a clone of a pointer that uses a different byte order to read and write to / from memory.
 
 = Casting =
 
