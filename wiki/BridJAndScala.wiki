@@ -28,6 +28,9 @@ float v3 = array3d[10][20][30];
 
 Java code :
 {{{
+import org.bridj.Pointer;
+import static org.bridj.Pointer.*;
+...
 Pointer<Float> array1d = pointerToFloats(100);
 Pointer<Pointer<Float>> array2d = pointerToFloats(100, 200);
 Pointer<Pointer<Pointer<Float>>> array3d = pointerToFloats(100, 200, 300);
