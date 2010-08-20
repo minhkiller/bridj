@@ -22,8 +22,8 @@ Scala code :
 {{{
 import org.bridj.Pointer._
 
-val array = allocateFloats(10);
-val value = array.get(4);
+val array = allocateFloats(10)
+val value = array(4)
 
 // optional : will be eventually called by the Garbage Collector
 array.release 
