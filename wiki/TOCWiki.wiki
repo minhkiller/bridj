@@ -16,6 +16,6 @@
       * [CPlusPlus C++]
       * [COM]
   * Hands On
-    * [Download          ]
-    * [Source            ]
-    * [Build             ]
+    * [Download]
+    * [Source]
+    * [Build]
