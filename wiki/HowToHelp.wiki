@@ -10,6 +10,9 @@ Even if you're not a programmer you're welcome to contribute to these projects, 
 
 This page details some ways you can help us.
 
+If any item rings a bell, 
+[http://groups.google.fr/group/nativelibs4java let's discuss it].
+
 = New projects = 
 
 See [GoogleSummerOfCode] for details on some ambitious sub-project that will likely no see the light of day without your help.
