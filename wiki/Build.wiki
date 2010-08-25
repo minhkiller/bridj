@@ -1,5 +1,7 @@
 #summary How to build BridJ
 #labels Featured
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 BridJ is built as part of the NativeLibs4Java sub-projects.
 
