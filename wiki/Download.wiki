@@ -1,5 +1,7 @@
 #summary Links to download BridJ
 #labels Featured
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/0.1-SNAPSHOT/ Binary snapshots]
 
