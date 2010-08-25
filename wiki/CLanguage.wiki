@@ -1,4 +1,6 @@
 #summary C support in BridJ
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 Please see [CurrentState].
 
