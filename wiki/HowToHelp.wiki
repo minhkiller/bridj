@@ -4,7 +4,7 @@
 
 BridJ is an ambitious project that aims at becoming the ultimate free interop library for Java (free as in freedom and beer : BSD).
 
-While currently developed by a single individual, BridJ and JNAerator have already received many contributions in the form of source code, bug reports and suggestions.
+While currently developed by a single individual, BridJ and JNAerator have already received [CreditsAndLicense many contributions] in the form of source code, bug reports and suggestions.
 
 Even if you're not a programmer you're welcome to contribute to these projects, and we'll be happy to help you with your contribution.
 
