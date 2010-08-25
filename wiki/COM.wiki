@@ -1,4 +1,6 @@
 #summary COM support in BridJ
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
