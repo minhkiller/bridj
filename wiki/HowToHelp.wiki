@@ -1,0 +1,27 @@
+#summary How to help with the development of BridJ
+
+= Introduction =
+
+BridJ is an ambitious project that aims at becoming the ultimate free interop library for Java (free as in freedom and beer : BSD).
+
+While currently developed by a single individual, BridJ and JNAerator have already received many contributions in the form of source code, bug reports and suggestions.
+
+Even if you're not a programmer you're welcome to contribute to these projects, and we'll be happy to help you with your contribution.
+
+This page details some ways you can help us.
+
+= New projects = 
+
+See [GoogleSummerOfCode] for details on some ambitious sub-project that will likely no see the light of day without your help.
+
+= Bug Fixes and Enhancements = 
+
+There are [Issues Many], just waiting for you.
+
+= Graphics =
+
+BridJ has no icon, JNAerator either.
+
+Feel like changing that ?
+
+= Money or Hardware donations = 
