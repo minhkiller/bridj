@@ -7,7 +7,7 @@ We describe here some of the projects on which we would love to mentor students 
 
 <wiki:toc max_depth="3" />
 
-(also see the [CurrentState] page for a list of features either in progress or planned)
+Please also see the [CurrentState] page for a list of features either in progress or planned, and the [HowToHelp] for more general ideas on how to help the BridJ / NativeLibs4Java / JNAerator projects.
 
 = Library interceptor generator = 
 
