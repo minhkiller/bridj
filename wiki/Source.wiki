@@ -1,4 +1,5 @@
 #summary Source code for BridJ
+#sidebar TOCWiki
 
 BridJ's source code is currently hosted at the NativeLibs4Java project.
 
