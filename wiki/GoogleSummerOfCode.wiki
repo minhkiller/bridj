@@ -90,3 +90,13 @@ List<String^>^ GetNames() {
     }
 }
 }}}
+
+= Add Fortran support =
+
+Fortran has different official versions (F77, F90...) many compilers (each supporting its own Fortran feature set) and presumably different calling conventions.
+
+Calling Fortran to Java might hence not be trivial.
+
+As for C++, one should restrict the scope of the project to the most common compiler(s), say GNU Fortran (gfortran).
+
+Support for the most common Fortran types is also important, and an excellent deliverable would be a fully functional binding to a Fortran LAPACK library from Java (there are already tons of such libraries, but I believe they're either translated to C or have C wrappers).
