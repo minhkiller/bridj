@@ -1,4 +1,5 @@
 #summary Ideas of subjects for Google Summer of Code internships
+#sidebar TOCWiki
 
 BridJ is a young project that opens many doors in the Java interop world, but exploring all these doors will require a lot of help. 
 
