@@ -1,5 +1,6 @@
 #summary Current State of the BridJ project
 #labels Featured
+#sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
 Display [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/CHANGELOG the CHANGELOG]
