@@ -1,4 +1,6 @@
 #summary Issue tracking
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 For issues about the JavaCL Generator, please go to [http://code.google.com/p/jnaerator/issues/ JNAerator's issue tracker].
 
