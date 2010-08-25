@@ -47,7 +47,7 @@ Using the BridJ modular architecture, the ultimate goal is to have C# / CLR clas
 
 Dark points are around mixed GC interaction (GC from the JVM vs. .NET GC), crossed inheritance and bridge performance.
 
-The Java ASM and .NET Emit frameworks will also be put to high use.
+The [http://asm.ow2.org/ Java ASM] and [http://msdn.microsoft.com/en-us/library/system.reflection.emit.aspx .NET Emit] frameworks will also be put to high use.
 
 = C++ to Java Converter = 
 
