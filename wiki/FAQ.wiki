@@ -1,5 +1,6 @@
 #summary BridJ's Frequently Asked Questions
 #labels Featured
+#sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
 = What is BridJ ? =
