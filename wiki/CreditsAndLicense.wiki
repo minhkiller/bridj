@@ -8,6 +8,9 @@ Olivier Chafik (also author of [http://code.google.com/p/jnaerator/ JNAerator] a
 = Contributors =
 
 Rémi Emonet : enhancements in GCC demangler
+Jeff Palmer : moderation of [http://groups.google.com/group/nativelibs4java the mailing list] and support to JavaCL users
+
+Countless bug reporters on both the [http://code.google.com/p/nativelibs4java/issues/list?can=1 NativeLibs4Java issue tracker] and the [http://code.google.com/p/jnaerator/issues/list?can=1 JNAerator issue tracker].
 
 [http://groups.google.fr/group/nativelibs4java Become a contributor !]
 
