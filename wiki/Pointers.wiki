@@ -1,4 +1,5 @@
 #summary How to use pointers in BridJ
+#sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
 = Anatomy of a pointer =
