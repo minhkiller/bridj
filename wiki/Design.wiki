@@ -1,5 +1,7 @@
 #summary Details about BridJ's design
 #labels Featured
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
