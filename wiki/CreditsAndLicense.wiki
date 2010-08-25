@@ -1,5 +1,7 @@
 #summary List of dependencies, contributors and sponsors
 #labels Featured
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 = Main author = 
 
