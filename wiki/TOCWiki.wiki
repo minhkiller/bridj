@@ -19,3 +19,4 @@
     * [Download]
     * [Source]
     * [Build]
+    * [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/ JavaDoc]
