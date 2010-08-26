@@ -1,4 +1,3 @@
-  * [Welcome ↑ Home]
   * [FAQ]
   * Project
     * [HowToHelp]
