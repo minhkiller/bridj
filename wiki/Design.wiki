@@ -24,7 +24,7 @@ Usability :
 
 = Assembler optimizations =
 
-These optimization are turned on when all conditions are met, which might be rarely or never.
+These optimization are turned on when all conditions are met, which might be rarely or never (please read [http://code.google.com/p/jnaerator/wiki/Reification] for how to generate optimizable and OO-looking methods out of plain old C functions).
 
 Without these optimizations, BridJ's performance is about the same as JNA in direct mode (without structs, where BridJ is much faster). With the optimizations, BridJ is about 10% slower than pure JNI, that is 5x faster than JNA in direct mode.
 
