@@ -32,7 +32,7 @@ Setting the `-Dorg.bridj.shadow=log` Java property will install a logging hooks 
 
 = JNA to BridJ Converter =
 
-Using the [http://www.jarvana.com/jarvana/view/org/eclipse/jdt/doc/isv/3.2.1-r321_v20060907/isv-3.2.1-r321_v20060907.jar!/reference/api/org/eclipse/jdt/core/dom/AST.html Eclipse compiler API] (also see [http://publib.boulder.ibm.com/infocenter/iadthelp/v6r0/index.jsp?topic=/org.eclipse.jdt.doc.isv/guide/jdt_api_manip.htm here], one could create a Java code converter between JNA and BridJ client code.
+Using the [http://www.jarvana.com/jarvana/view/org/eclipse/jdt/doc/isv/3.2.1-r321_v20060907/isv-3.2.1-r321_v20060907.jar!/reference/api/org/eclipse/jdt/core/dom/AST.html Eclipse compiler API] (also see [http://publib.boulder.ibm.com/infocenter/iadthelp/v6r0/index.jsp?topic=/org.eclipse.jdt.doc.isv/guide/jdt_api_manip.htm here]), one could create a Java code converter between JNA and BridJ client code to *convert existing JNA bindings to BridJ bindings* (please note that with JNAerator it is trivial to create BridJ bindings from scratch, though).
 
 As JNA does not use generics and BridJ does, some amount of type inference will be needed, and in general pattern matching on the Java DOM will be used.
 
