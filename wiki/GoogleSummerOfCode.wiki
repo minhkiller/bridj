@@ -9,6 +9,14 @@ We describe here some of the projects on which we would love to mentor students 
 
 Please also see the [CurrentState] page for a list of features either in progress or planned, and the [HowToHelp] for more general ideas on how to help the BridJ / NativeLibs4Java / JNAerator projects.
 
+= Objective-C support =
+
+BridJ currently does not have any working Objective-C support.
+
+The [http://code.google.com/p/rococoa/ Rococoa] project did an awesome job of binding the Objective-C runtime, building on JNA.
+
+It would be feasible to do the same with BridJ (i.e. do a port of Rococoa from JNA to BridJ), but BridJ itself will need some work (it might not be dynamic enough).
+
 = Library interceptor generator = 
 
 Library calls interception is a (hacking) technique that consists in hooking to all the calls to a existing function from a shared library. This allows for logging, behaviour altering, etc...
