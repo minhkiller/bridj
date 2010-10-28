@@ -83,6 +83,10 @@ Sure, please read [Build].
 
 BridJ is [CreditsAndLicense dual-licensed under a very liberal BSD license and the very liberal Apache 2.0 license].
 
+= How can I help ? =
+
+Please read [HowToHelp].
+
 = What are BridJ's runtime dependencies ? =
 
 BridJ is released as a self-contained JAR.
