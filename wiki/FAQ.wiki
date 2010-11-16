@@ -147,7 +147,7 @@ BridJ is better because :
   * you work directly with the original C/C++ headers, no need to write special header as with SWIG
 
 SWIG is better because :
-  * it's C++ support is much more solid : once it compiles, you're pretty sure it's gonna work (with BridJ
+  * it's C++ support is much more solid : once it compiles, you're pretty sure it's gonna work (with BridJ, errors will show up at runtime, typically at startup)
   * it has support for STL types (std::string, std::vector...)
   * it's more mature and stable
 
