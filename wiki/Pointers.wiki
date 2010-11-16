@@ -118,8 +118,11 @@ One case where we don't know bounds yet want to iterate, though, is for C string
 {{{
 long length = 0;
 Pointer<Byte> pString = ...;
-while (pString.get() != 0)
-    length++;
+for (byte c : pString) {
+    if (c == 0)
+        break;
+    else
+        length++;
 }}}
 (note that you can read a C string from a pointer with the method [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html#getCString() Pointer.getCString()])
 
