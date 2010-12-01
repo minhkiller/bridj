@@ -8,24 +8,24 @@ BridJ has grown big and there are many things to test.
 
 If you [Build build BridJ from sources], you can run a given test MyTest with `mvn test -Dtest=MyTest`.
 
-==PointerTest and TypedPointersTest==
+==`PointerTest` and `TypedPointersTest`==
 
-These tests target Pointer, PointerIO and CommonPointerIOs classes.
+These tests target `Pointer`, `PointerIO` and `CommonPointerIOs` classes.
 
-PointerTest is generated out of a Velocity template that iterates on all BridJ primitives (java primitives + CLong + SizeT + Pointer) to make sure that all method variations in Pointer are covered.
+`PointerTest` is generated out of a Velocity template that iterates on all BridJ primitives (java primitives + `CLong` + `SizeT` + `Pointer`) to make sure that all method variations in `Pointer` are covered.
 
 TODO:
   * more tests with non-null byteOffset !
   * fix 3D arrays
 
-==StructTest==
+==`StructTest`==
 
 Trivial test on simple structs.
 
 TODO:
   * more tests !
 
-==ObjCTest==
+==`ObjCTest`==
 
 Not functional !
 
