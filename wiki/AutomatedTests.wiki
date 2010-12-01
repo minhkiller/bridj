@@ -1,7 +1,60 @@
 #summary Description of BridJ's automated tests and links to coverage reports
 
-= Introduction =
+= BridJ's Automated Tests =
 
+BridJ has grown big and there are many things to test.
+
+If you [Build build BridJ from sources], you can run a given test MyTest with `mvn test -Dtest=MyTest`.
+
+== PointerTest, TypedPointersTest ==
+
+These tests target Pointer, PointerIO and CommonPointerIOs classes.
+
+PointerTest is generated out of a Velocity template that iterates on all BridJ primitives (java primitives + CLong + SizeT + Pointer) to make sure that all method variations in Pointer are covered.
+
+TODO:
+  * more tests with non-null byteOffset !
+  * fix 3D arrays
+
+== StructTest ==
+
+Trivial test on simple structs.
+
+TODO:
+  * more tests !
+
+== ObjCTest ==
+
+Not functional !
+
+== MiscBugsTest == 
+
+Tests that specifically target some past or present bugs.
+
+== FunctionTest ==
+
+Trivial enum argument calls.
+
+TODO:
+  * more tests !
+
+== DemanglingTest ==
+
+Test GCC4 and VC9 C++ demanglers (given known mangled names, check we get back the expected signature).
+
+TODO:
+  * more tests, especially for VC9 !
+
+== CPPTest ==
+
+Basic C++ calls tests, including virtual vs. non-virtual calls, different calling conventions on supported platforms (__stdcall...), destructor (including virtual destructor), static methods...
+
+== COMTest ==
+
+Windows-only test, just makes sure COM initializes well and that some known interface is instantiable.
+
+TODO:
+  * more tests !!!
 
 = Test Coverage =
 
