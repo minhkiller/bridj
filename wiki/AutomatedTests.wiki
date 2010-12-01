@@ -1,0 +1,31 @@
+#summary Description of BridJ's automated tests and links to coverage reports
+
+= Introduction =
+
+
+= Test Coverage =
+
+== Running Cobertura ==
+
+It's easy to create a test coverage report by yourself if you [Build build BridJ from sources] :
+{{{
+mvn cobertura:cobertura site
+}}}
+The coverage report is then in `target/site/cobertura`.
+
+== Last published Cobertura reports ==
+
+Every once in a while, we publish test coverage reports of the development version of BridJ.
+If you want up-to-date reports, you should rather build BridJ from sources and look at the preceding section.
+
+[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/cobertura/ BridJ's Latest Published Cobertura Report]
+
+Quick links within this report :
+
+[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/cobertura/org.bridj.Pointer.html Pointer]
+[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/cobertura/org.bridj.PointerIO.html PointerIO]
+[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/cobertura/org.bridj.CommonPointerIOs.html CommonPointerIOs]
+[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/cobertura/org.bridj.BridJ.html BridJ]
+[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/cobertura/org.bridj.CRuntime.html CRuntime]
+[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/cobertura/org.bridj.cpp.CPPRuntime.html CPPRuntime]
+[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/cobertura/org.bridj.MethodCallInfo.html MethodCallInfo]
