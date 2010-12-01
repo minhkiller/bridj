@@ -6,7 +6,7 @@
 
 BridJ has grown big and there are many things to test.
 
-If you [Build build BridJ from sources], you can run a given test MyTest with `mvn test -Dtest=MyTest`.
+If you [Build build BridJ from sources], you can run a given test `MyTest` with `mvn test -Dtest=MyTest`.
 
 ==`PointerTest` and `TypedPointersTest`==
 
