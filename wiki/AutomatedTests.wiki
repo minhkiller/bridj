@@ -1,4 +1,6 @@
 #summary Description of BridJ's automated tests and links to coverage reports
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 = BridJ's Automated Tests =
 
@@ -55,6 +57,12 @@ Windows-only test, just makes sure COM initializes well and that some known inte
 
 TODO:
   * more tests !!!
+
+== ComparisonTest ==
+
+Compares performance of BridJ against JNA and Javolution :
+  * Makes sure BridJ structs are one or two orders of magnitude faster that JNA structs for some operations (cast, creation...), and faster in all cases.
+  * Compare calls of simple functions with JNA in direct and indirect modes and make sure BridJ is between 2-3x faster than JNA's direct mode and 20-30x faster than JNA's indirect mode.
 
 = Test Coverage =
 
