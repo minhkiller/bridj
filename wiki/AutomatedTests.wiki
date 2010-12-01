@@ -78,9 +78,9 @@ Template-generated test that has two parts : a native C++ file, compiled in libt
 
 Makes sure the generated functions return what we expect (result based on input arguments, varying their types thanks to the template).
 
-= Test Coverage =
+=Test Coverage=
 
-== Running Cobertura ==
+==Running Cobertura==
 
 It's easy to create a test coverage report by yourself if you [Build build BridJ from sources] :
 {{{
@@ -88,7 +88,7 @@ mvn cobertura:cobertura site
 }}}
 The coverage report is then in `target/site/cobertura`.
 
-== Last published Cobertura reports ==
+==Last published Cobertura reports==
 
 Every once in a while, we publish test coverage reports of the development version of BridJ.
 If you want up-to-date reports, you should rather build BridJ from sources and look at the preceding section.
