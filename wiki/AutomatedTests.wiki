@@ -2,13 +2,13 @@
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
-= BridJ's Automated Tests =
+=BridJ's Automated Tests=
 
 BridJ has grown big and there are many things to test.
 
 If you [Build build BridJ from sources], you can run a given test MyTest with `mvn test -Dtest=MyTest`.
 
-== PointerTest, TypedPointersTest ==
+==PointerTest, TypedPointersTest==
 
 These tests target Pointer, PointerIO and CommonPointerIOs classes.
 
@@ -18,51 +18,65 @@ TODO:
   * more tests with non-null byteOffset !
   * fix 3D arrays
 
-== StructTest ==
+==StructTest==
 
 Trivial test on simple structs.
 
 TODO:
   * more tests !
 
-== ObjCTest ==
+==ObjCTest==
 
 Not functional !
 
-== MiscBugsTest == 
+==MiscBugsTest== 
 
 Tests that specifically target some past or present bugs.
 
-== FunctionTest ==
+==FunctionTest==
 
 Trivial enum argument calls.
 
 TODO:
   * more tests !
 
-== DemanglingTest ==
+==DemanglingTest==
 
 Test GCC4 and VC9 C++ demanglers (given known mangled names, check we get back the expected signature).
 
 TODO:
   * more tests, especially for VC9 !
 
-== CPPTest ==
+==CPPTest==
 
 Basic C++ calls tests, including virtual vs. non-virtual calls, different calling conventions on supported platforms (__stdcall...), destructor (including virtual destructor), static methods...
 
-== COMTest ==
+==COMTest==
 
 Windows-only test, just makes sure COM initializes well and that some known interface is instantiable.
 
 TODO:
   * more tests !!!
 
-== ComparisonTest ==
+==ComparisonTest==
 
 Compares performance of BridJ against JNA and Javolution :
   * Makes sure BridJ structs are one or two orders of magnitude faster that JNA structs for some operations (cast, creation...), and faster in all cases.
   * Compare calls of simple functions with JNA in direct and indirect modes and make sure BridJ is between 2-3x faster than JNA's direct mode and 20-30x faster than JNA's indirect mode.
+
+==CallbackTest==
+
+Test basic Java to C and C to Java callbacks.
+
+==BridJTest==
+
+Make sure BridJ is able to extract symbols from its native library
+
+==CallTest==
+
+Template-generated test that has two parts : a native C++ file, compiled in libtest.so / test.dll / libtest.dylib, and a Java class that binds to the generated functions defined in the native test library.
+
+Makes sure the generated functions return what we expect (result based on input arguments, varying their types thanks to the template).
 
 = Test Coverage =
 
