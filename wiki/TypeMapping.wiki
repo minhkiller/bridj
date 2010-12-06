@@ -12,8 +12,8 @@ With BridJ, mapping was kept to its simplest form : if a type is a pointer, it w
 || `int*`, `int&`, `int[]` || `Pointer<Integer>` || `IntegerByReference`, `Pointer`, `int[]`, `IntBuffer`... ||
 || `void**` || `Pointer<Pointer<?>>` || `PointerByReference`, `Pointer` ||
 || `wchar_t` || `char` || `char` ||
-|| `struct S*` || `Pointer<S>` || `S` ||
-|| `struct S` || `S` || `S.ByReference` ||
+|| `struct S*` || `Pointer<S>` || `S`, `S.ByReference` ||
+|| `struct S` || `S` || `S.ByValue`, `Pointer` ||
 || `enum E` || `ValuedEnum<E>` || `int` ||
 || `const char*` || `Pointer<Byte>` (use getCString() to get the string) || `String`, `Pointer`, `ByteByReference` , `ByteBuffer`, `byte[]` ||
 
