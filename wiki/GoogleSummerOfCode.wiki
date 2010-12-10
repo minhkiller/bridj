@@ -58,13 +58,15 @@ Dark points are around mixed GC interaction (GC from the JVM vs. .NET GC), cross
 
 The [http://asm.ow2.org/ Java ASM] and [http://msdn.microsoft.com/en-us/library/system.reflection.emit.aspx .NET Emit] frameworks will also be put to high use.
 
-= C++ to Java Converter = 
+= C++ to Java Converter (STARTED) = 
 
 JNAerator converts C / C++ signatures to Java bindings.
 
 The next step is to also convert the code (not only the signatures), so that one can bind a whole library and convert all of its samples and demos directly to Java / BridJ.
 
 The JNAerator parser will require fixes to support the C / C++ syntax completely, and some pattern matching on its DOM will be needed to convert to proper Java / BridJ constructs.
+
+*WORK HAS BEGUN, WITH AMAZING RESULTS... STAY TUNED !*
 
 = New C++ / JVM Language = 
 
