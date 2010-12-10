@@ -28,15 +28,19 @@ These optimization are turned on when all conditions are met, which might be rar
 
 Without these optimizations, BridJ's performance is about the same as JNA in direct mode (without structs, where BridJ is much faster). With the optimizations, BridJ is about 10% slower than pure JNI, that is 5x faster than JNA in direct mode.
 
+== Supported cases ==
+
 Concerns only the native C functions with primitive arguments that match the platform's size.
 
 Supports calls with a maximum number of arguments that depends on the platform (typically, 4).
 
 Supported platforms :
-  * MacOS X 64 bits (float + double disabled)
-  * Linux 64 bits (float + double disabled)
-  * Windows 32 bits (enabled)
+  * MacOS X 64 bits
+  * Linux 64 bits
+  * Windows 32 bits
   * Windows 64 bits (currently disabled)
+
+== Examples ==
 
 Example of optimizable functions :
 {{{
@@ -49,3 +53,7 @@ Examples of non-optimizable function :
 public static native int fWithPointer(Pointer<?> p); // p is not a primitive
 public static native int fTooManyArgs(long a, short b, int c, int d, int e, int f, int g, int h, int i);
 }}}
+
+== Disabling raw optimizations ==
+
+Set the environment variable `BRIDJ_DIRECT=0` or set the Java property `bridj.direct=false`.
