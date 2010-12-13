@@ -58,7 +58,7 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 }}}
 
-== dyncall License (ISC-like) ==
+== dyncall License (2-clauses BSD-like) ==
 
 [http://dyncall.org dyncall] is redistributed in binary form in BridJ's binary downloads an in its source tree, and in source form in its source tree.
 
