@@ -7,7 +7,7 @@
 
 Olivier Chafik (also author of [http://code.google.com/p/jnaerator/ JNAerator] and [http://code.google.com/p/javacl/ JavaCL])
   * [http://ochafik.free.fr/blog/ Blog : Ché zOlive]
-  * [http://twitter.com/ochafik Twitter : @ochafik on]
+  * [http://twitter.com/ochafik Twitter : @ochafik]
 
 = Contributors =
 
