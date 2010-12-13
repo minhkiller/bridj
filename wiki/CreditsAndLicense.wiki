@@ -60,7 +60,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 == dyncall License ==
 
-dyncall is redistributed in binary form in BridJ's binary downloads an in its source tree, and in source form in its source tree.
+[http://dyncall.org dyncall] is redistributed in binary form in BridJ's binary downloads an in its source tree, and in source form in its source tree.
 
 It is originally distributed under an [http://dyncall.org/license.shtml an ISC-style license] (see [http://en.wikipedia.org/wiki/ISC_license Wikipedia's page about the ISC license]).
 
@@ -81,7 +81,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 == ASM License ==
 
-ASM is redistributed in binary form in BridJ's binary downloads.
+[http://asm.ow2.org/ ASM] is redistributed in binary form in BridJ's binary downloads.
 
 It is originally distributed under a [http://asm.ow2.org/license.html 3-clauses BSD-style license] (see [http://en.wikipedia.org/wiki/BSD_Licence Wikipedia's page about the BSD license]) :
 
