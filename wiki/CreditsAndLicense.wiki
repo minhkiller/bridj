@@ -62,7 +62,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 [http://dyncall.org dyncall] is redistributed in binary form in BridJ's binary downloads an in its source tree, and in source form in its source tree.
 
-It is originally distributed under an [http://dyncall.org/license.shtml an ISC-style license] (see [http://en.wikipedia.org/wiki/ISC_license Wikipedia's page about the ISC license]).
+It is originally distributed under an [http://dyncall.org/license.shtml an ISC-style license] (see [http://en.wikipedia.org/wiki/ISC_license Wikipedia's page about the ISC license]) :
 
 Copyright (c) 2007-2010 
                         Daniel Adler <dadler AT uni-goettingen DOT de>, 
