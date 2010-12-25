@@ -11,8 +11,8 @@ Olivier Chafik (also author of [http://code.google.com/p/jnaerator/ JNAerator] a
 
 = Contributors =
   
-  * Rémi Emonet : enhancements in GCC demangler
-  * [http://code.google.com/u/kazocsaba/ Kazo Csaba] : bug reports + patches (binary kernels...)
+  * Rémi Emonet : enhancements in BridJ's GCC demangler
+  * [http://code.google.com/u/kazocsaba/ Kazo Csaba] : bug reports + patches for JavaCL (binary kernels...)
   * Jeff Palmer : moderation of [http://groups.google.com/group/nativelibs4java the mailing list] and support to JavaCL users
   * Bob Boothby : Mandelbrot demo in JavaCL
   * Samuel Audet : advice + support to JavaCL users
