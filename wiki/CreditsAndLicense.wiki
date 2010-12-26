@@ -5,7 +5,7 @@
 
 = Main author = 
 
-Olivier Chafik (also author of [http://code.google.com/p/jnaerator/ JNAerator] and [http://code.google.com/p/javacl/ JavaCL])
+Olivier Chafik (author of [http://code.google.com/p/bridj/ BridJ], [http://code.google.com/p/jnaerator/ JNAerator], [http://code.google.com/p/javacl/ JavaCL] and [http://code.google.com/p/scalacl/ ScalaCL])
   * [http://ochafik.free.fr/blog/ Blog : Ché zOlive]
   * [http://twitter.com/ochafik Twitter : @ochafik]
 
