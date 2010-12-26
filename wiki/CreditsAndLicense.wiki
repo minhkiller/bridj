@@ -12,7 +12,7 @@ Olivier Chafik (also author of [http://code.google.com/p/jnaerator/ JNAerator] a
 = Contributors =
   
   * [http://twitter.com/remiemonet Rémi Emonet] : enhancements in BridJ's GCC demangler
-  * [http://code.google.com/u/kazocsaba/ Kazo Csaba] : bug reports + patches for JavaCL (binary kernels...)
+  * [http://code.google.com/u/kazocsaba/ Kazo Csaba] : bug reports + patches for JavaCL (kernel binaries, reduction utilities...)
   * Jeff Palmer : moderation of [http://groups.google.com/group/nativelibs4java the mailing list] and support to JavaCL users
   * [http://bbboblog.blogspot.com/ Bob Boothby] : Mandelbrot demo in JavaCL
   * [http://www.ok.ctrl.titech.ac.jp/~saudet/ Samuel Audet] : advice + support to JavaCL users
