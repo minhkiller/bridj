@@ -1,9 +1,9 @@
   * [FAQ]
+  * [CreditsAndLicense Credits and License]
   * Project
-    * [HowToHelp]
-    * [CurrentState]
-    * [GoogleSummerOfCode]
-    * [CreditsAndLicense]
+    * [HowToHelp How to help]
+    * [CurrentState Current State]
+    * [GoogleSummerOfCode Google Summer of Code]
     * [Issues]
   * Documentation
     * [Design]
