@@ -37,7 +37,7 @@ Note that BridJ ships with these libraries, so you don't need to put them in the
 
 = Licenses =
 
-== BridJ License (3-clauses BSD-like) ==
+== BridJ & ScalaCL License (3-clauses BSD-like) ==
 
 {{{
 Copyright (c) 2010, Olivier Chafik
