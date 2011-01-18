@@ -20,10 +20,6 @@ Olivier Chafik (author of [http://code.google.com/p/bridj/ BridJ], [http://code.
 
 [HowToHelp Wonder how to help ? Read this page !]
 
-= Sponsors = 
-
-None
-
 = Generous donors =
 
   * Matthew S. (Paypal donation)
