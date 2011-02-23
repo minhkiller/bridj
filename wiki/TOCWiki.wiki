@@ -1,4 +1,5 @@
   * [FAQ]
+  * [Download Download / Use]
   * [CreditsAndLicense Credits and License]
   * Project
     * [HowToHelp How to help]
@@ -15,7 +16,6 @@
       * [CPlusPlus C++]
       * [COM]
   * Hands On
-    * [Download Download / Use]
     * [Source]
     * [Build]
     * [AutomatedTests]
