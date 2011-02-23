@@ -15,7 +15,7 @@ This page details these Scala-oriented features.
 
 = Pointer =
 
-[http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html BridJ's pointer class] was designed to behave like a list, so provided you import `scala.collection.JavaConversions._` you'll be able to iterate over its pointed elements.
+[http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/Pointer.html BridJ's pointer class] was designed to behave like a list, so provided you import `scala.collection.JavaConversions._` you'll be able to iterate over its pointed elements.
 
 It also implements apply and update, so indexed access can be made with the natural Scala syntax :
 {{{

@@ -4,7 +4,7 @@
 
 = Anatomy of a pointer =
 
-Please read through the [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html Pointer class' Javadoc].
+Please read through the [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/Pointer.html Pointer class' Javadoc].
 
 In BridJ, each pointer exposes the following data :
   * a peer, which is the long value of the memory address it points to. It is never equal to zero (the NULL pointer is represented with the Java null value).
@@ -124,7 +124,7 @@ for (byte c : pString) {
     else
         length++;
 }}}
-(note that you can read a C string from a pointer with the method [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html#getCString() Pointer.getCString()])
+(note that you can read a C string from a pointer with the method [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/Pointer.html#getCString() Pointer.getCString()])
 
 = Typed pointers =
 
@@ -138,7 +138,7 @@ TODO
 
 = Endianness =
 
-With the method [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html#order(java.nio.ByteOrder) Pointer.order(ByteOrder)], it is possible to create a clone of a pointer that uses a different byte order to read and write to / from memory.
+With the method [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/Pointer.html#order(java.nio.ByteOrder) Pointer.order(ByteOrder)], it is possible to create a clone of a pointer that uses a different byte order to read and write to / from memory.
 
 = Casting =
 
