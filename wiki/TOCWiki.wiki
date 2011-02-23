@@ -1,5 +1,5 @@
   * [FAQ]
-  * [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html Pointer] Javadoc | [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/ Full]
+  * Javadoc : [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/org/bridj/Pointer.html Pointer] | [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/ Full]
   * [Download Download / Use]
   * [CreditsAndLicense Credits and License]
   * Project
