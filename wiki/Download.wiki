@@ -5,7 +5,6 @@
 
 It is advised to use Maven or sbt to manage dependencies automatically.
   * Download JARs : [http://code.google.com/p/bridj/downloads/list Downloads Section] or [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/0.4-SNAPSHOT/ Binary snapshots]
-  * [http://nativelibs4java.sourceforge.net/sites/nl4j-runtime-parent/bridj/apidocs/ JavaDoc]
   * Use with Maven :
 {{{
 <repositories>
