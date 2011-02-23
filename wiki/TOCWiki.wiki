@@ -15,7 +15,7 @@
       * [CPlusPlus C++]
       * [COM]
   * Hands On
-    * [Download]
+    * [Download Download / Use]
     * [Source]
     * [Build]
     * [AutomatedTests]
