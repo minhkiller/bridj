@@ -1,5 +1,5 @@
   * [FAQ]
-  * Javadoc : [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/Pointer.html Pointer] | [http://nativelibs4java.sourceforge.net/bridj/api/stable/ Full]
+  * Javadoc : [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/Pointer.html Pointer] | [http://nativelibs4java.sourceforge.net/bridj/api/development/ Full]
   * [Download Download / Use]
   * [CreditsAndLicense Credits and License]
   * Project
