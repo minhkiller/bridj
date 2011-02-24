@@ -17,6 +17,8 @@ With BridJ, mapping was kept to its simplest form : if a type is a pointer, it w
 || `enum E` || `ValuedEnum<E>` || `int` ||
 || `const char*` || `Pointer<Byte>` (use getCString() to get the string) || `String`, `Pointer`, `ByteByReference` , `ByteBuffer`, `byte[]` ||
 
+Note that while NIO buffers are not allowed in bindings (`Pointer<Integer>` must be used rather than `IntBuffer`, unlike with JNA), it is trivial to create pointers out of buffers (see `Pointer.pointerToBuffer(Buffer)`, `Pointer.pointerToInts(IntBuffer)`...) and the other way around (`Pointer.getBuffer()`, `Pointer.getIntBuffer()`...).
+
 Please make sure to also read the [FAQ]
 
 = Structs =
