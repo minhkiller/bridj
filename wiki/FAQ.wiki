@@ -72,8 +72,9 @@ Please read [CurrentState]
   * Windows (x86, x64)
   * Linux (x86, x64)
   * Mac OS X (x86, x64, ppc)
+  * Solaris 10 (x86... soon x64 and sparc)
 
-... with plans for FreeBSD and Solaris ([CreditsAndLicense help and / or test hardward welcome])
+... with plans for FreeBSD ([CreditsAndLicense help and / or test hardward welcome])
 
 = Can I build BridJ from sources ? =
 
