@@ -61,13 +61,13 @@ Binaries are currently available and routinely tested for the following platform
 = Dynamic Library dependencies =
 
 On Windows :
-- C runtime + DbgHelp
+  * C runtime + DbgHelp
 
 On MacOS X :
-- C runtime + libobjc + pthreads
+  * C runtime + libobjc + pthreads
 
 On other Unix platforms : 
-- C runtime + pthreads
+  * C runtime + pthreads
 
 = Features Not Planned / Ruled Out =
 
