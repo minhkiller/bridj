@@ -72,5 +72,3 @@ On other Unix platforms :
 = Features Not Planned / Ruled Out =
 
 Why limiting the scope of this project so early ?
-
-Err... ok, BridJ will *never* make coffee.
