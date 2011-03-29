@@ -29,6 +29,7 @@ Binaries are currently available and routinely tested for the following platform
   * lightweight and fast structs (no memory duplication nor update issues between Java and the native side), with unions and sub-structs
   * [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/jawt/JAWTUtils.html Getting the native handler to an AWT Component's peer]
   * Dynamic function pointers casting (see Pointer.asDynamicFunction)
+  * Enumeration of shared libraries symbols (w/ demangling) and resolution of libraries paths (including support for GNU LD scripts)
 
 = Known limitations =
 
