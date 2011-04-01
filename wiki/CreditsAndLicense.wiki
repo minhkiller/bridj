@@ -33,6 +33,11 @@ While I'm working on these projects for the fun of it on my free time, I have bi
 BridJ uses the following libraries :
   * [http://dyncall.org dyncall], an excellent lightweight FFI library distributed under [http://dyncall.org/license.shtml an ISC-style license] (reproduced below). 
   Daniel Adler and Tassilo Philipp (authors of [http://dyncall.org/ dyncall]) have been very supportive and kindly accepted and/or adapted most if not all of the patches I submitted to them, many thanks !
+  To patch dyncall with BridJ's modifications, type :
+{{{
+wget http://nativelibs4java.googlecode.com/svn/trunk/libraries/Runtime/BridJ/admin/patch_dyncall.sh
+bash patch_dyncall.sh dyncall
+}}}
   * [http://asm.ow2.org/ ASM], a Java code generation library distributed under [http://asm.ow2.org/license.html a 3-clauses BSD-style license] (reproduced below).
 
 Note that BridJ ships with these libraries, so you don't need to put them in the path or install them to your system : *BridJ's JAR file is self-contained.*
