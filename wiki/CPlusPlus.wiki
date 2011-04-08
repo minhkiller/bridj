@@ -4,16 +4,9 @@
 
 Please see [CurrentState].
 
-Supported compilers :
-  * GCC 4.x (& Intel C++ Compiler)
-  * Visual C++ 9.0
+= Example of C++ class =
 
-Supported features :
-  * Creating C++ class instances
-  * Calling C++ methods (including virtual and static ones, varargs).
-  * Experimental support for C++ class templates
-  * Subclassing C++ classes from Java, with virtual methods overrides :
-  Given the following C++ class :
+Let's use the following C++ class throughout this page :
 {{{
 #ifndef TEST_EXPORT
 #define TEST_EXPORT
@@ -24,13 +17,40 @@ public:
     virtual int testVirtualAdd(int a, int b);
 };
 }}}
-  The BridJ bindings are easy to write natural (but it is advised to use [http://code.google.com/p/jnaerator/ JNAerator] to create them, nevertheless):
+
+Its BridJ bindings are easy to write, but it is advised to use [http://code.google.com/p/jnaerator/ JNAerator] to create them, nevertheless :
 {{{
+import org.bridj.*;
+import static org.bridj.Pointer.*;
+
 public static class TestClass extends CPPObject {
 	@Virtual(0) 
 	public native int testVirtualAdd(int a, int b);
 };
 }}}
+
+= Runtime support =
+
+Supported compilers :
+  * GCC 4.x (& Intel C++ Compiler)
+  * Visual C++ 9.0
+
+Supported platforms : all of BridJ's supported platforms (see [CurrentState]).
+
+= Language support
+
+Supported features :
+  * Creating C++ class instances :
+{{{
+TestClass test = new TestClass();
+Pointer<TestClass> pTest = pointerTo(test);
+}}}
+  * Calling C++ methods (including virtual and static ones, varargs) :
+{{{
+int result = test.testVirtualAdd(1, 2);
+}}}
+  * Experimental support for C++ class templates
+  * Subclassing C++ classes from Java, with virtual methods overrides :
   And you can now derive from `TestClass` in Java very naturally :
 {{{
 TestClass test = new TestClass() {
