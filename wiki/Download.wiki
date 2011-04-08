@@ -17,7 +17,7 @@ It is advised to use Maven or sbt to manage dependencies automatically.
   <dependency>
 	<groupId>com.nativelibs4java</groupId>
 	<artifactId>bridj</artifactId>
-	<version>0.3</version>
+	<version>0.4</version>
 	<scope>compile</scope>
   </dependency>
 </dependencies>
