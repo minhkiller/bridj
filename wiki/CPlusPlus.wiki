@@ -2,7 +2,7 @@
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
-Please see [CurrentState].
+Also read [CurrentState] and [TypeMapping] for more details.
 
 = Example of C++ class =
 
@@ -37,9 +37,10 @@ Supported compilers :
 
 Supported platforms : all of BridJ's supported platforms (see [CurrentState]).
 
-= Language support
+= Language support =
 
-Supported features :
+== Supported features ==
+
   * Creating C++ class instances :
 {{{
 TestClass test = new TestClass();
@@ -62,4 +63,9 @@ TestClass test = new TestClass() {
 }}}
   The only known limitation so far is that you cannot call super.testVirtualAdd from the overridden method yet (but this is worked on and should be possible in the next release).
 
-See [TypeMapping] for more details.
+== Features not supported ==
+
+  * Multiple inheritance
+  * Virtual inheritance (not to be confused with virtual methods, which are supported)
+  * Function and method templates (only class templates are (partially) supported for now)
+...
