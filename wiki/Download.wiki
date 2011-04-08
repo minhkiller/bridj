@@ -4,7 +4,7 @@
 <wiki:toc max_depth="3" />
 
 It is advised to use Maven or sbt to manage dependencies automatically.
-  * Download JARs : [http://code.google.com/p/bridj/downloads/list Downloads Section] or [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/0.4-SNAPSHOT/ Binary snapshots]
+  * Download JARs : [http://code.google.com/p/bridj/downloads/list Downloads Section] or [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/ Binary snapshots]
   * Use with Maven :
 {{{
 <repositories>
