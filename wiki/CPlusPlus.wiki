@@ -4,10 +4,42 @@
 
 Please see [CurrentState].
 
-BridJ only supports calling C++ code compiled with GCC4 and Visual C++ 9.0.
+Supported compilers :
+  * GCC 4.x (& Intel C++ Compiler)
+  * Visual C++ 9.0
 
-BridJ supports creating C++ class instances, calling C++ methods (including virtual and static).
-
-It will soon support subclassing C++ classes from Java. 
+Supported features :
+  * Creating C++ class instances
+  * Calling C++ methods (including virtual and static ones, varargs).
+  * Experimental support for C++ class templates
+  * Subclassing C++ classes from Java, with virtual methods overrides :
+  Given the following C++ class :
+{{{
+#ifndef TEST_EXPORT
+#define TEST_EXPORT
+#endif
+class TEST_EXPORT TestClass {
+public:
+    virtual ~TestClass();
+    virtual int testVirtualAdd(int a, int b);
+};
+}}}
+  The BridJ bindings are easy to write natural (but it is advised to use [http://code.google.com/p/jnaerator/ JNAerator] to create them, nevertheless):
+{{{
+public static class TestClass extends CPPObject {
+	@Virtual(0) 
+	public native int testVirtualAdd(int a, int b);
+};
+}}}
+  And you can now derive from `TestClass` in Java very naturally :
+{{{
+TestClass test = new TestClass() {
+	@Override
+	public int testVirtualAdd(int a, int b) {
+		return a + b;
+	}
+};
+}}}
+  The only known limitation so far is that you cannot call super.testVirtualAdd from the overridden method yet (but this is worked on and should be possible in the next release).
 
 See [TypeMapping] for more details.
