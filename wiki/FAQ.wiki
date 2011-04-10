@@ -76,6 +76,11 @@ Please read [CurrentState]
 
 ... with plans for FreeBSD ([CreditsAndLicense help and / or test hardward welcome])
 
+= BridJ hangs with 100% CPU usage ! =
+
+If you're on Windows x86 (or on 64 bits windows in a 32 bits JVM), this is typically a case of bad calling convention being used for a native function or callback binding. 
+Please triple-check the calling convention (could it be __stdcall ?) and add a proper `@Convention(Convention.Style.xxx)` annotation.
+
 = Can I build BridJ from sources ? =
 
 Sure, please read [Build].
