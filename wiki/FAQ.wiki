@@ -81,6 +81,12 @@ Please read [CurrentState]
 If you're on Windows x86 (or on 64 bits windows in a 32 bits JVM), this is typically a case of bad calling convention being used for a native function or callback binding. 
 Please triple-check the calling convention (could it be __stdcall ?) and add a proper `@Convention(Convention.Style.xxx)` annotation.
 
+= How to specify different calling conventions for different platforms ? =
+
+Short answer is : you don't need to.
+
+Only Windows x86 has different calling conventions, so `@Convention` annotations will typically be ignored silently on other platforms.
+
 = Can I build BridJ from sources ? =
 
 Sure, please read [Build].
