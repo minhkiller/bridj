@@ -2,6 +2,6 @@
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
-For issues about the JavaCL Generator, please go to [http://code.google.com/p/jnaerator/issues/ JNAerator's issue tracker].
+For issues about the *JNAerator* or the *JavaCL Generator*, please go to [http://code.google.com/p/jnaerator/issues/ JNAerator's issue tracker].
 
-For all other issues (BridJ, JNAerator...), please use [http://code.google.com/p/nativelibs4java/issues/ NativeLibs4Java's issue tracker]
+For all other issues (*JavaCL*, *ScalaCL*, *BridJ*...), please use [http://code.google.com/p/nativelibs4java/issues/ NativeLibs4Java's issue tracker]
