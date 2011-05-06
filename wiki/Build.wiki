@@ -25,12 +25,13 @@ mvn install -Dmaven.test.skip=true
 
 BridJ's JARs are in `Runtime/Bridj/target` (pick `bridj-x.x-SNAPSHOT.jar` if you don't have specific size needs).
 
-|| JAR File || C || C++ || Objective-C || COM || MFC || .NET || Windows || MacOS X || Linux || Solaris || FreeBSD ||
-|| `bridj-x.x-SNAPSHOT.jar` || x || x || x || x || x || x || x || x || x || x || ||
-|| `bridj-x.x-SNAPSHOT-c-only.jar` || x ||  ||  ||  ||  ||  || x || x || x || x || || 
-|| `bridj-x.x-SNAPSHOT-windows-only.jar` || x || x ||  || x || x || x || x ||  ||  ||  || ||
-|| `bridj-x.x-SNAPSHOT-unix-only.jar` || x || x || x ||  ||  ||  ||  || x || x || x || ||
-|| `bridj-x.x-SNAPSHOT-macosx-only.jar` || x || x || x ||  ||  ||  ||  || x ||  ||  || || 
+|| JAR File || C || C++ || Objective-C || COM || MFC || .NET || Windows || MacOS X || Linux || Solaris ||
+|| `bridj-x.x-SNAPSHOT.jar` || x || x || x || x || x || x || x || x || x || x ||
+|| `bridj-x.x-SNAPSHOT-c-only.jar` || x ||  ||  ||  ||  ||  || x || x || x || x || 
+|| `bridj-x.x-SNAPSHOT-windows-only.jar` || x || x ||  || x || x || x || x ||  ||  ||  ||
+|| `bridj-x.x-SNAPSHOT-unix-only.jar` || x || x || x ||  ||  ||  ||  || x || x || x ||
+|| `bridj-x.x-SNAPSHOT-macosx-only.jar` || x || x || x ||  ||  ||  ||  || x ||  ||  || 
+
 
 = Incremental build =
 
