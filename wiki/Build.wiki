@@ -25,7 +25,7 @@ mvn install -Dmaven.test.skip=true
 
 BridJ's JARs are in `Runtime/Bridj/target` (pick `bridj-x.x-SNAPSHOT.jar` if you don't have specific size needs).
 
-|| JAR File || C || C++ || Objective-C || COM || MFC || .NET || Windows || MacOS X || Linux || Solaris ||
+|| JAR File || C || C++ || Objective-C || COM || MFC || .NET || Windows || MacOS X || Linux || Solaris x86 ||
 || `bridj-x.x-SNAPSHOT.jar` || x || x || x || x || x || x || x || x || x || x ||
 || `bridj-x.x-SNAPSHOT-c-only.jar` || x ||  ||  ||  ||  ||  || x || x || x || x || 
 || `bridj-x.x-SNAPSHOT-windows-only.jar` || x || x ||  || x || x || x || x ||  ||  ||  ||
