@@ -73,6 +73,7 @@ Please read [CurrentState]
   * Linux (x86, x64)
   * Mac OS X (x86, x64, ppc)
   * Solaris 10 (x86... soon x64 and sparc)
+  * Android 3.0 (armv5)
 
 ... with plans for FreeBSD ([CreditsAndLicense help and / or test hardward welcome])
 
