@@ -30,6 +30,7 @@ BridJ's JARs are in `Runtime/Bridj/target` (pick `bridj-x.x-SNAPSHOT.jar` if you
 || `bridj-x.x-SNAPSHOT-c-only.jar` || x ||  ||  ||  ||  ||  || x || x || x || x || ||
 || `bridj-x.x-SNAPSHOT-windows-only.jar` || x || x ||  || x || x || x || x ||  ||  ||  || ||
 || `bridj-x.x-SNAPSHOT-unix-only.jar` || x || x || x ||  ||  ||  ||  || x || x || x || ||
+|| `bridj-x.x-SNAPSHOT-linux-only.jar` || x || x ||  ||  ||  ||  ||  ||  || x ||  || ||
 || `bridj-x.x-SNAPSHOT-macosx-only.jar` || x || x || x ||  ||  ||  ||  || x ||  ||  ||  ||
 || `bridj-x.x-SNAPSHOT-android.jar` || x || x ||  ||  ||  ||  ||  ||  ||  ||  || x ||
 
