@@ -8,10 +8,17 @@ Also read [CurrentState] and [TypeMapping] for more details.
 
 Let's use the following C++ class throughout this page :
 {{{
-#ifndef TEST_EXPORT
-#define TEST_EXPORT
+#ifdef _WIN32
+#    ifdef TEST_EXPORTS
+#        define TEST_API __declspec(dllexport)
+#    else
+#        define TEST_API __declspec(dllimport)
+#    endif
+#elseif
+#    define TEST_API
 #endif
-class TEST_EXPORT TestClass {
+
+class TEST_API TestClass {
 public:
     virtual ~TestClass();
     virtual int testVirtualAdd(int a, int b);
