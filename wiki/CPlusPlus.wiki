@@ -77,6 +77,6 @@ TestClass test = new TestClass() {
 
   * Exceptions !
   * Multiple inheritance
-  * Virtual inheritance (not to be confused with virtual methods, which are supported)
+  * Virtual inheritance (not to be confused with virtual methods, which *are* supported)
   * Function and method templates (only class templates are (partially) supported for now)
 ...
