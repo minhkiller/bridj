@@ -1,10 +1,10 @@
 #summary BridJ comes with specialized trimmed-down packagings
 
-|| JAR File || C || C++ || Objective-C || COM || MFC || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
-|| `bridj-x.x.jar` || x || x || x || x || x || x || x || x || x || x || x || x ||
-|| `bridj-x.x-c-only.jar` || x ||  ||  ||  ||  ||  || x || x || x || x || x || x ||
-|| `bridj-x.x-windows-only.jar` || x || x ||  || x || x || x || x ||  ||  ||  || || x ||
-|| `bridj-x.x-unix-only.jar` || x || x || x ||  ||  ||  ||  || x || x || x || x || x ||
-|| `bridj-x.x-linux-only.jar` || x || x ||  ||  ||  ||  ||  ||  ||  || x ||  || x ||
-|| `bridj-x.x-macosx-only.jar` || x || x || x ||  ||  ||  ||  || x ||  ||  ||  ||  ||
-|| `bridj-x.x-android.jar` || x || x ||  ||  ||  ||  ||  ||  ||  ||  ||  || x ||
+|| Classifier || C || C++ || Objective-C || COM || MFC || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
+|| _empty_ || x || x || x || x || x || x || x || x || x || x || x || x ||
+|| c-only || x ||  ||  ||  ||  ||  || x || x || x || x || x || x ||
+|| windows-only || x || x ||  || x || x || x || x ||  ||  ||  || || x ||
+|| unix-only || x || x || x ||  ||  ||  ||  || x || x || x || x || x ||
+|| linux-only || x || x ||  ||  ||  ||  ||  ||  ||  || x ||  || x ||
+|| macosx-only || x || x || x ||  ||  ||  ||  || x ||  ||  ||  ||  ||
+|| android || x || x ||  ||  ||  ||  ||  ||  ||  ||  ||  || x ||
