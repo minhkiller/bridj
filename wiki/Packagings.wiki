@@ -2,7 +2,7 @@
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
-= Full BridJ =
+= Maven =
 
 It's very easy to add a dependency to BridJ in Maven, Gradle, Sbt, Rake or other build managers :
 {{{
@@ -27,7 +27,7 @@ It's very easy to add a dependency to BridJ in Maven, Gradle, Sbt, Rake or other
 </repositories>
 }}}
 
-= Smaller versions =
+== Smaller versions ==
 
 If you're worried about the size of your program and don't need support for all the platforms or languages supported by BridJ, you might want to choose a trimmed-down package by specifying a _classifier_ in the dependency definition.
 
