@@ -1,6 +1,6 @@
 #summary BridJ comes with specialized trimmed-down packagings
 
-= Default package =
+= Full BridJ =
 
 It's very easy to add a dependency to BridJ in Maven, Gradle, Sbt, Rake or other build managers :
 {{{
@@ -25,7 +25,7 @@ It's very easy to add a dependency to BridJ in Maven, Gradle, Sbt, Rake or other
 </repositories>
 }}}
 
-= Smaller packages =
+= Smaller versions =
 
 If you're worried about the size of your program and don't need support for all the platforms or languages supported by BridJ, you might want to choose a trimmed-down package by specifying a _classifier_ in the dependency definition.
 
