@@ -29,7 +29,7 @@ It's very easy to add a dependency to BridJ in Maven, Gradle, Sbt, Rake or other
 
 If you're worried about the size of your program and don't need support for all the platforms or languages supported by BridJ, you might want to choose a trimmed-down package by specifying a _classifier_ in the dependency definition.
 
-Here's the list of the various classifiers available as deployed maven artifacts :
+Here's the list of the various versions  [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/ available as deployed maven artifacts] (the _classifier_ is the JAR suffix) :
 
 || Classifier || C || C++ || Objective-C || COM || MFC || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
 || _empty_ || x || x || x || x || x || x || x || x || x || x || x ||  ||
