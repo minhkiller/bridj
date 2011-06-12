@@ -2,7 +2,7 @@
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
-= Maven =
+= Using BridJ =
 
 It's very easy to add a dependency to BridJ in Maven, Gradle, Sbt, Rake or other build managers :
 {{{
