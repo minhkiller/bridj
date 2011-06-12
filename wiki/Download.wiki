@@ -3,6 +3,10 @@
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
+[http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp You can try BridJ quickly] through [http://jnaerator.googlecode.com/ JNAerator] (just select "BridJ" in the "Runtime" combobox).
+
+= Usage with Maven or sbt =
+
 It is advised to use Maven or sbt to manage dependencies automatically.
   * Download JARs : [http://code.google.com/p/bridj/downloads/list Downloads Section] or [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/ Binary snapshots]
   * Use with Maven :
@@ -17,7 +21,7 @@ It is advised to use Maven or sbt to manage dependencies automatically.
   <dependency>
 	<groupId>com.nativelibs4java</groupId>
 	<artifactId>bridj</artifactId>
-	<version>0.4</version>
+	<version>0.4.2</version>
 	<scope>compile</scope>
   </dependency>
 </dependencies>
@@ -29,8 +33,38 @@ import sbt._
 class Project(info: ProjectInfo) extends DefaultProject(info)
 {
   val nativelibs4javaRepo = "NativeLibs4Java Repository" at "http://nativelibs4java.sourceforge.net/maven/"
-  val bridj = "com.nativelibs4java" % "bridj" % "0.4-SNAPSHOT"
+  val bridj = "com.nativelibs4java" % "bridj" % "0.4.2"
 }
 }}}
 
-[http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp You can try BridJ quickly] through [http://jnaerator.googlecode.com/ JNAerator] (just select "BridJ" in the "Runtime" combobox).
+== Smaller specialized versions ==
+
+Optionally : choose a classifier (JAR filename suffix) that corresponds to a smaller trimmed-down of BridJ, if you're afraid BridJ is too heavy for you :
+|| Classifier || C || C++ || Objective-C || COM || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
+|| _empty_ || x || x || x || x || x || x || x || x || x || x ||  ||
+|| `c-only` || x ||  ||  ||  ||  || x || x || x || x || x ||  ||
+|| `windows-only` || x || x ||  || x || x || x ||  ||  ||  || ||  ||
+|| `unix-only` || x || x || x ||  ||  ||  || x || x || x || x ||  ||
+|| `linux-only` || x || x ||  ||  ||  ||  ||  ||  || x ||  ||  ||
+|| `macosx-only` || x || x || x ||  ||  ||  || x ||  ||  ||  ||  ||
+|| `android` || x || x ||  ||  ||  ||  ||  ||  ||  ||  || x ||
+
+= Platform notes =
+
+== Windows ==
+
+COM is support is ok.
+
+.NET support is non-existent.
+
+== MacOS X ==
+
+Objective-C support is dramatically undertested and probably very poor. Help would be appreciated...
+
+== Android ==
+
+[http://code.google.com/p/nativelibs4java/issues/detail?id=69 BridJ support for Android is on its way] with some reports of success.
+
+== iOS (jailbroken iPhones and iPads) ==
+
+BridJ's support for iOS is not working properly yet, and relies on [http://jamvm.sourceforge.net/ JamVM].
