@@ -48,7 +48,7 @@ class Project(info: ProjectInfo) extends DefaultProject(info)
 }
 }}}
 
-== Smaller specialized versions ==
+== Smaller specialized versions (Maven classifiers) ==
 
 Optionally : choose a classifier (JAR filename suffix) that corresponds to a smaller trimmed-down of BridJ, if you're afraid BridJ is too heavy for you :
 
