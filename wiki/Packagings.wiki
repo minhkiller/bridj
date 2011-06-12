@@ -1,5 +1,36 @@
 #summary BridJ comes with specialized trimmed-down packagings
 
+= Default package =
+
+It's very easy to add a dependency to BridJ in Maven, Gradle, Sbt, Rake or other build managers :
+{{{
+<dependencies>
+  <dependency>
+    <groupId>com.nativelibs4java</groupId>
+    <artifactId>bridj</artifactId>
+    <version>0.4.2</version>
+    <!--
+    <classifier>c-only</classifier>
+    -->
+  </dependency>
+  ...
+</dependencies>
+<repositories>
+  <repository>
+    <id>nativelibs4java</id>
+    <name>nativelibs4java Maven2 Repository</name>
+    <url>http://nativelibs4java.sourceforge.net/maven</url>
+  </repository>
+  ...
+</repositories>
+}}}
+
+= Smaller packages =
+
+If you're worried about the size of your program and don't need support for all the platforms or languages supported by BridJ, you might want to choose a trimmed-down package by specifying a _classifier_ in the dependency definition.
+
+Here's the list of the various classifiers available as deployed maven artifacts :
+
 || Classifier || C || C++ || Objective-C || COM || MFC || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
 || _empty_ || x || x || x || x || x || x || x || x || x || x || x || x ||
 || c-only || x ||  ||  ||  ||  ||  || x || x || x || x || x || x ||
