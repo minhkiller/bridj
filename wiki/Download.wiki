@@ -59,11 +59,23 @@ Note that you can use the [http://maven.apache.org/plugins/maven-shade-plugin/ M
 
 == Windows ==
 
-COM is support is ok.
+C, C++, COM support is ok.
 
 .NET support is non-existent.
 
+== Linux ==
+
+C, C++ support is ok.
+
+== Solaris ==
+
+Only Solaris x86 is supported (test hardware would be welcome !).
+
+C, C++ support is ok, with some issues in endianness-aware reading/writing with Pointer.
+
 == MacOS X ==
+
+C, C++ support is ok.
 
 Objective-C support is dramatically undertested and probably very poor. Help would be appreciated...
 
