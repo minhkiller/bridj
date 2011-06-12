@@ -33,11 +33,11 @@ If you're worried about the size of your program and don't need support for all 
 
 Here's the list of the various versions  [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/ available as deployed maven artifacts] (the _classifier_ is the JAR suffix) :
 
-|| Classifier || C || C++ || Objective-C || COM || MFC || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
+|| Classifier || C || C++ || Objective-C || COM || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
 || _empty_ || x || x || x || x || x || x || x || x || x || x ||  ||
 || `c-only` || x ||  ||  ||  ||  || x || x || x || x || x ||  ||
 || `windows-only` || x || x ||  || x || x || x ||  ||  ||  || ||  ||
-|| `unix-only` || x || x || x ||  ||  ||  ||  || x || x || x || x ||  ||
+|| `unix-only` || x || x || x ||  ||  ||  || x || x || x || x ||  ||
 || `linux-only` || x || x ||  ||  ||  ||  ||  ||  || x ||  ||  ||
 || `macosx-only` || x || x || x ||  ||  ||  || x ||  ||  ||  ||  ||
 || `android` || x || x ||  ||  ||  ||  ||  ||  ||  ||  || x ||
