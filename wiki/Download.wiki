@@ -67,11 +67,19 @@ Note that you can use the [http://maven.apache.org/plugins/maven-shade-plugin/ M
 
 == Android ==
 
-BridJ works on Android/arm emulators (with the SDK r10), and probably even on actual devices (untested).
+BridJ works on Android/arm emulators (with the SDK `r10`), and probably even on actual devices (untested).
 
 See this issue for progress [http://code.google.com/p/nativelibs4java/issues/detail?id=69 BridJ support for Android].
 
-To include BridJ to an Android project, you should build your native library with the NDK and use an ant-based project (see [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/cpp/android-test/ this sample]). You can then put `bridj-x.x-android.jar` into the `lib/` directory and add the line `jar.libs.dir=lib` to the `build.properties` file : BridJ will be in the classpath and will be included in your program.
+=== Including BridJ to a project ===
+
+To include BridJ to an Android project, you should build your native library with the NDK and use an ant-based project (see sample below). 
+
+You can then put `bridj-x.x-android.jar` into the `lib/` directory and add the line `jar.libs.dir=lib` to the `build.properties` file : BridJ will be in the classpath and will be included in your program.
+
+=== Sample of BridJ on Android ===
+
+A simple sample of BridJ use on Android was derived from the NDK's `helloworld-jni` sample. It is [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/cpp/android-test/ available in BridJ's SVN repository].
 
 Building upon the NDK's `helloworld-jni` sample, you can modify the helloworld.c file as follows :
 {{{
