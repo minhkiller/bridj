@@ -1,4 +1,4 @@
-#summary Links to download BridJ
+#summary How to download and use BridJ (+ platform-specific notes)
 #labels Featured
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
