@@ -69,6 +69,7 @@ Please read [CurrentState]
 
 = What platforms does BridJ support ? = 
 
+Binaries are currently available and routinely tested for the following platforms :
   * Windows (x86, x64)
   * Linux (x86, x64)
   * Mac OS X (x86, x64, ppc)
