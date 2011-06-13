@@ -65,6 +65,49 @@ Note that you can use the [http://maven.apache.org/plugins/maven-shade-plugin/ M
 
 = Platform notes =
 
+== Android ==
+
+BridJ works on Android/arm emulators (with the SDK r10), and probably even on actual devices (untested).
+
+See this issue for progress [http://code.google.com/p/nativelibs4java/issues/detail?id=69 BridJ support for Android].
+
+To include BridJ to an Android project, you should build your native library with the NDK and use an ant-based project (see [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/cpp/android-test/ this sample]). You can then put `bridj-x.x-android.jar` into the `lib/` directory and add the line `jar.libs.dir=lib` to the `build.properties` file : BridJ will be in the classpath and will be included in your program.
+
+Building upon the NDK's `helloworld-jni` sample, you can modify the helloworld.c file as follows :
+{{{
+#include <string.h>
+#include <jni.h>
+
+jstring Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv* env, jobject thiz ) {
+    return (*env)->NewStringUTF(env, "Hello from JNI !");
+}
+
+int addTwoInts(int a, int b) {
+        return a + b;
+}
+}}}
+And add the following BridJ bindings :
+{{{
+package com.example.hellojni;
+
+import org.bridj.*;
+import org.bridj.ann.*;
+
+@Library("hello-jni")
+public class BridJLib {
+        static {
+                BridJ.register();
+        }
+        public static native int addTwoInts(int a, int b);
+}
+}}}
+You will then be able to use BridJ transparently in your activities :
+{{{
+TextView  tv = new TextView(this);
+int a = 10, b = 100;
+tv.setText(a + " + " + b + " = " + BridJLib.addTwoInts(a, b) + " (computed in BridJ-bound native function !)");
+}}}
+
 == Windows ==
 
 C, C++, COM support is ok.
@@ -86,14 +129,6 @@ C, C++ support is ok, with some issues in endianness-aware reading/writing with 
 C, C++ support is ok.
 
 Objective-C support is dramatically undertested and probably very poor. Help would be appreciated...
-
-== Android ==
-
-BridJ works on Android/arm emulators (with the SDK r10), and probably even on actual devices (untested).
-
-See this issue for progress [http://code.google.com/p/nativelibs4java/issues/detail?id=69 BridJ support for Android].
-
-To include BridJ to an Android project, you should build your native library with the NDK and use an ant-based project (see [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/cpp/android-test/ this sample]). You can then put `bridj-x.x-android.jar` into the `lib/` directory and add the line `jar.libs.dir=lib` to the `build.properties` file : BridJ will be in the classpath and will be included in your program.
 
 == iOS (jailbroken iPhones and iPads) ==
 
