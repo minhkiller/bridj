@@ -77,7 +77,7 @@ Take [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Run
 
 BridJ works on Android/arm emulators (with the SDK `r10`), and probably even on actual devices (untested).
 
-See this issue for progress [http://code.google.com/p/nativelibs4java/issues/detail?id=69 BridJ support for Android].
+See [http://code.google.com/p/nativelibs4java/issues/detail?id=69 this issue] for progress info.
 
 === Including BridJ to a project ===
 
