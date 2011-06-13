@@ -89,7 +89,11 @@ Objective-C support is dramatically undertested and probably very poor. Help wou
 
 == Android ==
 
-[http://code.google.com/p/nativelibs4java/issues/detail?id=69 BridJ support for Android is on its way] with some reports of success.
+BridJ works on Android/arm emulators (with the SDK r10), and probably even on actual devices (untested).
+
+See this issue for progress [http://code.google.com/p/nativelibs4java/issues/detail?id=69 BridJ support for Android].
+
+To include BridJ to an Android project, you should build your native library with the NDK and use an ant-based project (see [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/main/cpp/android-test/ this sample]). You can then put `bridj-x.x-android.jar` into the `lib/` directory and add the line `jar.libs.dir=lib` to the `build.properties` file : BridJ will be in the classpath and will be included in your program.
 
 == iOS (jailbroken iPhones and iPads) ==
 
