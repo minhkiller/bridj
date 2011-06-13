@@ -50,7 +50,9 @@ class Project(info: ProjectInfo) extends DefaultProject(info)
 
 == Smaller specialized versions (Maven classifiers) ==
 
-Optionally : choose a classifier (JAR filename suffix) that corresponds to a smaller trimmed-down of BridJ, if you're afraid BridJ is too heavy for you :
+If BridJ is too heavy for you, there are pre-packaged smaller trimmed-down versions of BridJ.
+
+To use such a prepackaged version, download it from the [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/ Binary snapshots] or specify the correct _classifier_ in the Maven dependency definition :
 
 || Classifier || C || C++ || Objective-C || COM || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
 || _empty_ || x || x || x || x || x || x || x || x || x || x ||  ||
