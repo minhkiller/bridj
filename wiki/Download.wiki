@@ -63,6 +63,7 @@ You can download them from the [http://nativelibs4java.sourceforge.net/maven/com
 || `unix-only` || x || x || x ||  ||  ||  || x || x || x || x ||  ||
 || `linux-only` || x || x ||  ||  ||  ||  ||  ||  || x ||  ||  ||
 || `macosx-only` || x || x || x ||  ||  ||  || x ||  ||  ||  ||  ||
+|| `ios-only` || x || x || x ||  ||  ||  ||  || x ||  ||  ||  ||
 || `android` || x || x ||  ||  ||  ||  ||  ||  ||  ||  || x ||
 
 === Build your own subset ===
