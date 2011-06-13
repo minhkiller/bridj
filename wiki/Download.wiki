@@ -48,13 +48,15 @@ class Project(info: ProjectInfo) extends DefaultProject(info)
 }
 }}}
 
-== Smaller specialized versions (Maven classifiers) ==
+== Specialized subsets (smaller JARs !) ==
 
-If BridJ is too heavy for you, there are pre-packaged smaller trimmed-down versions of BridJ.
+If BridJ is too heavy for you, there are pre-packaged specialized subsets of BridJ.
 
-To use such a prepackaged version, download it from the [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/ Binary snapshots] or specify the correct _classifier_ in the Maven dependency definition :
+You can download them from the [http://nativelibs4java.sourceforge.net/maven/com/nativelibs4java/bridj/ Binary snapshots] or specify the correct _classifier_ in the Maven dependency (cf. next section).
 
-|| Classifier || C || C++ || Objective-C || COM || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
+=== List of prepackaged subsets ===
+
+|| Maven Classifier || C || C++ || Objective-C || COM || .NET || Windows (x86, x64) || MacOS X (universal) || iOS (arm) || Linux (x86, x64) || Solaris (x86) || Android (arm) ||
 || _empty_ || x || x || x || x || x || x || x || x || x || x ||  ||
 || `c-only` || x ||  ||  ||  ||  || x || x || x || x || x ||  ||
 || `windows-only` || x || x ||  || x || x || x ||  ||  ||  || ||  ||
@@ -63,7 +65,11 @@ To use such a prepackaged version, download it from the [http://nativelibs4java.
 || `macosx-only` || x || x || x ||  ||  ||  || x ||  ||  ||  ||  ||
 || `android` || x || x ||  ||  ||  ||  ||  ||  ||  ||  || x ||
 
-Note that you can use the [http://maven.apache.org/plugins/maven-shade-plugin/ Maven Shade Plugin] in your own project to strip away native libraries (in the `org/bridj/lib/*` packages) and classes (such as COM support in `org/bridj/cpp/com/*`) that you don't need. Take [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/pom.xml BridJ's pom] as example.
+=== Build your own subset ===
+
+Note that you can use the [http://maven.apache.org/plugins/maven-shade-plugin/ Maven Shade Plugin] in your own Maven project to strip away native libraries (in the `org/bridj/lib/*` packages) and classes (such as COM support in `org/bridj/cpp/com/*`) that you don't need. 
+
+Take [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/pom.xml BridJ's pom] as example.
 
 = Platform notes =
 
