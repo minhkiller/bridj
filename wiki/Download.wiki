@@ -76,7 +76,7 @@ Take [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Run
 
 == Android ==
 
-BridJ works on Android/arm emulators (with the [http://developer.android.com/sdk/index.html SDK]), and probably even on actual devices (untested).
+BridJ works partially on Android/arm emulators (with the [http://developer.android.com/sdk/index.html SDK]), and probably even on actual devices (untested). C functions work, but callbacks just crash the Dalvik VM for now.
 
 See [http://code.google.com/p/nativelibs4java/issues/detail?id=69 this issue] for progress info.
 
