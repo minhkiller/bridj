@@ -2,7 +2,14 @@
 
 Please keep in mind that [CreditsAndLicense BridJ is licensed under the BSD license], so anyone using it must state it in his documentation and/or other distributed materials (but there's no need to publish any modified sources, although it is good practice ;-)).
 
-Here are some of the projects known to use BridJ internally.
+Here are some of the projects known to use BridJ internally :
+
+= Projects on the wild =
+
   * [https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) : [https://github.com/atsushieno Atsushi Eno]'s experimental Java port of [https://github.com/atsushieno/falplayer-android falplayer], a "repeatable OGG Vorbis player for Android"
   * [http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) : OpenCL bindings for Java (JavaCL uses JNA by default but has a BridJ port available as the javacl-bridj Maven artifact)
   * [http://code.google.com/p/scalacl/ ScalaCL] (BSD-licensed) : optimizing Scala compiler plugin + GPU-backed collections (using OpenCL)
+
+= Unreleased projects =
+
+...
