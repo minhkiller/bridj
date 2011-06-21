@@ -9,7 +9,9 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 == falplayer-android-j ==
 
-[https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) is [https://github.com/atsushieno Atsushi Eno]'s experimental Java port of [https://github.com/atsushieno/falplayer-android falplayer], a "repeatable OGG Vorbis player for Android"
+[https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) is [https://github.com/atsushieno Atsushi Eno]'s experimental Java port of [https://github.com/atsushieno/falplayer-android falplayer], a "repeatable OGG Vorbis player for Android".
+
+It features BridJ-powered libvorbisidec / [http://wss.co.uk/pinknoise/tremolo/ Tremolo] bindings.
 
 == JavaCL ==
 
