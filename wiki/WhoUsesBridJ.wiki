@@ -13,7 +13,7 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 == JavaCL ==
 
-[http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) is an OpenCL OO API for Java.
+[http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) is an [http://www.khronos.org/opencl/ OpenCL] bindings library for Java.
 
 It uses JNA by default but has a BridJ port available as the javacl-bridj Maven artifact.
 
