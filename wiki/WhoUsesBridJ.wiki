@@ -12,7 +12,9 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 == JavaCL ==
 
-[http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) is an OpenCL binding for Java (JavaCL uses JNA by default but has a BridJ port available as the javacl-bridj Maven artifact)
+[http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) is an OpenCL OO API for Java.
+
+It uses JNA by default but has a BridJ port available as the javacl-bridj Maven artifact.
 
 == ScalaCL ==
 
@@ -22,6 +24,8 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 == StormMQ Myxi ==
 
-" [http://stormmq.com/ StormMQ Myxi] is the world's first Message Queue as a Service using AMQP 1-0. We decided to use BridJ as it is the only professionally-supported, efficient product available today to seamlessly integrate essential C functionality with Java. Olivier Chafik, the main developer, provides first-class support and deep technical understanding. We've successfully mapped gnu libc and libpthread to allow us more fidelity and functionality on linux and work round Java's limitations with memory mapped files. "
+" [http://stormmq.com/ StormMQ Myxi] is the world's first Message Queue as a Service using AMQP 1-0. 
 
-...
+We decided to use BridJ as it is the only professionally-supported, efficient product available today to seamlessly integrate essential C functionality with Java. Olivier Chafik, the main developer, provides first-class support and deep technical understanding. 
+
+We've successfully mapped gnu libc and libpthread to allow us more fidelity and functionality on linux and work round Java's limitations with memory mapped files. "
