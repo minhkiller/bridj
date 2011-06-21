@@ -89,6 +89,7 @@ To include BridJ to an Android project, you have two options :
     * add bridj-x.x-android.jar to your project's classpath
     * make sure to untick the "Force error when external jars contain native libraries" checkbox in the Eclipse / Android / Build preferences (otherwise it will complain that "The library x contains native libraries that will not run on the device.")
     [http://bridj.googlecode.com/svn/wiki/images/eclipse-android-sdk-nativelib-error.png]
+    _Beware_ : [http://code.google.com/p/android/issues/detail?id=17861 this setting is broken] in the current version of the plugin, so as a workaround you'll have to also untick the "Automatically refresh resources and assets folder on build" checkbox... Annoying ? Please let the Android devs know about it ;-)
   * Command-line : 
     * build your native library with the [http://developer.android.com/sdk/ndk/index.html NDK] 
     * use an ant-based project (see sample below).
