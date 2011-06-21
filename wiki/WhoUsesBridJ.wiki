@@ -1,8 +1,8 @@
 #summary List of projects that use BridJ
 
-Please keep in mind that [CreditsAndLicense BridJ is licensed under the BSD license], so anyone using it must state it in his documentation and/or other distributed materials (but there's no need to publish any modified sources, although it is good practice ;-)).
+Please keep in mind that [CreditsAndLicense BridJ is licensed under the BSD license], so anyone using it must state it appropriately in the documentation and/or other distributed materials (but there's no need to publish any modified sources, although it is good practice ;-)).
 
-Here are some of the projects known to use BridJ internally :
+Here are some of the projects known to use BridJ internally (please post [http://groups.google.com/group/nativelibs4java on the mailing list] if you'd like your project to be listed here) :
 
 = Projects on the wild =
 
