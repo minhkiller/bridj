@@ -76,7 +76,9 @@ Take [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Run
 
 == Android ==
 
-BridJ works partially on Android/arm emulators (with the [http://developer.android.com/sdk/index.html SDK]), and probably even on actual devices (untested). C functions work, but callbacks just crash the Dalvik VM for now.
+BridJ works partially on Android/arm emulators (with the [http://developer.android.com/sdk/index.html SDK]), and probably even on actual devices (untested). 
+
+Proper C++ support might require that you use [http://www.crystax.net/android/ndk-r4.php CrystaX's NDK], as BridJ makes some use of RTTI.
 
 See [http://code.google.com/p/nativelibs4java/issues/detail?id=69 this issue] for progress info.
 
