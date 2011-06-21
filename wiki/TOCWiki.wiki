@@ -2,6 +2,7 @@
   * Javadoc : [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/Pointer.html Pointer] | [http://nativelibs4java.sourceforge.net/bridj/api/development/ Full]
   * [Download Download / Use]
   * [CreditsAndLicense Credits and License]
+    * [WhoUsesBridJ Who uses BridJ ?]
   * Project
     * [HowToHelp How to help]
     * [CurrentState Current State]
