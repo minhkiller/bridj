@@ -21,7 +21,9 @@ It uses JNA by default but has a BridJ port available as the javacl-bridj Maven 
 
 == ScalaCL ==
 
-[http://code.google.com/p/scalacl/ ScalaCL] (BSD-licensed) is an optimizing Scala compiler plugin + GPU-backed collections (using OpenCL)
+[http://code.google.com/p/scalacl/ ScalaCL] (BSD-licensed) is an optimizing Scala compiler plugin + GPU-backed collections.
+
+It uses the BridJ port of JavaCL.
 
 = Upcoming Releases =
 
