@@ -4,12 +4,24 @@ Please keep in mind that [CreditsAndLicense BridJ is licensed under the BSD lice
 
 Here are some of the projects known to use BridJ internally (please post [http://groups.google.com/group/nativelibs4java on the mailing list] if you'd like your project to be listed here) :
 
-= Projects on the wild =
+= Released Projects =
 
-  * [https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) : [https://github.com/atsushieno Atsushi Eno]'s experimental Java port of [https://github.com/atsushieno/falplayer-android falplayer], a "repeatable OGG Vorbis player for Android"
-  * [http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) : OpenCL bindings for Java (JavaCL uses JNA by default but has a BridJ port available as the javacl-bridj Maven artifact)
-  * [http://code.google.com/p/scalacl/ ScalaCL] (BSD-licensed) : optimizing Scala compiler plugin + GPU-backed collections (using OpenCL)
+== falplayer-android-j ==
 
-= Unreleased projects =
+[https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) is [https://github.com/atsushieno Atsushi Eno]'s experimental Java port of [https://github.com/atsushieno/falplayer-android falplayer], a "repeatable OGG Vorbis player for Android"
+
+== JavaCL ==
+
+[http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) is an OpenCL binding for Java (JavaCL uses JNA by default but has a BridJ port available as the javacl-bridj Maven artifact)
+
+== ScalaCL ==
+
+[http://code.google.com/p/scalacl/ ScalaCL] (BSD-licensed) is an optimizing Scala compiler plugin + GPU-backed collections (using OpenCL)
+
+= Upcoming Releases =
+
+== StormMQ Myxi ==
+
+" [http://stormmq.com/ StormMQ Myxi] is the world's first Message Queue as a Service using AMQP 1-0. We decided to use BridJ as it is the only professionally-supported, efficient product available today to seamlessly integrate essential C functionality with Java. Olivier Chafik, the main developer, provides first-class support and deep technical understanding. We've successfully mapped gnu libc and libpthread to allow us more fidelity and functionality on linux and work round Java's limitations with memory mapped files. "
 
 ...
