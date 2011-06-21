@@ -44,6 +44,10 @@ bash patch_dyncall.sh dyncall
 
 Note that BridJ ships with these libraries, so you don't need to put them in the path or install them to your system : *BridJ's JAR file is self-contained.*
 
+= Projects that use BridJ =
+
+See [WhoUsesBridJ]
+
 = Licenses =
 
 == BridJ & ScalaCL License (3-clauses BSD-like) ==
