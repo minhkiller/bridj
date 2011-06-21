@@ -80,10 +80,11 @@ BridJ works partially on Android/arm emulators (with the [http://developer.andro
 
 See [http://code.google.com/p/nativelibs4java/issues/detail?id=69 this issue] for progress info.
 
-=== Including BridJ to a project ===
+=== Including BridJ in a project ===
 
-To include BridJ to an Android project, you should build your native library with the [http://developer.android.com/sdk/ndk/index.html NDK] and use an ant-based project (see sample below). 
-
+To include BridJ to an Android project, you have two options :
+  * Using the Android SDK Eclipse plugin : please make sure to untick the "Force error when external jars contain native libraries" checkbox in the Eclipse -> Android preferences tab
+  * Command-line : you should build your native library with the [http://developer.android.com/sdk/ndk/index.html NDK] and use an ant-based project (see sample below). 
 You can then put `bridj-x.x-android.jar` into the `lib/` directory and add the line `jar.libs.dir=lib` to the `build.properties` file : BridJ will be in the classpath and will be included in your program.
 
 === Sample of BridJ on Android ===
