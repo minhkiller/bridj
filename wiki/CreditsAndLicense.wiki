@@ -50,7 +50,7 @@ See [WhoUsesBridJ]
 
 = Licenses =
 
-== BridJ & ScalaCL License (3-clauses BSD-like) ==
+== BridJ, JavaCL & ScalaCL License (3-clauses BSD-like) ==
 
 {{{
 Copyright (c) 2010-2011, Olivier Chafik
