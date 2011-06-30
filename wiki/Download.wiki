@@ -1,6 +1,9 @@
 #summary How to download and use BridJ (+ platform-specific notes)
 #labels Featured
 #sidebar TOCWiki
+
+[http://code.google.com/p/bridj/downloads/list Direct link] to downloads list.
+
 <wiki:toc max_depth="3" />
 
 [http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp You can try BridJ quickly] through [http://jnaerator.googlecode.com/ JNAerator] (just select "BridJ" in the "Runtime" combobox).
