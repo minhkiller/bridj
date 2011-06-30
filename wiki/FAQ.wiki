@@ -79,7 +79,7 @@ Binaries are currently available and routinely tested for the following platform
 
 ... with plans for FreeBSD ([CreditsAndLicense help and / or test hardward welcome])
 
-= How to I check for errno / GetLastError() ? =
+= How to I check for errno / `GetLastError()` ? =
 
 Simply declare that your function throws [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/LastError.html LastError], that's it !
 
