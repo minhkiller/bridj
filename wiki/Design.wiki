@@ -9,7 +9,7 @@
 
 However, JNA was designed in the pre-Java 1.5 era and has made some design choices that hinder both performance and usability.
 
-BridJ was written from scratch to replace JNA with both performance and usability as golden objectives (as well as support for C++).
+BridJ was written from scratch to replace JNA with both performance and usability as golden objectives (as well as support for C++ and ease of conversion from C++ to Java).
 
 Performance :
   * Lightweight structs : no data duplication nor synchronization issues
