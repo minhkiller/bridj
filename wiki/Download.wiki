@@ -2,7 +2,7 @@
 #labels Featured
 #sidebar TOCWiki
 
-[http://code.google.com/p/bridj/downloads/list Direct link] to downloads list.
+This page explains how to get and use BridJ using various build management softwares and provides platform-specific notes, but you may want [http://code.google.com/p/bridj/downloads/list direct access to the downloads] page instead.
 
 <wiki:toc max_depth="3" />
 
