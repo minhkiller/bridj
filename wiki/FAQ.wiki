@@ -79,6 +79,12 @@ Binaries are currently available and routinely tested for the following platform
 
 ... with plans for FreeBSD ([CreditsAndLicense help and / or test hardward welcome])
 
+= How to I check for errno / GetLastError() ? =
+
+Simply declare that your function throws [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/LastError.html LastError], that's it !
+
+You'll get exceptions soon enough ;-)
+
 = BridJ hangs with 100% CPU usage ! =
 
 If you're on Windows x86 (or on 64 bits windows in a 32 bits JVM), this is typically a case of bad calling convention being used for a native function or callback binding. 
