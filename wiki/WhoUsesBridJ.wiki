@@ -13,7 +13,7 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 It features BridJ-powered libvorbisidec / [http://wss.co.uk/pinknoise/tremolo/ Tremolo] bindings.
 
-== DirectX4Java ==
+== directx4java ==
 
 [http://code.google.com/p/directx4java/ DirectX4Java] is a port of DirectX 10 and 11 for Java (licensed under GPLv2). 
 
