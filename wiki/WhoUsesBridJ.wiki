@@ -19,6 +19,8 @@ It features BridJ-powered libvorbisidec / [http://wss.co.uk/pinknoise/tremolo/ T
 
 It uses JNA by default but has a BridJ port available as the javacl-bridj Maven artifact.
 
+[http://code.google.com/p/javacl/wiki/WhoUsesJavaCL JavaCL is also used by other projects], which hence make indirect use of BridJ.
+
 == ScalaCL ==
 
 [http://code.google.com/p/scalacl/ ScalaCL] (BSD-licensed) is an optimizing Scala compiler plugin + GPU-backed collections.
