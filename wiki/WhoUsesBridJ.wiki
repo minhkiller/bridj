@@ -13,12 +13,6 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 It features BridJ-powered libvorbisidec / [http://wss.co.uk/pinknoise/tremolo/ Tremolo] bindings.
 
-== directx4java ==
-
-[http://code.google.com/p/directx4java/ DirectX4Java] is a port of DirectX 10 and 11 for Java (licensed under GPLv2). 
-
-It recently switched from JNA to BridJ to power its low-level COM interoperability.
-
 == JavaCL ==
 
 [http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) is an [http://www.khronos.org/opencl/ OpenCL] bindings library for Java.
@@ -40,3 +34,9 @@ It uses the BridJ port of JavaCL.
 We decided to use BridJ as it is the only professionally-supported, efficient product available today to seamlessly integrate essential C functionality with Java. Olivier Chafik, the main developer, provides first-class support and deep technical understanding. 
 
 We've successfully mapped gnu libc and libpthread to allow us more fidelity and functionality on linux and work round Java's limitations with memory mapped files. "
+
+== directx4java ==
+
+[http://code.google.com/p/directx4java/ DirectX4Java] is a port of DirectX 10 and 11 for Java (licensed under GPLv2). 
+
+It recently switched from JNA to BridJ to power its low-level COM interoperability.
