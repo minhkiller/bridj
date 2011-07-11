@@ -39,6 +39,6 @@ We've successfully mapped gnu libc and libpthread to allow us more fidelity and 
 
 == directx4java ==
 
-[http://code.google.com/p/directx4java/ DirectX4Java] is a port of DirectX 10 and 11 for Java (under GPLv2) written by [https://www.masterbranch.com/developer/evandro.millian Evandro Millian].
+[http://code.google.com/p/directx4java/ DirectX4Java] is a port of DirectX 10 and 11 for Java (MIT-licensed) written by [https://www.masterbranch.com/developer/evandro.millian Evandro Millian].
 
 It recently switched from JNA to BridJ to power its low-level COM interoperability.
