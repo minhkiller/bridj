@@ -16,7 +16,7 @@ Subsequent builds will be much quicker (see next section), and can be launched f
   * Checkout [http://code.google.com/p/nativelibs4java/source/browse/#svn/trunk/libraries nativelibs4java files] :
     {{{
 svn checkout http://nativelibs4java.googlecode.com/svn/trunk/libraries nativelibs4java
-cd nativelibs4java
+cd nativelibs4java/libraries
 }}}
   * Run the following Maven command :
     {{{
@@ -51,7 +51,10 @@ export DYNCALL_HOME=pathToDyncall/dyncall
 cd dyncall
 patch < pathToBridJ/src/main/cpp/bridj/dyncall.patch
 }}}
-You may need to clean the patch up for it to apply correctly.
+You may need to clean the patch up for it to apply correctly. Also note that during some build process above dyncall.patch might be overwritten. To get the original patch in the source tree, run this :
+{{{
+svn revert pathToBridJ/src/main/cpp/bridj/dyncall.patch
+}}}
 
 Then you can build BridJ's shared library (and its test library) :
   * On Unix/Linux/MacOS X :
