@@ -25,6 +25,7 @@ Olivier Chafik (author of [http://code.google.com/p/bridj/ BridJ], [http://code.
 = Generous donors =
 
   * Matthew S. (Paypal donation)
+  * Tishampati Dhar (Paypal donation)
   * NeZetiC (donation of a Sun Ultra 5 computer so I can work on the BridJ+dyncall Sparc port)
 
 While I'm working on these projects for the fun of it on my free time, I have bills to pay... Any donation will be greatly appreciated :
