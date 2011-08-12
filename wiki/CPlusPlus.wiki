@@ -60,7 +60,7 @@ Pointer<TestClass> pTest = pointerTo(test);
 {{{
 int result = test.testVirtualAdd(1, 2);
 }}}
-  * Experimental support for C++ class templates (JNAerator is not yet compatible with this feature, so you'll have to write the template bindings by hand for now ; see [http://code.google.com/p/nativelibs4java/source/browse/trunk/libraries/Runtime/BridJ/src/test/java/org/bridj/CPPTemplateTest.java CPPTemplateTest])
+  * Experimental support for C++ class templates (JNAerator is not yet compatible with this feature, so you'll have to write the template bindings by hand for now ; see [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/test/java/org/bridj/CPPTemplateTest.java CPPTemplateTest])
   * Subclassing C++ classes from Java, with virtual methods overrides :
   And you can now derive from `TestClass` in Java very naturally :
 {{{
