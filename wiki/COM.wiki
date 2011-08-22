@@ -13,6 +13,7 @@ In most cases with BridJ you don't need to know more about COM internals.
 = Example =
 
 {{{
+@IID("56FDF342-FD6D-11D0-958A-006097C9A090")
 public class ITaskbarList extends IUnknown {
 
         @Virtual(0) public native void HrInit();
