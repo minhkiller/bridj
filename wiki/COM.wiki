@@ -25,4 +25,4 @@ public class ITaskbarList extends IUnknown {
 
 [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/java/org/bridj/cpp/com/shell/ITaskbarList3.java ITaskbarList3 interface]
 
-[https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/java/org/bridj/demos/TaskbarListDemo.java See a complete example here].
+[https://github.com/ochafik/nativelibs4java/blob/master/libraries/Runtime/BridJ/src/main/demos/TaskbarListDemo.java See a complete example here].
