@@ -69,7 +69,9 @@ CleanNative
 BuildNative
 }}}
 
-If it's not a platform already supported by BridJ, you must update some of its Java machinery so it can find your binary at runtime (search for `getEmbeddedLibraryResource` in [https://github.com/ochafik/nativelibs4java/blob/master/libraries/Runtime/BridJ/src/main/java/org/bridj/Platform.java Platform.java]).
+If it's not a platform already supported by BridJ, you must :
+  * update BridJ's Java machinery so it can find your binary at runtime (search for `getEmbeddedLibraryResource` in [https://github.com/ochafik/nativelibs4java/blob/master/libraries/Runtime/BridJ/src/main/java/org/bridj/Platform.java Platform.java])
+  * in case the build fails : update dyncall's configure script and/or update BridJ's [https://github.com/ochafik/nativelibs4java/blob/master/libraries/Runtime/BridJ/src/main/cpp/bridj/Make.sh Make.sh] script
 
 To run the tests on your new binary :
 {{{
