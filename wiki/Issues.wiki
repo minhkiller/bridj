@@ -1,7 +1,5 @@
-#summary Issue tracking
+#summary Issues for BridJ
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
-For issues about the *JNAerator* or the *JavaCL Generator*, please go to [http://code.google.com/p/jnaerator/issues/ JNAerator's issue tracker].
-
-For all other issues (*JavaCL*, *ScalaCL*, *BridJ*...), please use [http://code.google.com/p/nativelibs4java/issues/ NativeLibs4Java's issue tracker]
+Please use [https://github.com/ochafik/nativelibs4java/issues?sort=created&direction=desc&state=open NativeLibs4Java's GitHub Issues] to report bugs and request enhancements with a title starting by `BridJ: ...`
