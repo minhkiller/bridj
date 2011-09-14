@@ -7,6 +7,10 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 = Released Projects =
 
+== BridJ PCap ==
+
+[http://os.smaxe.com/bridj-pcap.html BridJ PCap], written by [http://andreisochirca.blogspot.com/ Andrei Sochirca], is a "BridJ based Java library that provides network packet capture functionality. It requires native library: libpcap for *nix or WinPCap for Windows."
+
 == falplayer-android-j ==
 
 [https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) is [https://github.com/atsushieno Atsushi Eno]'s experimental Java port of [https://github.com/atsushieno/falplayer-android falplayer], a "repeatable OGG Vorbis player for Android".
