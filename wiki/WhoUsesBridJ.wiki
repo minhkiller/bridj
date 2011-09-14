@@ -11,7 +11,7 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 [http://os.smaxe.com/bridj-pcap.html BridJ PCap], written by [http://andreisochirca.blogspot.com/ Andrei Sochirca], is a library that provides network packet capture functionality.
 
-It uses BridJ to leverage the native install of libpcap or WinPCap.
+It uses BridJ to leverage the native install of [http://www.tcpdump.org/ libpcap] or [http://www.winpcap.org/ WinPCap].
 
 == falplayer-android-j ==
 
