@@ -1,9 +1,9 @@
 #summary How to submit bug reports for BridJ
 
-If you face what appears to be a bug in BridJ, we'd be very grateful if you could try and report it on the bug tracker :
+If you face what appears to be a bug in BridJ, [CreditsAndLicense we]'d be very grateful if you could try and report it on the bug tracker :
   [https://github.com/ochafik/nativelibs4java/issues?labels=BridJ NativeLibs4Java's BridJ Bug Tracker]
 
-To maximise the chances we can fix the issue and/or help you quickly, please make sure to provide all of the following items in the report :
+To maximise the chances [CreditsAndLicense we] can fix the issue and/or help you quickly, please make sure to provide all of the following items in the report :
   * Working code : any of the following :
     * a class with a static main method that compiles directly against BridJ's JAR
     * a JUnit test class that can just be dropped into [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/test/java/org/bridj BridJ's test sources]
