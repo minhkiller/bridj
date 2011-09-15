@@ -1,7 +1,13 @@
 #summary How to submit bug reports for BridJ
 
+= Bug tracker =
+
 If you face what appears to be a bug in BridJ, [CreditsAndLicense we]'d be very grateful if you could try and report it on the bug tracker :
   [https://github.com/ochafik/nativelibs4java/issues?labels=BridJ NativeLibs4Java's BridJ Bug Tracker]
+
+Of course, [CreditsAndLicense we]'d recommend that you first look at the open bugs (and if you're not using the latest snapshot version of BridJ, that you also look at the bugs recently closed) to see if an issue similar to yours has already been reported.
+
+= What should go in an ideal report =
 
 To maximise the chances [CreditsAndLicense we] can fix the issue and/or help you quickly, please make sure to provide all of the following items in the report :
   * Working code : any of the following :
