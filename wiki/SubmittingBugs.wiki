@@ -25,4 +25,4 @@ To maximise the chances we can fix the issue and/or help you quickly, please mak
 
 Also, please do not use fancy archive formats (stick to plain old `.zip`), and if you have only a handful of files without particular directory hierarchy, you can even attach these files separately (this way they'll be readable separately from an iPhone).
 
-If you're in doubt, please come and ask on [http://groups.google.com/group/nativelibs4java the mailing-list] :-)
+Anyway if you're in doubt, please come and ask on [http://groups.google.com/group/nativelibs4java the mailing-list] :-)
