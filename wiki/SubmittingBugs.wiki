@@ -1,11 +1,14 @@
 #summary How to submit bug reports for BridJ
 
-If you submit an [Issues issue], please make sure to provide all of the following items to maximize the chances we can help you quickly :
+If you face what appears to be a bug in BridJ, we'd be very grateful if you could try and report it on the bug tracker :
+  [https://github.com/ochafik/nativelibs4java/issues?labels=BridJ NativeLibs4Java's BridJ Bug Tracker]
+
+To maximise the chances we can fix the issue and/or help you quickly, please make sure to provide all of the following items in the report :
   * Working code : any of the following :
     * a class with a static main method that compiles directly against BridJ's JAR
     * a JUnit test class that can just be dropped into [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/test/java/org/bridj BridJ's test sources]
     * an archive of a project that compiles *easily* with Maven or Ant
-  _In particular, please make sure to include the source code of your BridJ bindings to the report._
+  _In particular, please make sure to include the source code of your BridJ bindings._
   * Instructions on how to run your code :
     * full command-line
     * prequisites : 
@@ -14,8 +17,12 @@ If you submit an [Issues issue], please make sure to provide all of the followin
       * other dependencies (direct links, please !)
   * The full error log of BridJ :
     * Set the `BRIDJ_VERY_VERBOSE=1` environment variable prior to running your program / test class
-    * Include the `hs_err_pidXXX.log` core dump files to the report
-    * In case the program never ends (hangs with no normal reason), run `jconsole` and include a dump of the execution trace of the main thread (or of all of them) to the report
+    * Any `hs_err_pidXXX.log` core dump files
+    * In case the program never ends (hangs with no normal reason), run `jconsole` and include a dump of the execution trace of the main thread (or of all of them)
   * A direct link to the native library targeted by your bindings, if possible and if needed to reproduce the issue
   * The full C/C++/Objective-C headers of the native library
   * The exact [http://code.google.com/p/jnaerator/ JNAerator] arguments you've used to generate your bindings, if you've used that tool (which is highly advised !)
+
+Also, please do not use fancy archive formats (stick to plain old `.zip`), and if you have only a handful of files without particular directory hierarchy, you can even attach these files separately (this way they'll be readable separately from an iPhone).
+
+If you're in doubt, please come and ask on [http://groups.google.com/group/nativelibs4java the mailing-list] :-)
