@@ -10,8 +10,8 @@ Of course, [CreditsAndLicense we]'d recommend that you first look at the open bu
 = What should go in an ideal report =
 
 To maximise the chances [CreditsAndLicense we] can fix the issue and/or help you quickly, please make sure to provide all of the following items in the report :
-  * Working code : any of the following :
-    * a class with a static main method that compiles directly against BridJ's JAR
+  * Working code : *any of the following* :
+    * a class with a static main method that compiles directly against BridJ's JAR (you might want to [Build build BridJ from sources] and just drop your `.java` file to `src/main/java`, to have it compiled an run with `mvn compile exec:java -Dexec.mainClass=yourClass`)
     * a JUnit test class that can just be dropped into [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/test/java/org/bridj BridJ's test sources]
     * an archive of a project that compiles *easily* with Maven or Ant
   _In particular, please make sure to include the source code of your BridJ bindings._
