@@ -18,6 +18,7 @@
       * [CPlusPlus C++]
       * [COM]
   * Hands On
+    * [SubmittingBugs How to Submit Bugs
     * [Source]
     * [Build]
     * [AutomatedTests]
