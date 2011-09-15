@@ -23,7 +23,7 @@ To maximise the chances [CreditsAndLicense we] can fix the issue and/or help you
       * other dependencies (direct links and/or exact version numbers, please !)
   * The full error log of BridJ :
     * Set the `BRIDJ_VERY_VERBOSE=1` environment variable prior to running your program / test class
-    * Any `hs_err_pidXXX.log` core dump files
+    * Any `hs_err_pidXXX.log` files
     * In case the program never ends (hangs with no normal reason), run `jconsole` and include a dump of the execution trace of the main thread (or of all of them)
   * A direct link to the native library targeted by your bindings, if possible and if needed to reproduce the issue
   * The full C/C++/Objective-C headers of the native library
