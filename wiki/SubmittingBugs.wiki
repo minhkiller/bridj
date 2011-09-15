@@ -5,11 +5,17 @@ If you submit an [Issues issue], please make sure to provide all of the followin
     * a class with a static main method that compiles directly against BridJ's JAR
     * a JUnit test class that can just be dropped into [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/test/java/org/bridj BridJ's test sources]
     * an archive of a project that compiles *easily* with Maven or Ant
-  * Instructions on how to run :
+  _In particular, please make sure to include the source code of your BridJ bindings to the report._
+  * Instructions on how to run your code :
     * full command-line
-    * prequisites (native library to install manually ? specific hardware ?)
+    * prequisites : 
+      * native library to install manually ? 
+      * specific hardware ?
+      * other dependencies (direct links, please !)
   * The full error log of BridJ :
     * Set the `BRIDJ_VERY_VERBOSE=1` environment variable prior to running your program / test class
     * Include the `hs_err_pidXXX.log` core dump files to the report
     * In case the program never ends (hangs with no normal reason), run `jconsole` and include a dump of the execution trace of the main thread (or of all of them) to the report
   * A direct link to the native library targeted by your bindings, if possible and if needed to reproduce the issue
+  * The full C/C++/Objective-C headers of the native library
+  * The exact [http://code.google.com/p/jnaerator/ JNAerator] arguments you've used to generate your bindings, if you've used that tool (which is highly advised !)
