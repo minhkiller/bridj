@@ -1,0 +1,15 @@
+#summary How to submit bug reports for BridJ
+
+If you submit an [Issues issue], please make sure to provide all of the following items to maximize the chances we can help you quickly :
+  * Working code : any of the following :
+    * a class with a static main method that compiles directly against BridJ's JAR
+    * a JUnit test class that can just be dropped into [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/test/java/org/bridj BridJ's test sources]
+    * an archive of a project that compiles *easily* with Maven or Ant
+  * Instructions on how to run :
+    * full command-line
+    * prequisites (native library to install manually ? specific hardware ?)
+  * The full error log of BridJ :
+    * Set the `BRIDJ_VERY_VERBOSE=1` environment variable prior to running your program / test class
+    * Include the `hs_err_pidXXX.log` core dump files to the report
+    * In case the program never ends (hangs with no normal reason), run `jconsole` and include a dump of the execution trace of the main thread (or of all of them) to the report
+  * A direct link to the native library targeted by your bindings, if possible and if needed to reproduce the issue
