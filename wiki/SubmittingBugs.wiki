@@ -14,7 +14,7 @@ To maximise the chances we can fix the issue and/or help you quickly, please mak
     * prequisites : 
       * native library to install manually ? 
       * specific hardware ?
-      * other dependencies (direct links, please !)
+      * other dependencies (direct links and/or exact version numbers, please !)
   * The full error log of BridJ :
     * Set the `BRIDJ_VERY_VERBOSE=1` environment variable prior to running your program / test class
     * Any `hs_err_pidXXX.log` core dump files
