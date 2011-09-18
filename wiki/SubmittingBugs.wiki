@@ -14,7 +14,7 @@ To maximise the chances [CreditsAndLicense we] can fix the issue and/or help you
     * a class with a static main method that compiles directly against BridJ's JAR (you might want to [Build build BridJ from sources] and just drop your `.java` file to `src/main/java`, to have it compiled an run with `mvn compile exec:java -Dexec.mainClass=yourClass`)
     * a JUnit test class that can just be dropped into [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/test/java/org/bridj BridJ's test sources]
     * an archive of a project that compiles *easily* with Maven or Ant
-  _In particular, please make sure to include the source code of your BridJ bindings._
+  _In particular, please make sure to include the source code of your BridJ bindings._ If you've used [http://code.google.com/p/jnaerator/ JNAerator] without the [http://code.google.com/p/jnaerator/wiki/CommandLineOptionsAndEnvironmentVariables -noComp and -noJar options], the sources of the generated bindings are located in the generated JAR, alongside the .class files.
   * Instructions on how to run your code :
     * full command-line
     * prequisites : 
