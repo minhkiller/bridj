@@ -79,6 +79,14 @@ Binaries are currently available and routinely tested for the following platform
 
 ... with plans for FreeBSD ([CreditsAndLicense help and / or test hardward welcome])
 
+= How can I trace/log the native calls ? =
+
+You can set the `-Dbridj.logCalls=true` property or the BRIDJ_LOG_CALLS=1 environment variable.
+
+In this log mode :
+  * only the Java method will be logged (no arguments nor return value)
+  * direct calls will be disabled (those wired with optimized assembler glue), so performance might be degraded a bit
+
 = How to I check for errno / `GetLastError()` ? =
 
 Simply declare that your function throws [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/LastError.html LastError], that's it !
