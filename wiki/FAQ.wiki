@@ -182,6 +182,4 @@ SWIG is better because :
 
 = Who is using BridJ ? =
 
-  * [http://javacl.googlecode.com/ JavaCL] has an experimental port to BridJ (over from JNA) which is fully functional.
-
-Please let us know if you want your project to be listed here :-)
+Please read [WhoUsesBridJ Who's using BridJ].
