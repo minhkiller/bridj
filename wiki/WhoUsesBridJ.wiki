@@ -15,7 +15,7 @@ It uses BridJ to leverage the native install of [http://www.tcpdump.org/ libpcap
 
 == falplayer-android-j ==
 
-[https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) is [https://github.com/atsushieno Atsushi Eno]'s experimental Java port of [https://github.com/atsushieno/falplayer-android falplayer], a "repeatable OGG Vorbis player for Android".
+[https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) is the Java version of [https://github.com/atsushieno Atsushi Eno]'s Ogg Vorbis music player for Android (see original version : [https://github.com/atsushieno/falplayer-android falplayer]).
 
 It features BridJ-powered libvorbisidec / [http://wss.co.uk/pinknoise/tremolo/ Tremolo] bindings.
 
