@@ -7,6 +7,12 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 = Released Projects =
 
+== OpenIMAJ ==
+
+According to its project page, the [http://www.openimaj.org/ Open Intelligent Multimedia Analysis toolkit for Java] (OpenIMAJ, BSD-licensed) "is a collection of libraries for multimedia analysis written in the Java programming language. Currently most of the focus in OpenIMAJ is on image analysis and feature extraction, and as such the OpenIMAJ libraries contain methods for processing images and extracting state-of-the-art features, including SIFT. The OpenIMAJ clustering and nearest-neighbour libraries contain efficient, multi-threaded implementations of clustering algorithms including Hierarchical K-Means and Approximate K-Means. The clustering library makes it possible to easily create visual-bag-of-words representations for images. OpenIMAJ also incorporates a number of tools to enable extremely-large-scale multimedia analysis using a distributed computing approach based on Apache Hadoop."
+
+It appears to be using BridJ in its 'openimaj-serial-driver' and 'core-video-capture' modules.
+
 == BridJ PCap ==
 
 [http://os.smaxe.com/bridj-pcap.html BridJ PCap] (LGPL-licensed) is a library written by [http://andreisochirca.blogspot.com/ Andrei Sochirca] that provides network packet capture functionality.
