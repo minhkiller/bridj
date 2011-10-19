@@ -65,7 +65,7 @@ In three words : [Design C++, Performance and Usability]
 
 = What is BridJ's development status ? = 
 
-Please read [CurrentState]
+Please read the [https://github.com/ochafik/nativelibs4java/blob/master/libraries/Runtime/BridJ/CHANGELOG Change Log] and have a look at the [CurrentState] page.
 
 = What platforms does BridJ support ? = 
 
