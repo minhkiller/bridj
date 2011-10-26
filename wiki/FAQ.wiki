@@ -104,17 +104,16 @@ This crash indicates that the program tried to access memory it wasn't supposed 
 
 The tricky part here is that this kind of errors usually does not surface immediately : the crash will typically occur in later calls, giving false leads on where the error actually occurred.
 
-The only reliable way to debug such errors is to make use of a native debugger.
+The only reliable way to debug such errors is to make use of a native debugger. On Windows, Visual C++ comes with a very nice debugger and is available for free in its Express edition (under some conditions). 
 
-On Windows, Visual C++ has a very nice debugger and is available for free in its Express edition (under some conditions). 
+To debug your crash with Visual C++, you should compile your native library in debug mode if possible, then run the java process with the debugger (or attach a debugger to it before any native call is performed). You'll want to turn as many debug checks on as possible in the [http://msdn.microsoft.com/en-us/library/x85tt0dd.aspx debugger settings].
 
-A way to debug your crash is to compile your native library in debug mode (if possible), then run the java process with the debugger (or attach a debugger to it before any native call is performed). You'll want to turn as many debug checks on as possible in the [http://msdn.microsoft.com/en-us/library/x85tt0dd.aspx debugger settings].
-
-It will be easier to set the full path to the debug version of your DLL using a manual path override, rather than having to copy DLLs around after each build : if your library is named "MyLib" in BridJ (the value inside the @Library("MyLib") annotation), you can set the path in the run properties dialog with the following environment variable : 
+Also, it will be easier to set the full path to the debug version of your DLL using a manual path override : if your library is named `MyLib` in BridJ (the value inside the `@Library("MyLib")` annotation), you can :
+  * Set the path in the run properties dialog with the following environment variable : 
 {{{
     BRIDJ_MYLIB_LIBRARY=c:\...\MyProject\Debug\MyLib.dll
 }}}
-Or you can add the following property argument to your java process command-line : 
+  * Or add the following property argument to your java process command-line : 
 {{{
     "-Dbridj.MyLib.library=c:\...\MyLib.dll"
 }}}
@@ -122,7 +121,7 @@ You can then check which exact version of your DLL was picked by BridJ by scanni
 
 As far as BridJ is concerned, you may try turning the direct mode off with BRIDJ_DIRECT=0 or -Dbridj.direct=false and see if the issue still happens.
 
-A last option would be to turn BridJ's "protected" mode on, but right now you'd have to recompile it from sources (and uncomment the #define ENABLE_PROTECTED_MODE directive in Exceptions.h).
+A last option would be to turn BridJ's "protected" mode on, but right now you'd have to [Build recompile it from sources] (and uncomment the #define ENABLE_PROTECTED_MODE directive in Exceptions.h). Note that protected mode is currently slow and unstable (which is why it's not enabled by default ;-)). 
 
 = How to specify different calling conventions for different platforms ? =
 
