@@ -53,7 +53,7 @@ patch < pathToBridJ/src/main/cpp/bridj/dyncall.patch
 }}}
 You may need to clean the patch up for it to apply correctly. Also note that during some build process above dyncall.patch might be overwritten. To get the original patch in the source tree, run this :
 {{{
-svn revert pathToBridJ/src/main/cpp/bridj/dyncall.patch
+git checkout pathToBridJ/src/main/cpp/bridj/dyncall.patch
 }}}
 
 Then you can build BridJ's shared library (and its test library) :
@@ -62,7 +62,7 @@ Then you can build BridJ's shared library (and its test library) :
 cd Runtime/BridJ
 sh CleanNative ; sh BuildNative
 }}}
-  * On Windows :
+  * On Windows (you can double-click on both scripts from Windows explorer instead of using the command line) :
   {{{
 cd Runtime\BridJ
 CleanNative
