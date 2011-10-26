@@ -20,7 +20,7 @@ cd nativelibs4java/libraries
 }}}
   * Run the following Maven command :
     {{{
-mvn install -Dmaven.test.skip=true
+mvn install -DskipTests
 }}}
 
 BridJ's JARs are in `Runtime/Bridj/target` (pick `bridj-x.x-SNAPSHOT.jar` if you don't have specific size needs).
