@@ -12,7 +12,7 @@ It will take some time, so you'll want to have a coffee during the build (if you
 
 Subsequent builds will be much quicker (see next section), and can be launched from your Maven-aware IDE of choice.
 
-  * First, [http://maven.apache.org/download.html install Maven].
+  * First, [http://maven.apache.org/download.html install Maven 2.x] (the build does not succeed yet with Maven 3.x, but help would be welcome on that side !).
   * Fork and/or clone the [https://github.com/ochafik/nativelibs4java NativeLibs4Java Github repository]
   * Go to the libraries folder :
     {{{
