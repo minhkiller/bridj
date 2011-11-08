@@ -30,7 +30,7 @@ It is advised to use Maven or sbt to manage dependencies automatically.
   <dependency>
 	<groupId>com.nativelibs4java</groupId>
 	<artifactId>bridj</artifactId>
-	<version>0.5</version>
+	<version>0.6</version>
 	<!--
 	<classifier>c-only</classifier>
 	-->
@@ -47,7 +47,7 @@ import sbt._
 class Project(info: ProjectInfo) extends DefaultProject(info)
 {
   val nativelibs4javaRepo = "NativeLibs4Java Repository" at "http://nativelibs4java.sourceforge.net/maven/"
-  val bridj = "com.nativelibs4java" % "bridj" % "0.5"
+  val bridj = "com.nativelibs4java" % "bridj" % "0.6"
 }
 }}}
 
