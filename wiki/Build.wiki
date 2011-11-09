@@ -5,6 +5,23 @@
 
 BridJ is built as part of the NativeLibs4Java sub-projects.
 
+= Build BridJ only =
+
+If the following steps do not succeed, please read the next section "Full build"
+  * First, [http://maven.apache.org/download.html install Maven 2.x] (the build does not succeed yet with Maven 3.x, but help would be welcome on that side !).
+  * Fork and/or clone the [https://github.com/ochafik/nativelibs4java NativeLibs4Java Github repository]
+  * Go to the libraries/Runtime/BridJ folder :
+    {{{
+cd nativelibs4java
+cd libraries
+cd Runtime
+cd BridJ
+}}}
+  * Run the following Maven command :
+    {{{
+mvn install -DskipTests
+}}}
+
 = Full build (first time) =
 
 This will build all of NativeLibs4Java's projects, including JNAerator.
