@@ -19,7 +19,7 @@ cd BridJ
 }}}
   * Run the following Maven command :
     {{{
-mvn install -DskipTests
+mvn clean install -DskipTests
 }}}
 
 = Full build (first time) =
