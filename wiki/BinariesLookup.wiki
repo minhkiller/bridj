@@ -1,0 +1,7 @@
+#summary Details on how BridJ looks up binary files
+
+= External binaries =
+
+= Binaries embedded in JARs =
+
+See [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/resources/org/bridj/lib BridJ's embedded libraries].
