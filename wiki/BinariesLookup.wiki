@@ -25,6 +25,8 @@ The following paths are also used :
 
 For a given library with name `Xxx`, BridJ uses the environment variable BRIDJ_XXX_LIBRARY or the property `bridj.Xxx.library` for explicit full path of the library binary file.
 
+An explicit library file can also be set programmatically with [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#setNativeLibraryFile(java.lang.String, java.io.File) BridJ.setNativeLibraryFile].
+
 = Binaries embedded in JARs =
 
 == Embedded library path syntax ==
