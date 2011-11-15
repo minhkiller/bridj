@@ -1,4 +1,5 @@
 #summary Details on how BridJ looks up binary files
+<wiki:toc max_depth="3" />
 
 = External binaries =
 
@@ -26,4 +27,25 @@ For a given library with name `Xxx`, BridJ uses the environment variable BRIDJ_X
 
 = Binaries embedded in JARs =
 
-See [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/resources/org/bridj/lib BridJ's embedded libraries].
+Embedded resources are extracted from predefined paths of the form :
+`embeddedResourceRoot` / `platformName` / `binaryName`
+
+Predefined embedded resource roots are `lib` and `org/bridj/lib`.
+
+Binary name for library `Xxx` will be `libXxx.so`, `libXxx.dylib`, `Xxx.so` or `Xxx.dll` depending on the platform.
+
+Platform names are as follows :
+|| Platform name || Platform description || Example path for library `Xxx` ||
+|| `win32` || Window x86 (32 bits) || `lib/win32/Xxx.so` ||
+|| `win64` || Window x64 (64 bits) || `lib/win64/Xxx.so` ||
+|| `linux_x86` || Linux x86 (32 bits) || `lib/linux_x86/libXxx.dll` ||
+|| `linux_x64` || Linux amd64 (64 bits) || `lib/linux_x64/libXxx.dll` ||
+|| `sunos_x86` || Solaris x86 (32 bits) || `lib/sunos_x86/Xxx.so` ||
+|| `darwin_universal` || MacOS X (x86 / x64 / ppc) || `lib/darwin_universal/libXxx.dylib` ||
+|| `iphoneos_arm32_arm` || iOS (iPhone / iPad) arm || `lib/iphoneos_arm32_arm/libXxx.dylib` ||
+
+Please see [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/resources/org/bridj/lib BridJ's sources] an up-to-date list of platform names.
+
+The exception is Android, where the only embedded resource root is 'lib' :
+|| Platform name || Plarform description || Example path for library `Xxx` ||
+|| `armeabi` || Android arm || `lib/armeabi/libXxx.so` ||
