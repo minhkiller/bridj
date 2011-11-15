@@ -30,6 +30,7 @@ For a given library with name `Xxx`, BridJ uses the environment variable BRIDJ_X
 == Embedded library path syntax ==
 
 Embedded resources are extracted from predefined paths of the form :
+
 `embeddedResourceRoot` / `platformName` / `binaryName`
 
 == Embedded resource roots ==
