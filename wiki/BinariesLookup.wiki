@@ -27,12 +27,22 @@ For a given library with name `Xxx`, BridJ uses the environment variable BRIDJ_X
 
 = Binaries embedded in JARs =
 
+== Embedded library path syntax ==
+
 Embedded resources are extracted from predefined paths of the form :
 `embeddedResourceRoot` / `platformName` / `binaryName`
 
+== Embedded resource roots ==
+
 Predefined embedded resource roots are `lib` and `org/bridj/lib`.
 
+Additional resource roots can be added with [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/Platform.html#addEmbeddedLibraryResourceRoot(java.lang.String) BridJ.addEmbeddedLibraryResourceRoot].
+
+== Binary names ==
+
 Binary name for library `Xxx` will be `libXxx.so`, `libXxx.dylib`, `Xxx.so` or `Xxx.dll` depending on the platform.
+
+== Platform names ==
 
 Platform names are as follows :
 || Platform name || Platform description || Example path for library `Xxx` ||
