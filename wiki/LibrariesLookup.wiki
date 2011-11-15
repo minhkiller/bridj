@@ -29,11 +29,11 @@ An explicit library file can also be set programmatically with [http://nativelib
 
 = Binaries embedded in JARs =
 
-== Embedded library path syntax ==
-
-Embedded resources are extracted from predefined paths of the form :
+Embedded resources are extracted from paths of the form :
 
 `embeddedResourceRoot` / `platformName` / `binaryName`
+
+Details on each part of this path are in the following sub-sections :
 
 == Embedded resource roots ==
 
