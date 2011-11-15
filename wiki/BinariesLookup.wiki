@@ -2,6 +2,28 @@
 
 = External binaries =
 
+== Lookup paths ==
+
+BridJ needs to know where to find binaries. 
+
+Depending on the platform, the following environment variables are used as lookup paths :
+  * `PATH`
+  * `LD_LIBRARY_PATH`
+  * `DYLD_LIBRARY_PATH`
+
+The following Java properties are also used :
+  * `java.library.path`
+  * `gnu.classpath.boot.library.path`
+
+The following paths are also used :
+  * `.`
+  * `${java.home}/bin`
+  * `${java.home}/../Libraries` on MacOS X
+
+== Explicit paths ==
+
+For a given library with name `Xxx`, BridJ uses the environment variable BRIDJ_XXX_LIBRARY or the property `bridj.Xxx.library` for explicit full path of the library binary file.
+
 = Binaries embedded in JARs =
 
 See [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/resources/org/bridj/lib BridJ's embedded libraries].
