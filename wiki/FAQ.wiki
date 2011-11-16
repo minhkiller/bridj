@@ -129,6 +129,12 @@ Short answer is : you don't need to.
 
 Only Windows x86 has different calling conventions, so `@Convention` annotations will typically be ignored silently on other platforms.
 
+= Can I ship my library's binaries in a cross-platform JAR ? =
+
+You sure can ! BridJ provides a seamless cross-platform binaries JAR extraction mechanism, which it uses for its own needs.
+
+For detailed information about embedded libraries, please read [LibrariesLookup Libraries Lookup].
+
 = Can I build BridJ from sources ? =
 
 Sure, please read [Build].
