@@ -23,7 +23,7 @@ The following paths are also used :
 
 == Explicit paths ==
 
-For a given library with name `Xxx`, BridJ uses the environment variable BRIDJ_XXX_LIBRARY or the property `bridj.Xxx.library` for explicit full path of the library binary file.
+For a given library with name `Xyz`, BridJ uses the environment variable BRIDJ_XYZ_LIBRARY or the property `bridj.Xyz.library` for explicit full path of the library binary file.
 
 An explicit library file can also be set programmatically with [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#setNativeLibraryFile(java.lang.String, java.io.File) BridJ.setNativeLibraryFile].
 
@@ -51,22 +51,22 @@ Additional resource roots can be added with [http://nativelibs4java.sourceforge.
 
 == Binary names ==
 
-Binary name for library `Xxx` will be `libXxx.so`, `libXxx.dylib`, `Xxx.so` or `Xxx.dll` depending on the platform.
+Binary name for library `Xyz` will be `libXyz.so`, `libXyz.dylib`, `Xyz.so` or `Xyz.dll` depending on the platform.
 
 == Platform names and example resource paths ==
 
 Platform names are as follows :
-|| Platform name || Platform description || Example resource path for library `Xxx` ||
-|| `win32` || Window x86 (32 bits) || `lib/win32/Xxx.dll` ||
-|| `win64` || Window x64 (64 bits) || `lib/win64/Xxx.dll` ||
-|| `linux_x86` || Linux x86 (32 bits) || `lib/linux_x86/libXxx.so` ||
-|| `linux_x64` || Linux amd64 (64 bits) || `lib/linux_x64/libXxx.so` ||
-|| `sunos_x86` || Solaris x86 (32 bits) || `lib/sunos_x86/Xxx.so` ||
-|| `darwin_universal` || MacOS X (x86 / x64 / ppc) || `lib/darwin_universal/libXxx.dylib` ||
-|| `iphoneos_arm32_arm` || iOS (iPhone / iPad) arm || `lib/iphoneos_arm32_arm/libXxx.dylib` ||
+|| Platform name || Platform description || Example resource path for library `Xyz` ||
+|| `win32` || Window x86 (32 bits) || `lib/win32/Xyz.dll` ||
+|| `win64` || Window x64 (64 bits) || `lib/win64/Xyz.dll` ||
+|| `linux_x86` || Linux x86 (32 bits) || `lib/linux_x86/libXyz.so` ||
+|| `linux_x64` || Linux amd64 (64 bits) || `lib/linux_x64/libXyz.so` ||
+|| `sunos_x86` || Solaris x86 (32 bits) || `lib/sunos_x86/Xyz.so` ||
+|| `darwin_universal` || MacOS X (x86 / x64 / ppc) || `lib/darwin_universal/libXyz.dylib` ||
+|| `iphoneos_arm32_arm` || iOS (iPhone / iPad) arm || `lib/iphoneos_arm32_arm/libXyz.dylib` ||
 
 Please see [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/resources/org/bridj/lib BridJ's sources] an up-to-date list of platform names.
 
 The exception is Android, where the only embedded resource root is 'lib' :
-|| Platform name || Plarform description || Example resource path for library `Xxx` ||
-|| `armeabi` || Android arm || `lib/armeabi/libXxx.so` ||
+|| Platform name || Plarform description || Example resource path for library `Xyz` ||
+|| `armeabi` || Android arm || `lib/armeabi/libXyz.so` ||
