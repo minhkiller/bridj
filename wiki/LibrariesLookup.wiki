@@ -16,10 +16,12 @@ The following Java properties are also used :
   * `java.library.path`
   * `gnu.classpath.boot.library.path`
 
-The following paths are also used :
+Finally, the following paths are used :
   * `.`
   * `${java.home}/bin`
   * `${java.home}/../Libraries` on MacOS X
+
+Additional paths can be added programmatically with <a href="http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#addLibraryPath(java.lang.String)">BridJ.addLibraryPath</a>.
 
 == Explicit paths ==
 
