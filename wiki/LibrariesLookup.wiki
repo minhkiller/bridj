@@ -25,15 +25,15 @@ The following paths are also used :
 
 For a given library with name `Xyz`, BridJ uses the environment variable BRIDJ_XYZ_LIBRARY or the property `bridj.Xyz.library` for explicit full path of the library binary file.
 
-An explicit library file can also be set programmatically with [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#setNativeLibraryFile(java.lang.String, java.io.File) BridJ.setNativeLibraryFile].
+An explicit library file can also be set programmatically with <a href="http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#setNativeLibraryFile(java.lang.String, java.io.File)">BridJ.setNativeLibraryFile</a>.
 
 == Library aliases and actual name ==
 
 The actual name of a library might be platform-dependent.
 
-For instance the "C" library is actually named `mscvrt.dll` on Windows. This is supported by BridJ through [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#setNativeLibraryActualName(java.lang.String, java.lang.String) BridJ.setNativeLibraryActualName].
+For instance the "C" library is actually named `mscvrt.dll` on Windows. This is supported by BridJ through <a href="http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#setNativeLibraryActualName(java.lang.String, java.lang.String)">BridJ.setNativeLibraryActualName</a>.
 
-Likewise, you can define aliases for libraries with [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#addNativeLibraryAlias(java.lang.String, java.lang.String) BridJ.addNativeLibraryAlias].
+Likewise, you can define aliases for libraries with <a href="http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#addNativeLibraryAlias(java.lang.String, java.lang.String)">BridJ.addNativeLibraryAlias</a>.
 
 = Binaries embedded in JARs =
 
@@ -65,7 +65,7 @@ Platform names are as follows :
 || `darwin_universal` || MacOS X (x86 / x64 / ppc) || `lib/darwin_universal/libXyz.dylib` ||
 || `iphoneos_arm32_arm` || iOS (iPhone / iPad) arm || `lib/iphoneos_arm32_arm/libXyz.dylib` ||
 
-Please see [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/resources/org/bridj/lib BridJ's sources] an up-to-date list of platform names.
+Please see [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/resources/org/bridj/lib BridJ's sources] for an up-to-date list of platform names.
 
 The exception is Android, where the only embedded resource root is 'lib' :
 || Platform name || Plarform description || Example resource path for library `Xyz` ||
