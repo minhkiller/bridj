@@ -8,9 +8,9 @@
 BridJ needs to know where to find binaries. 
 
 Depending on the platform, the following environment variables are used as lookup paths :
-  * `PATH`
-  * `LD_LIBRARY_PATH`
-  * `DYLD_LIBRARY_PATH`
+  * `PATH` (Windows)
+  * `LD_LIBRARY_PATH` (Unix / Linux)
+  * `DYLD_LIBRARY_PATH` (Darwin / MacOS X)
 
 The following Java properties are also used :
   * `java.library.path`
