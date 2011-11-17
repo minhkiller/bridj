@@ -25,7 +25,7 @@ Additional paths can be added programmatically with <a href="http://nativelibs4j
 
 == Explicit paths ==
 
-For a given library with name `Xyz`, BridJ uses the environment variable BRIDJ_XYZ_LIBRARY or the property `bridj.Xyz.library` for explicit full path of the library binary file.
+For a given library with name `Xyz`, BridJ uses the environment variable BRIDJ_XYZ_LIBRARY or the property `bridj.Xyz.library` for explicit full path of the library binary file (beware : _case-sensitive_ names !)
 
 An explicit library file can also be set programmatically with <a href="http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/BridJ.html#setNativeLibraryFile(java.lang.String, java.io.File)">BridJ.setNativeLibraryFile</a>.
 
