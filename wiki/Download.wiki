@@ -24,7 +24,7 @@ It is advised to use Maven or sbt to manage dependencies automatically.
   <repository>
     <id>sonatype</id>
     <name>Sonatype OSS Snapshots Repository</name>
-    <url>oss.sonatype.org/content/groups/public</url>
+    <url>http://oss.sonatype.org/content/groups/public</url>
   </repository>
   <repository>
     <id>nativelibs4java-repo</id>
@@ -51,7 +51,7 @@ import sbt._
 
 class Project(info: ProjectInfo) extends DefaultProject(info)
 {
-  val sonatypeSnapshotsRepo = "Sonatype OSS Snapshots Repository" at "oss.sonatype.org/content/groups/public"
+  val sonatypeSnapshotsRepo = "Sonatype OSS Snapshots Repository" at "http://oss.sonatype.org/content/groups/public"
   val nativelibs4javaRepo = "NativeLibs4Java Repository" at "http://nativelibs4java.sourceforge.net/maven/"
   val bridj = "com.nativelibs4java" % "bridj" % "0.6"
 }
