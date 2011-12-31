@@ -65,6 +65,22 @@ Read more about :
 
 In three words : [Design C++, Performance and Usability]
 
+== What is BridJ's license ? ==
+
+BridJ is [CreditsAndLicense dual-licensed under a very liberal BSD license and the very liberal Apache 2.0 license].
+
+== What are BridJ's runtime dependencies ? ==
+
+BridJ is released as a self-contained JAR.
+
+However, it includes a copy of the [http://asm.ow2.org/ ASM] library and its native library are statically linked with a modified version of [http://dyncall.org Dyncall].
+
+More details here : [CreditsAndLicense].
+
+== Where can I get support for BridJ ? ==
+
+On [http://groups.google.com/group/nativelibs4java NativeLibs4Java's mailing-list].
+
 == What is BridJ's development status ? == 
 
 Please read the [https://github.com/ochafik/nativelibs4java/blob/master/libraries/Runtime/BridJ/CHANGELOG Change Log] and have a look at the [CurrentState] page.
@@ -85,26 +101,9 @@ Binaries are currently available and routinely tested for the following platform
 
 Sure, please read [Build].
 
-== What is BridJ's license ? ==
-
-BridJ is [CreditsAndLicense dual-licensed under a very liberal BSD license and the very liberal Apache 2.0 license].
-
-== Where can I get support for BridJ ? ==
-
-On [http://groups.google.com/group/nativelibs4java NativeLibs4Java's mailing-list].
-
-
 == How can I help ? ==
 
 Please read [HowToHelp].
-
-== What are BridJ's runtime dependencies ? ==
-
-BridJ is released as a self-contained JAR.
-
-However, it includes a copy of the [http://asm.ow2.org/ ASM] library and its native library are statically linked with a modified version of [http://dyncall.org Dyncall].
-
-More details here : [CreditsAndLicense].
 
 == How is BridJ different from... ==
 
