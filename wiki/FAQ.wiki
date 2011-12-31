@@ -3,7 +3,9 @@
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
-= What is BridJ ? =
+= About the project =
+
+== What is BridJ ? ==
 
 BridJ is a library that lets you call [CLanguage C], [CPlusPlus C++] and [ObjectiveC Objective-C] libraries from Java as if you were writing native code. It is a recent alternative to [http://jna.dev.java.net JNA].
 
@@ -59,15 +61,15 @@ Read more about :
   * [Design]
   * [BridJAndScala Using BridJ with Scala]
 
-= Why another interop library ? =
+== Why another interop library ? ==
 
 In three words : [Design C++, Performance and Usability]
 
-= What is BridJ's development status ? = 
+== What is BridJ's development status ? == 
 
 Please read the [https://github.com/ochafik/nativelibs4java/blob/master/libraries/Runtime/BridJ/CHANGELOG Change Log] and have a look at the [CurrentState] page.
 
-= What platforms does BridJ support ? = 
+== What platforms does BridJ support ? == 
 
 Binaries are currently available and routinely tested for the following platforms :
   * Windows (x86, x64)
@@ -79,82 +81,24 @@ Binaries are currently available and routinely tested for the following platform
 
 ... with plans for FreeBSD ([CreditsAndLicense help and / or test hardward welcome])
 
-= How can I trace/log the native calls ? =
-
-You can set the `-Dbridj.logCalls=true` property or the BRIDJ_LOG_CALLS=1 environment variable.
-
-In this log mode :
-  * only the Java method will be logged (no arguments nor return value)
-  * direct calls will be disabled (those wired with optimized assembler glue), so performance might be degraded a bit
-
-= How to I check for errno / `GetLastError()` ? =
-
-Simply declare that your function throws [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/LastError.html LastError], that's it !
-
-You'll get exceptions soon enough ;-)
-
-= BridJ hangs with 100% CPU usage ! =
-
-If you're on Windows x86 (or on 64 bits windows in a 32 bits JVM), this is typically a case of bad calling convention being used for a native function or callback binding. 
-Please triple-check the calling convention (could it be __stdcall ?) and add a proper `@Convention(Convention.Style.xxx)` annotation.
-
-= How do I debug an EXCEPTION_ACCESS_VIOLATION crash ? =
-
-This crash indicates that the program tried to access memory it wasn't supposed to access (for instance someone read at index 100 in an array of 10 elements).
-
-The tricky part here is that this kind of errors usually does not surface immediately : the crash will typically occur in later calls, giving false leads on where the error actually occurred.
-
-The only reliable way to debug such errors is to make use of a native debugger. On Windows, Visual C++ comes with a very nice debugger and is available for free in its Express edition (under some conditions). 
-
-To debug your crash with Visual C++, you should compile your native library in debug mode if possible, then run the java process with the debugger (or attach a debugger to it before any native call is performed). You'll want to turn as many debug checks on as possible in the [http://msdn.microsoft.com/en-us/library/x85tt0dd.aspx debugger settings].
-
-Also, it will be easier to set the full path to the debug version of your DLL using a manual path override : if your library is named `MyLib` in BridJ (the value inside the `@Library("MyLib")` annotation), you can :
-  * Set the path in the run properties dialog with the following environment variable : 
-{{{
-    BRIDJ_MYLIB_LIBRARY=c:\...\MyProject\Debug\MyLib.dll
-}}}
-  * Or add the following property argument to your java process command-line : 
-{{{
-    "-Dbridj.MyLib.library=c:\...\MyLib.dll"
-}}}
-You can then check which exact version of your DLL was picked by BridJ by scanning through Visual C++'s "Modules" window.
-
-As far as BridJ is concerned, you may try turning the direct mode off with BRIDJ_DIRECT=0 or -Dbridj.direct=false and see if the issue still happens.
-
-A last option would be to turn BridJ's "protected" mode on, but right now you'd have to [Build recompile it from sources] and uncomment the `#define ENABLE_PROTECTED_MODE` directive in `Exceptions.h`. Note that protected mode is currently slow and unstable which is why it's not enabled by default ;-). 
-
-= How do I debug a "LoadLibrary : The specified module could not be found" error ? =
-
-If BridJ fails to load a library, it can be that :
-  * you're trying to load a 64 bits on a 32 bits platform, or vice-versa (please check which version `java -version` yields : if it does not say it's 64 bits, it means it's 32 bits)
-  * it didn't find the exact path you specified
-  * it didn't find a DLL dependency of the library you're trying to load (please open your DLL with [http://www.dependencywalker.com/ Dependency Walker] and make sure all its dependencies are resolved and in the path)
-
-= How to specify different calling conventions for different platforms ? =
-
-Short answer is : you don't need to.
-
-Only Windows x86 has different calling conventions, so `@Convention` annotations will typically be ignored silently on other platforms.
-
-= Can I ship my library's binaries in a cross-platform JAR ? =
-
-You sure can ! BridJ provides a seamless cross-platform binaries JAR extraction mechanism, which it uses for its own needs.
-
-For detailed information about embedded libraries, please read [LibrariesLookup Libraries Lookup].
-
-= Can I build BridJ from sources ? =
+== Can I build BridJ from sources ? ==
 
 Sure, please read [Build].
 
-= What is BridJ's license ? =
+== What is BridJ's license ? ==
 
 BridJ is [CreditsAndLicense dual-licensed under a very liberal BSD license and the very liberal Apache 2.0 license].
 
-= How can I help ? =
+== Where can I get support for BridJ ? ==
+
+On [http://groups.google.com/group/nativelibs4java NativeLibs4Java's mailing-list].
+
+
+== How can I help ? ==
 
 Please read [HowToHelp].
 
-= What are BridJ's runtime dependencies ? =
+== What are BridJ's runtime dependencies ? ==
 
 BridJ is released as a self-contained JAR.
 
@@ -162,17 +106,9 @@ However, it includes a copy of the [http://asm.ow2.org/ ASM] library and its nat
 
 More details here : [CreditsAndLicense].
 
-= How do I bind C / C++ function / struct / class / type XXX with BridJ ? =
+== How is BridJ different from... ==
 
-Just paste your C header [http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp into JNAerator], choose BridJ as runtime and click on JNAerate.
-
-= Where can I get support for BridJ ? =
-
-On [http://groups.google.com/group/nativelibs4java NativeLibs4Java's mailing-list].
-
-= How is BridJ different from... =
-
-== JNA ==
+=== JNA ===
 
 Things BridJ aims at doing better than JNA :
   * BridJ is BSD-licensed (while JNA is LGPL)
@@ -206,7 +142,7 @@ Where JNA wins over BridJ :
   * BridJ interfaces are harder to write by hand than JNA's. But [http://jnaerator.googlecode.com/ JNAerator] supports both JNA and BridJ outputs (with BridJ output being less verbose because there's only one way to bind things), so you won't need to write any interface by hand anyway.
   * JNA has tons of working examples
 
-== SWIG == 
+=== SWIG === 
 
 BridJ is better because :
   * it only requires you to build your Java program, whereas SWIG requires a painful native build on every target platform
@@ -218,6 +154,77 @@ SWIG is better because :
   * it has support for STL types (std::string, std::vector...)
   * it's more mature and stable
 
-= Who is using BridJ ? =
+== Who is using BridJ ? ==
 
 Please read [WhoUsesBridJ Who's using BridJ].
+
+= Usage =
+
+== How do I bind C / C++ function / struct / class / type XXX with BridJ ? ==
+
+Just paste your C header [http://jnaerator.sourceforge.net/webstart/JNAerator/JNAeratorStudio.jnlp into JNAerator], choose BridJ as runtime and click on JNAerate.
+
+== Can I ship my library's binaries in a cross-platform JAR ? ==
+
+You sure can ! BridJ provides a seamless cross-platform binaries JAR extraction mechanism, which it uses for its own needs.
+
+For detailed information about embedded libraries, please read [LibrariesLookup Libraries Lookup].
+
+== How can I trace/log the native calls ? ==
+
+You can set the `-Dbridj.logCalls=true` property or the BRIDJ_LOG_CALLS=1 environment variable.
+
+In this log mode :
+  * only the Java method will be logged (no arguments nor return value)
+  * direct calls will be disabled (those wired with optimized assembler glue), so performance might be degraded a bit
+
+== How to specify different calling conventions for different platforms ? ==
+
+Short answer is : you don't need to.
+
+Only Windows x86 has different calling conventions, so `@Convention` annotations will typically be ignored silently on other platforms.
+
+== How to I check for errno / `GetLastError()` ? ==
+
+Simply declare that your function throws [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/LastError.html LastError], that's it !
+
+You'll get exceptions soon enough ;-)
+
+= Troubleshooting =
+
+== BridJ hangs with 100% CPU usage ! ==
+
+If you're on Windows x86 (or on 64 bits windows in a 32 bits JVM), this is typically a case of bad calling convention being used for a native function or callback binding. 
+Please triple-check the calling convention (could it be __stdcall ?) and add a proper `@Convention(Convention.Style.xxx)` annotation.
+
+== How do I debug an EXCEPTION_ACCESS_VIOLATION crash ? ==
+
+This crash indicates that the program tried to access memory it wasn't supposed to access (for instance someone read at index 100 in an array of 10 elements).
+
+The tricky part here is that this kind of errors usually does not surface immediately : the crash will typically occur in later calls, giving false leads on where the error actually occurred.
+
+The only reliable way to debug such errors is to make use of a native debugger. On Windows, Visual C++ comes with a very nice debugger and is available for free in its Express edition (under some conditions). 
+
+To debug your crash with Visual C++, you should compile your native library in debug mode if possible, then run the java process with the debugger (or attach a debugger to it before any native call is performed). You'll want to turn as many debug checks on as possible in the [http://msdn.microsoft.com/en-us/library/x85tt0dd.aspx debugger settings].
+
+Also, it will be easier to set the full path to the debug version of your DLL using a manual path override : if your library is named `MyLib` in BridJ (the value inside the `@Library("MyLib")` annotation), you can :
+  * Set the path in the run properties dialog with the following environment variable : 
+{{{
+    BRIDJ_MYLIB_LIBRARY=c:\...\MyProject\Debug\MyLib.dll
+}}}
+  * Or add the following property argument to your java process command-line : 
+{{{
+    "-Dbridj.MyLib.library=c:\...\MyLib.dll"
+}}}
+You can then check which exact version of your DLL was picked by BridJ by scanning through Visual C++'s "Modules" window.
+
+As far as BridJ is concerned, you may try turning the direct mode off with BRIDJ_DIRECT=0 or -Dbridj.direct=false and see if the issue still happens.
+
+A last option would be to turn BridJ's "protected" mode on, but right now you'd have to [Build recompile it from sources] and uncomment the `#define ENABLE_PROTECTED_MODE` directive in `Exceptions.h`. Note that protected mode is currently slow and unstable which is why it's not enabled by default ;-). 
+
+== How do I debug a "LoadLibrary : The specified module could not be found" error ? ==
+
+If BridJ fails to load a library, it can be that :
+  * you're trying to load a 64 bits on a 32 bits platform, or vice-versa (please check which version `java -version` yields : if it does not say it's 64 bits, it means it's 32 bits)
+  * it didn't find the exact path you specified
+  * it didn't find a DLL dependency of the library you're trying to load (please open your DLL with [http://www.dependencywalker.com/ Dependency Walker] and make sure all its dependencies are resolved and in the path)
