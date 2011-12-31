@@ -222,7 +222,7 @@ As far as BridJ is concerned, you may try turning the direct mode off with BRIDJ
 
 A last option would be to turn BridJ's "protected" mode on, but right now you'd have to [Build recompile it from sources] and uncomment the `#define ENABLE_PROTECTED_MODE` directive in `Exceptions.h`. Note that protected mode is currently slow and unstable which is why it's not enabled by default ;-). 
 
-== How do I debug a "LoadLibrary : The specified module could not be found" error ? ==
+== How do I debug a `LoadLibrary : The specified module could not be found` error ? ==
 
 If BridJ fails to load a library, it can be that :
   * you're trying to load a 64 bits on a 32 bits platform, or vice-versa (please check which version `java -version` yields : if it does not say it's 64 bits, it means it's 32 bits)
