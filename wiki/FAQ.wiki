@@ -227,3 +227,11 @@ If BridJ fails to load a library, it can be that :
   * you're trying to load a 64 bits on a 32 bits platform, or vice-versa (please check which version `java -version` yields : if it does not say it's 64 bits, it means it's 32 bits)
   * it didn't find the exact path you specified
   * it didn't find a DLL dependency of the library you're trying to load (please open your DLL with [http://www.dependencywalker.com/ Dependency Walker] and make sure all its dependencies are resolved and in the path)
+
+== I found a bug in BridJ ! Where do I report it ? ==
+
+Getting lots of bug reports is crucial to making BridJ better, so we'd like to encourage you to file issues as you find them without worrying too much about the contents : it's often better for us to have an incomplete report than no report at all, and anyway we'll let you know very politely if your issue comes from a misuse rather than a bug in BridJ.
+
+Here's the issue tracker : [https://github.com/ochafik/nativelibs4java/issues NativeLibs4Java's Issues on GitHub].
+
+And here's a guide on [SubmittingBugs How to Submit Bugs].
