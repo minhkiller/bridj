@@ -132,23 +132,23 @@ for (int v : p)
     * No such thing as Structure.ByReference vs. Structure.ByValue : if a function accepts a pointer to MyStruct, it's gonna be `f(Pointer<MyStruct> s)`, if it accepts a MyStruct by value it will be `f(MyStruct s)`. Simple.
     * Wanna cast a pointer to a function pointer ? `ptr.as(MyFunctionPointer.class)`.
   * Pervasive multiple endianness support : if you retrieved a pointer to some GPU-filled memory and you know the GPU is little-endian while your CPU is big-endian, you can just call `myPtr.order(ByteOrder.LITTLE_ENDIAN)`. You can then retrieve data from it as usual, and even cast to a struct pointer : it will just work as intended.
+  * BridJ has better [http://jnaerator.googlecode.com/ JNAerator] support (in particular, the experimental `-convertBodies` option will convert function bodies from C/C++ into Java/BridJ code !), so you won't need to write any interface by hand.
 
-Where JNA wins over BridJ :
+JNA's advantages over BridJ :
   * BridJ doesn't handle structs by value in function calls yet (neither in arguments nor in return value). This is being worked on, though.
   * JNA is Java 1.4 compatible (while BridJ requires Java 1.5+)
   * JNA is mature and stable, used by *many* projects
   * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86/amd64 for now)
-  * BridJ interfaces are harder to write by hand than JNA's. But [http://jnaerator.googlecode.com/ JNAerator] supports both JNA and BridJ outputs (with BridJ output being less verbose because there's only one way to bind things), so you won't need to write any interface by hand anyway.
   * JNA has tons of working examples
 
 === SWIG === 
 
-BridJ is better because :
+BridJ's advantages :
   * it only requires you to build your Java program, whereas SWIG requires a painful native build on every target platform
   * the resulting API is generally nicer looking, without any manual configuration involved
   * you work directly with the original C/C++ headers, no need to write special header as with SWIG
 
-SWIG is better because :
+SWIG's advantages :
   * it's C++ support is much more solid : once it compiles, you're pretty sure it's gonna work (with BridJ, errors will show up at runtime, typically at startup)
   * it has support for STL types (std::string, std::vector...)
   * it's more mature and stable
