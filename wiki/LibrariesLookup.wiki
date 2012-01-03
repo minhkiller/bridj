@@ -67,7 +67,7 @@ Platform names are as follows :
 || `darwin_universal` || MacOS X (x86 / x64 / ppc) || `lib/darwin_universal/libXyz.dylib` ||
 || `iphoneos_arm32_arm` || iOS (iPhone / iPad) arm || `lib/iphoneos_arm32_arm/libXyz.dylib` ||
 
-Please see [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/src/main/resources/org/bridj/lib BridJ's sources] for an up-to-date list of platform names.
+Please see [https://github.com/ochafik/nativelibs4java/tree/master/libraries/BridJ/src/main/resources/org/bridj/lib BridJ's sources] for an up-to-date list of platform names.
 
 The exception is Android, where the only embedded resource root is 'lib' :
 || Platform name || Plarform description || Example resource path for library `Xyz` ||
