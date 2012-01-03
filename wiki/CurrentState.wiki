@@ -3,7 +3,7 @@
 #sidebar TOCWiki
 <wiki:toc max_depth="3" />
 
-Display [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Runtime/BridJ/CHANGELOG the CHANGELOG]
+Display [https://github.com/ochafik/nativelibs4java/tree/master/libraries/BridJ/CHANGELOG the CHANGELOG]
 
 = Supported Platforms =
 
