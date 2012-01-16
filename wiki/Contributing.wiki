@@ -1,0 +1,18 @@
+#summary How to contribute to BridJ
+
+Contributing to BridJ
+
+BridJ now has [CreditsAndLicense a few occasional contributors] as well as [https://github.com/ochafik/nativelibs4java/issues many bug reporters]. 
+
+Any further help will be highly welcome !
+
+You can help in many ways :
+  * report bugs
+  * suggest / write documentation
+  * investigate [https://github.com/ochafik/nativelibs4java/issues open bugs] 
+  * submit patches / pull requests for fixes or new features
+  * help users on the [http://groups.google.com/group/nativelibs4java mailing list] or on StackOverflow
+ 
+If you wish to contribute code, you'll want to have a look at the [Build] page.
+
+In any case if you don't know where to start, please ask on the [http://groups.google.com/group/nativelibs4java mailing list].
