@@ -198,7 +198,9 @@ Please triple-check the calling convention (could it be __stdcall ?) and add a p
 
 == How do I debug an EXCEPTION_ACCESS_VIOLATION crash ? ==
 
-This crash indicates that the program tried to access memory it wasn't supposed to access (for instance someone read at index 100 in an array of 10 elements).
+This crash indicates that the program tried to access memory it wasn't supposed to access (for instance someone read at index 100 in an array of 10 elements). 
+
+It may also be caused by an invalid calling convention being used, see previous FAQ item)
 
 The tricky part here is that this kind of errors usually does not surface immediately : the crash will typically occur in later calls, giving false leads on where the error actually occurred.
 
