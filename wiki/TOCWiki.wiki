@@ -20,6 +20,7 @@
       * [CPlusPlus C++]
       * [COM]
   * Hands On
+    * [Contributing]
     * [SubmittingBugs How to Submit Bugs]
     * [Source]
     * [Build]
