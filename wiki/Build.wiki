@@ -80,7 +80,7 @@ sh CleanNative ; sh BuildNative
 }}}
   * On Windows (you can double-click on both scripts from Windows explorer instead of using the command line) :
   {{{
-cd Runtime\BridJ
+cd BridJ
 CleanNative
 BuildNative
 }}}
