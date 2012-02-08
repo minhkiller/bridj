@@ -10,6 +10,7 @@ BridJ is built as part of the NativeLibs4Java sub-projects.
 If the following steps do not succeed, please read the next section "Full build"
   * First, [http://maven.apache.org/download.html install Maven 3.x]
   * Fork and/or clone the [https://github.com/ochafik/nativelibs4java NativeLibs4Java Github repository]
+    Please make sure you've set the git http://help.github.com/line-endings/ autocrlf option to true]
   * Go to the libraries/BridJ folder :
     {{{
 cd nativelibs4java
