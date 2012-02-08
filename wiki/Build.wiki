@@ -9,8 +9,11 @@ BridJ is built as part of the NativeLibs4Java sub-projects.
 
 If the following steps do not succeed, please read the next section "Full build"
   * First, [http://maven.apache.org/download.html install Maven 3.x]
+  * Please make sure you've set the git [http://help.github.com/line-endings/ autocrlf option] to true :
+{{{
+git config --global core.autocrlf true
+}}}
   * Fork and/or clone the [https://github.com/ochafik/nativelibs4java NativeLibs4Java Github repository]
-    Please make sure you've set the git http://help.github.com/line-endings/ autocrlf option to true]
   * Go to the libraries/BridJ folder :
     {{{
 cd nativelibs4java
@@ -30,6 +33,10 @@ It will take some time, so you'll want to have a coffee during the build (if you
 Subsequent builds will be much quicker (see next section), and can be launched from your Maven-aware IDE of choice.
 
   * First, [http://maven.apache.org/download.html install Maven 3.x]
+  * Please make sure you've set the git [http://help.github.com/line-endings/ autocrlf option] to true :
+{{{
+git config --global core.autocrlf true
+}}}
   * Fork and/or clone the [https://github.com/ochafik/nativelibs4java NativeLibs4Java Github repository]
   * Go to the libraries folder :
     {{{
