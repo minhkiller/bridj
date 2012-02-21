@@ -25,7 +25,7 @@ Olivier Chafik (author of [http://code.google.com/p/bridj/ BridJ], [http://code.
 = Generous donors =
 
   * Matthew S. (Paypal donation)
-  * Roger Pack (Paypal donation)
+  * [http://freeldssheetmusic.org/ Roger Pack] (Paypal donation)
   * Tishampati Dhar (Paypal donation)
   * NeZetiC (donation of a Sun Ultra 5 computer so I can work on the BridJ+dyncall Sparc port)
 
