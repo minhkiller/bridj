@@ -68,8 +68,10 @@ public static class S extends StructObject {
 	}
 };
 
+import static org.bridj.Pointer.*;
+
 S myStruct = new S(); // maybe chained with setters : new S().a(10).b(12).c(55);
-Pointer<S> pS = Pointer.pointerTo(myStruct);
+Pointer<S> pS = pointerTo(myStruct);
 funVal(myStruct);
 funVal(pS.get()); // pointer is a reified generic class, so get() returns a correct S instance
 }}}
