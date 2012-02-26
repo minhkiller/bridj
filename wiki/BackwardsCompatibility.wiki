@@ -1,4 +1,6 @@
 #summary Notes about backwards compatibility of BridJ
+#sidebar TOCWiki
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
@@ -18,11 +20,33 @@ If the same issue was ever to come up with another dependency of BridJ, please [
 
 In order to improve the usability of BridJ's API (and sometimes to support new features), some backwards-incompatible changes have been made in past versions and might be done in future ones.
 
-An example of such breaking change is the methods `Pointer.getInt(long)` (respectively `getLong`, `getShort`...) that were renamed to `Pointer.getIntAtOffset(long)` (resp. `getLongAtOffset`, `getShortAtOffset`...). This change was done to avoid inevitable confusion between `Pointer<Integer>.get(long)` which argument is expressed in number of integers, and `Pointer<Integer>.getInt(long)` which argument was expressed in number of bytes : this behaviour is now explicit in the name of the new `Pointer<Integer>.getIntAtOffset(long)`, avoiding lots of head-scratching from future users and cutting support costs down.
+== Example of past API breaking change ==
+
+An example of such breaking change is the methods `Pointer.getInt(long)` (respectively `getLong`, `getShort`...) that were renamed to `Pointer.getIntAtOffset(long)` (resp. `getLongAtOffset`, `getShortAtOffset`...). 
+
+This change was done to avoid inevitable confusion between `Pointer<Integer>.get(long)` which argument is expressed in number of integers, and `Pointer<Integer>.getInt(long)` which argument was expressed in number of bytes : this behaviour is now explicit in the name of the new `Pointer<Integer>.getIntAtOffset(long)`, avoiding lots of head-scratching from future users and cutting support costs down.
+
+== A Maven-based workaround ==
 
 These backwards-incompatible changes can however become a huge issue for users whose libraries are likely to coexist in the same applications with other BridJ-dependent libraries that use different versions of BridJ.
 
 In these cases, we currently advise to use the [http://maven.apache.org/plugins/maven-shade-plugin/index.html Maven Shade Plugin] to relocate BridJ's packages to a version-dependent name, using configuration such as the following :
 {{{
-
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>1.4</version>
+				<configuration>
+					<relocations>
+						<relocation>
+							<pattern>org.bridj</pattern>
+							<shadedPattern>org.bridj.v_0_7_0</shadedPattern>
+						</relocation>
+					</relocations>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 }}}
