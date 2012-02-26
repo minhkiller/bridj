@@ -19,6 +19,7 @@
       * [CLanguage C]
       * [CPlusPlus C++]
       * [COM]
+    * [BackwardsCompatibility]
   * Hands On
     * [Contributing]
     * [SubmittingBugs How to Submit Bugs]
