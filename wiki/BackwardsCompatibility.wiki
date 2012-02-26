@@ -44,6 +44,10 @@ In these cases, we currently advise to use the [http://maven.apache.org/plugins/
 							<pattern>org.bridj</pattern>
 							<shadedPattern>org.bridj.v_0_7_0</shadedPattern>
 						</relocation>
+						<relocation>
+							<pattern>org.ochafik</pattern>
+							<shadedPattern>org.bridj.v_0_7_0</shadedPattern>
+						</relocation>
 					</relocations>
 				</configuration>
 			</plugin>
