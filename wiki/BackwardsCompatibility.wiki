@@ -26,11 +26,26 @@ An example of such breaking change is the methods `Pointer.getInt(long)` (respec
 
 This change was done to avoid inevitable confusion between `Pointer<Integer>.get(long)` which argument is expressed in number of integers, and `Pointer<Integer>.getInt(long)` which argument was expressed in number of bytes : this behaviour is now explicit in the name of the new `Pointer<Integer>.getIntAtOffset(long)`, avoiding lots of head-scratching from future users and cutting support costs down.
 
-== A Maven-based workaround ==
+= What if you need backwards-compatibility from BridJ ? =
 
 These backwards-incompatible changes can however become a huge issue for users whose libraries are likely to coexist in the same applications with other BridJ-dependent libraries that use different versions of BridJ.
 
-In these cases, we currently advise to use the [http://maven.apache.org/plugins/maven-shade-plugin/index.html Maven Shade Plugin] to relocate BridJ's packages to a version-dependent name, using configuration such as the following :
+== Use BridJ's version-specific repackaged artifact ==
+
+BridJ now has a version-specific packaged artifact available with the "version-specific-packages" classifier :
+{{{
+  <dependency>
+        <groupId>com.nativelibs4java</groupId>
+        <artifactId>bridj</artifactId>
+        <version>0.7-SNAPSHOT</version>
+        <classifier>version-specific-packages</classifier>
+  </dependency>
+}}}
+In this artifact, the `org.bridj` package is renamed to `org.bridj.v0_7` : this requires an update of all the import clauses in client source code but guarantees there won't be any version collision with other versions of BridJ in the classpath.
+
+== Use a Maven-based workaround ==
+
+If you need a different classifier from BridJ (say, "c-only"), we advise you to relocate BridJ's packages yourself with the [http://maven.apache.org/plugins/maven-shade-plugin/index.html Maven Shade Plugin] using a configuration such as the following :
 {{{
 	<build>
 		<plugins>
@@ -42,11 +57,7 @@ In these cases, we currently advise to use the [http://maven.apache.org/plugins/
 					<relocations>
 						<relocation>
 							<pattern>org.bridj</pattern>
-							<shadedPattern>org.bridj.v_0_7_0</shadedPattern>
-						</relocation>
-						<relocation>
-							<pattern>org.ochafik</pattern>
-							<shadedPattern>org.bridj.v_0_7_0</shadedPattern>
+							<shadedPattern>org.bridj.v0_7</shadedPattern>
 						</relocation>
 					</relocations>
 				</configuration>
