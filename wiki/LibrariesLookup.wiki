@@ -49,7 +49,7 @@ Details on each part of this path are in the following sub-sections :
 
 Predefined embedded resource roots are `lib` and `org/bridj/lib`.
 
-Additional resource roots can be added with [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/Platform.html#addEmbeddedLibraryResourceRoot(java.lang.String) BridJ.addEmbeddedLibraryResourceRoot].
+Additional resource roots can be added with [http://nativelibs4java.sourceforge.net/bridj/api/stable/org/bridj/Platform.html#addEmbeddedLibraryResourceRoot(java.lang.String) Platform.addEmbeddedLibraryResourceRoot].
 
 == Binary names ==
 
