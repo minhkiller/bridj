@@ -32,7 +32,9 @@ These backwards-incompatible changes can however become a huge issue for users w
 
 == Use BridJ's version-specific repackaged artifact ==
 
-BridJ now has a version-specific packaged artifact available with the "version-specific-packages" classifier :
+*This is a feature still in development, should be stable by the release of 0.7*.
+
+BridJ now has an experimental version-specific packaged artifact available with the "version-specific-packages" classifier :
 {{{
   <dependency>
         <groupId>com.nativelibs4java</groupId>
