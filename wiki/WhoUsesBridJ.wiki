@@ -19,6 +19,12 @@ It uses BridJ in its 'openimaj-serial-driver' and 'core-video-capture' modules.
 
 It uses BridJ to leverage the native install of [http://www.tcpdump.org/ libpcap] or [http://www.winpcap.org/ WinPCap].
 
+== GeoTools ==
+
+[http://www.geotools.org/ GeoTools] is an open source Java library that provides tools for geospatial data.
+
+It uses BridJ to bind the [http://www.gdal.org/ogr/ OGR] library.
+
 == falplayer-android-j ==
 
 [https://github.com/atsushieno/falplayer-android-j falplayer-android-j] (MIT-licensed) is the Java version of [https://github.com/atsushieno Atsushi Eno]'s Ogg Vorbis music player for Android (see original version : [https://github.com/atsushieno/falplayer-android falplayer]).
