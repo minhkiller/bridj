@@ -19,7 +19,7 @@ It uses BridJ in its 'openimaj-serial-driver' and 'core-video-capture' modules.
 
 It uses BridJ to leverage the native install of [http://www.tcpdump.org/ libpcap] or [http://www.winpcap.org/ WinPCap].
 
-== GeoTools ==
+== `GeoTools` ==
 
 [http://www.geotools.org/ GeoTools] is an open source Java library that provides tools for geospatial data.
 
