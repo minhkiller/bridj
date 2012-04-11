@@ -18,7 +18,7 @@ Olivier Chafik (author of [http://code.google.com/p/bridj/ BridJ], [http://code.
   * [http://bbboblog.blogspot.com/ Bob Boothby] : Mandelbrot demo in JavaCL
   * Jeff Palmer : moderation of [http://groups.google.com/group/nativelibs4java the mailing list] and support to JavaCL users
   * [http://www.ok.ctrl.titech.ac.jp/~saudet/ Samuel Audet] : support to JavaCL users
-  * Countless [github.com/ochafik/nativelibs4java/issues bug reporters], whose energy and patience are a great motivation !
+  * Countless [http://github.com/ochafik/nativelibs4java/issues bug reporters], whose energy and patience are a great motivation !
 
 [HowToHelp Wonder how to help ? Read this page !]
 
