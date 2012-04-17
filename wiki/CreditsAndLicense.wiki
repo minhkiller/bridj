@@ -11,7 +11,7 @@ Olivier Chafik (author of [http://code.google.com/p/bridj/ BridJ], [http://code.
 
 = Contributors =
   
-  * [http://twitter.com/remiemonet Rémi Emonet] : enhancements in BridJ's GCC demangler
+  * [http://twitter.com/remiemonet Rémi Emonet] : many enhancements in BridJ's GCC demangler
   * [http://kazocsaba.blogspot.com/ Kazó Csaba] : bug reports + patches for JavaCL (kernel binaries, reduction utilities...)
   * Andrei Sochirca : intense bug reporting and many suggestions that drove [https://github.com/ochafik/nativelibs4java/tree/master/libraries/BridJ/CHANGELOG# release 0.4.1] of BridJ
   * [https://github.com/atsushieno Atsushi Eno] : testing and many patch proposals that helped support BridJ on Android
