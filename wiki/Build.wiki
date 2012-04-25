@@ -86,6 +86,7 @@ Then you can build BridJ's shared library (and its test library) :
 cd BridJ
 sh CleanNative ; sh BuildNative
 }}}
+(to build the native library in debug mode, use : `DEBUG=1 ./CleanNative ; DEBUG=1 ./BuildNative`)
   * On Windows (you can double-click on both scripts from Windows explorer instead of using the command line) :
   {{{
 cd BridJ
@@ -100,6 +101,11 @@ If it's not a platform already supported by BridJ, you must :
 To run the tests on your new binary :
 {{{
 mvn test
+}}}
+
+And finally you can install the updated BridJ library locally to use it from depending projects :
+{{{
+mvn install
 }}}
 
 = About BridJ's source code =
