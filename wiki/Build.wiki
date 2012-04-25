@@ -68,7 +68,16 @@ mvn clean install
 
 = Building BridJ's native library =
 
+== Patch dyncall ==
+
 BridJ depends on [http://dyncall.org Dyncall], so you'll need to check it out and apply some BridJ-specific patches (beware: DYNCALL_HOME must point to the dyncall directory inside the dyncall directory the following command checks out) :
+{{{
+cd BridJ
+admin/checkout_and_patch_dyncall.sh dyncall
+export DYNCALL_HOME=dyncall
+}}}
+
+Alternatively, you can do things more manually if the `checkout_and_patch_dyncall.sh` script doesn't work for you :
 {{{
 svn co https://dyncall.org/svn/dyncall/trunk dyncall
 export DYNCALL_HOME=pathToDyncall/dyncall
@@ -79,6 +88,8 @@ You may need to clean the patch up for it to apply correctly. Also note that dur
 {{{
 git checkout pathToBridJ/src/main/cpp/bridj/dyncall.patch
 }}}
+
+== Build the library ==
 
 Then you can build BridJ's shared library (and its test library) :
   * On Unix/Linux/MacOS X :
