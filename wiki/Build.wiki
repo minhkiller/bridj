@@ -73,8 +73,8 @@ mvn install -DskipTests
 = Rebuilding BridJ's native library =
 
 You'll need to rebuild BridJ's native libraries if :
-* You changed any source file in `BridJ/src/main/cpp/bridj` or `BridJ/src/test/cpp/test`
-* You're trying to run BridJ on an unsupported platform
+  * You changed any source file in `BridJ/src/main/cpp/bridj` or `BridJ/src/test/cpp/test`
+  * You're trying to run BridJ on an unsupported platform
 
 In the latter case, be brave but things should go fine in _most_ cases, thanks to the extreme portability of the [http://dyncall.org/ Dyncall] library (which BridJ uses for it's low-level FFI and for its pretty cool build scripts).
 
