@@ -7,7 +7,9 @@ BridJ is built as part of the NativeLibs4Java sub-projects.
 
 = Build BridJ only =
 
-This section will guide you through the build of BridJ. If you start hacking it, you might also want to read the next sections about how to build other NativeLibs4Java projects that depend on BridJ, and how to rebuild BridJ's native libraries.
+This section will guide you through the build of BridJ. 
+
+If you start hacking it (wanna fix [https://github.com/ochafik/nativelibs4java/issues?labels=BridJ some bugs] ?), you might also want to read the next sections about how to build other NativeLibs4Java projects that depend on BridJ, and how to rebuild BridJ's native libraries.
 
   * First, [http://maven.apache.org/download.html install Maven 3.x]
   * Please make sure you've set the git [http://help.github.com/line-endings/ autocrlf option] to true :
