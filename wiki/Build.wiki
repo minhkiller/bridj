@@ -52,7 +52,7 @@ The good news is that some of these projects are in the same source tree as Brid
 If it is the first time you ever build all of NativeLibs4Java's projects (including JNAerator, JavaCL, ScalaCL...), this might take can take up to 15 minutes (enough time to dring a coffee or two), since Maven has to download (and cache) lots of stuff (subsequent builds will be much quicker).
 
   * First, [http://maven.apache.org/download.html install Maven 3.x]
-  * Install JOGL on your system as [http://code.google.com/p/javacl/wiki/Build#Installing_JOGL_2.x described on JavaCL's wiki]
+  * Install JOGL on your system as http://code.google.com/p/javacl/wiki/Usage#Jogamp_JOGL described on JavaCL's wiki]
   * Please make sure you've set the git [http://help.github.com/line-endings/ autocrlf option] to true :
 {{{
 git config --global core.autocrlf true
