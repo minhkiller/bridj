@@ -89,13 +89,13 @@ Please read the [https://github.com/ochafik/nativelibs4java/blob/master/librarie
 
 Binaries are currently available and routinely tested for the following platforms :
   * Windows (x86, x64)
-  * Linux (x86, x64)
+  * Linux (x86, x64, arm32)
   * Mac OS X (x86, x64, ppc)
   * Solaris 10 (x86... soon x64 and sparc)
   * Android 3.0 (armv5)
   * iOS (arm) on jailbroken iPhones (in progress...)
 
-... with plans for FreeBSD ([CreditsAndLicense help and / or test hardward welcome])
+([CreditsAndLicense help and / or test hardward welcome] to help with other platforms)
 
 == Can I build BridJ from sources ? ==
 
