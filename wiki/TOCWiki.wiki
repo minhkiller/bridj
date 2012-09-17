@@ -12,6 +12,7 @@
   * Documentation
     * [Design]
     * [Pointers]
+    * [Callbacks]
     * [LibrariesLookup Libraries Lookup]
     * [TypeMapping]
     * [BridJAndScala]
