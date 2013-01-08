@@ -25,7 +25,7 @@ New releases are deployed on [http://search.maven.org/ Maven Central], so you do
   <dependency>
 	<groupId>com.nativelibs4java</groupId>
 	<artifactId>bridj</artifactId>
-	<version>0.6.1</version>
+	<version>0.6.2</version>
   </dependency>
 </dependencies>
 }}}
@@ -48,7 +48,7 @@ If you wish to use a snapshot :
   <dependency>
 	<groupId>com.nativelibs4java</groupId>
 	<artifactId>bridj</artifactId>
-	<version>0.6.2-SNAPSHOT</version>
+	<version>0.6.3-SNAPSHOT</version>
   </dependency>
 </dependencies>
 }}}
@@ -64,7 +64,7 @@ class Project(info: ProjectInfo) extends DefaultProject(info)
   // val sonatypeSnapshotsRepo = "Sonatype OSS Snapshots Repository" at "http://oss.sonatype.org/content/groups/public"
   // Repository for old releases <= 0.6
   // val nativelibs4javaRepo = "NativeLibs4Java Repository" at "http://nativelibs4java.sourceforge.net/maven/"
-  val bridj = "com.nativelibs4java" % "bridj" % "0.6.1"
+  val bridj = "com.nativelibs4java" % "bridj" % "0.6.2"
 }
 }}}
 
@@ -72,7 +72,7 @@ class Project(info: ProjectInfo) extends DefaultProject(info)
 
 If BridJ is too heavy for you, there are pre-packaged specialized subsets of BridJ.
 
-You can download them manually from the [http://repo1.maven.org/maven2/com/nativelibs4java/bridj/0.6.1/ Maven repository] or specify the correct _classifier_ in the Maven dependency (cf. next section).
+You can download them manually from the [http://repo1.maven.org/maven2/com/nativelibs4java/bridj/0.6.2/ Maven repository] or specify the correct _classifier_ in the Maven dependency (cf. next section).
 
 === List of prepackaged subsets ===
 
