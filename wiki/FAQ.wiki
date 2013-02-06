@@ -196,6 +196,12 @@ You'll get exceptions soon enough ;-)
 If you're on Windows x86 (or on 64 bits windows in a 32 bits JVM), this is typically a case of bad calling convention being used for a native function or callback binding. 
 Please triple-check the calling convention (could it be __stdcall ?) and add a proper `@Convention(Convention.Style.xxx)` annotation.
 
+== Segmentation faults when using callbacks? ==
+
+You need to keep strong references to callbacks, otherwise they'll be garbage-collected and the native code will crash when trying to call them.
+
+You can use [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/BridJ.html#protectFromGC(T) BridJ.protectFromGC] to do that, or use your own strong references with finer-grained lifespan.
+
 == How do I debug an EXCEPTION_ACCESS_VIOLATION crash ? ==
 
 This crash indicates that the program tried to access memory it wasn't supposed to access (for instance someone read at index 100 in an array of 10 elements). 
