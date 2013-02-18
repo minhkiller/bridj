@@ -93,7 +93,6 @@ Binaries are currently available and routinely tested for the following platform
   * Mac OS X (x86, x64, ppc)
   * Solaris 10 (x86... soon x64 and sparc)
   * Android 3.0 (armv5)
-  * iOS (arm) on jailbroken iPhones (in progress...)
 
 ([CreditsAndLicense help and / or test hardward welcome] to help with other platforms)
 
@@ -138,7 +137,7 @@ JNA's advantages over BridJ :
   * BridJ doesn't handle structs by value in function calls yet (neither in arguments nor in return value). This is being worked on, though.
   * JNA is Java 1.4 compatible (while BridJ requires Java 1.5+)
   * JNA is mature and stable, used by *many* projects
-  * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86/amd64 for now)
+  * BridJ supports less platforms (Windows 32/64, MacOS X Universal, Linux x86/amd64/armhf/armel for now)
   * JNA has tons of working examples
 
 === SWIG === 
