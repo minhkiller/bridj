@@ -89,7 +89,7 @@ Please read the [https://github.com/ochafik/nativelibs4java/blob/master/librarie
 
 Binaries are currently available and routinely tested for the following platforms :
   * Windows (x86, x64)
-  * Linux (x86, x64, arm32)
+  * Linux (x86, x64, armhf, armel)
   * Mac OS X (x86, x64, ppc)
   * Solaris 10 (x86... soon x64 and sparc)
   * Android 3.0 (armv5)
