@@ -5,7 +5,19 @@ Please keep in mind that [CreditsAndLicense BridJ is licensed under the BSD lice
 
 Here are some of the projects known to use BridJ internally (please post [http://groups.google.com/group/nativelibs4java on the mailing list] if you'd like your project to be listed here) :
 
-= Released Projects =
+== StormMQ Myxi ==
+
+" [http://stormmq.com/ StormMQ Myxi] is the world's first Message Queue as a Service using AMQP 1-0. 
+
+We decided to use BridJ as it is the only professionally-supported, efficient product available today to seamlessly integrate essential C functionality with Java. Olivier Chafik, the main developer, provides first-class support and deep technical understanding. 
+
+We've successfully mapped gnu libc and libpthread to allow us more fidelity and functionality on linux and work round Java's limitations with memory mapped files. "
+
+== directx4java ==
+
+[http://code.google.com/p/directx4java/ DirectX4Java] is a port of DirectX 10 and 11 for Java (MIT-licensed) written by [https://www.masterbranch.com/developer/evandro.millian Evandro Millian].
+
+It recently switched from JNA to BridJ to power its low-level COM interoperability.
 
 == jlibav ==
 
@@ -60,19 +72,3 @@ It uses JNA by default but has a BridJ port available as the javacl-bridj Maven 
 [http://code.google.com/p/scalacl/ ScalaCL] (BSD-licensed) is an optimizing Scala compiler plugin + GPU-backed collections.
 
 It uses the BridJ port of JavaCL.
-
-= Upcoming Releases =
-
-== StormMQ Myxi ==
-
-" [http://stormmq.com/ StormMQ Myxi] is the world's first Message Queue as a Service using AMQP 1-0. 
-
-We decided to use BridJ as it is the only professionally-supported, efficient product available today to seamlessly integrate essential C functionality with Java. Olivier Chafik, the main developer, provides first-class support and deep technical understanding. 
-
-We've successfully mapped gnu libc and libpthread to allow us more fidelity and functionality on linux and work round Java's limitations with memory mapped files. "
-
-== directx4java ==
-
-[http://code.google.com/p/directx4java/ DirectX4Java] is a port of DirectX 10 and 11 for Java (MIT-licensed) written by [https://www.masterbranch.com/developer/evandro.millian Evandro Millian].
-
-It recently switched from JNA to BridJ to power its low-level COM interoperability.
