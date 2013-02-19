@@ -7,6 +7,12 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 = Released Projects =
 
+== jlibav ==
+
+[http://code.google.com/p/jlibav/ Java wrapper for Libav].
+
+This library provides an access to a big part of the Libav functions via BridJ. It is compatible with all Libav binaries since version 0.7. The goal of this project is to cover complete functionality of the Libav. (Note: the Libav binaries are not a part of this library)
+
 == OpenIMAJ ==
 
 [http://www.openimaj.org/ Open Intelligent Multimedia Analysis toolkit for Java] (OpenIMAJ, BSD-licensed) is a collection of libraries for multimedia analysis, focusing on state of the art and highly scalable (multithreaded + distributed) image analysis and feature extraction. It was written by [mailto:jsh2@ecs.soton.ac.uk Jon Hare], [mailto:ss@ecs.soton.ac.uk Sina Samangooei] and [mailto:dpd@ecs.soton.ac.uk David Dupplaw].
