@@ -13,6 +13,12 @@ Here are some of the projects known to use BridJ internally (please post [http:/
 
 It uses BridJ in its 'openimaj-serial-driver' and 'core-video-capture' modules.
 
+== webcam-capture ==
+
+[http://webcam-capture.sarxos.pl/ sarxos/webcam-capture] is a generic Webcam capture utility (cross-platform, multi-drivers).
+
+It uses BridJ for its built-in drivers.
+
 == BridJ PCap ==
 
 [http://os.smaxe.com/bridj-pcap.html BridJ PCap] (LGPL-licensed) is a library written by [http://andreisochirca.blogspot.com/ Andrei Sochirca] that provides network packet capture functionality.
