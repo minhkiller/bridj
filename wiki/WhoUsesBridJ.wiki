@@ -63,7 +63,7 @@ It features BridJ-powered libvorbisidec / [http://wss.co.uk/pinknoise/tremolo/ T
 
 [http://code.google.com/p/javacl/ JavaCL] (BSD-licensed) is an [http://www.khronos.org/opencl/ OpenCL] bindings library for Java.
 
-It uses JNA by default but has a BridJ port available as the javacl-bridj Maven artifact.
+It switched to BridJ for its low-level bindings (legacy JNA version is still available for download).
 
 [http://code.google.com/p/javacl/wiki/WhoUsesJavaCL JavaCL is also used by other projects], which hence make indirect use of BridJ.
 
