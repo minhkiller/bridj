@@ -19,6 +19,10 @@ It uses BridJ in its 'openimaj-serial-driver' and 'core-video-capture' modules.
 
 It uses BridJ for its built-in drivers.
 
+== hunspell-bridj ==
+
+[https://github.com/thomas-joiner/HunspellBridJ HunspellBridJ]: bindings for the Hunspell library for Java, using BridJ.
+
 == BridJ PCap ==
 
 [http://os.smaxe.com/bridj-pcap.html BridJ PCap] (LGPL-licensed) is a library written by [http://andreisochirca.blogspot.com/ Andrei Sochirca] that provides network packet capture functionality.
