@@ -233,7 +233,10 @@ A last option would be to turn BridJ's "protected" mode on, but right now you'd 
 If BridJ fails to load a library, it can be that :
   * you're trying to load a 64 bits on a 32 bits platform, or vice-versa (please check which version `java -version` yields : if it does not say it's 64 bits, it means it's 32 bits)
   * it didn't find the exact path you specified
-  * it didn't find a DLL dependency of the library you're trying to load (please open your DLL with [http://www.dependencywalker.com/ Dependency Walker] and make sure all its dependencies are resolved and in the path)
+  * it didn't find a DLL dependency of the library you're trying to load (please open your DLL with [http://www.dependencywalker.com/ Dependency Walker] and make sure all its dependencies are resolved and in the path). Dependent libraries must be declared as:
+{{{
+@Library("MainLib", dependencies = { "Dependency1", "Dependency2"... })
+}}}
 
 == I found a bug in BridJ ! Where do I report it ? ==
 
