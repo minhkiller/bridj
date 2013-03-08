@@ -73,3 +73,10 @@ Please see [https://github.com/ochafik/nativelibs4java/tree/master/libraries/Bri
 The exception is Android, where the only embedded resource root is 'lib' :
 || Platform name || Plarform description || Example resource path for library `Xyz` ||
 || `armeabi` || Android arm || `lib/armeabi/libXyz.so` ||
+
+= Dependent libraries =
+
+If a shared library depends on another one, it may be useful to declare the dependencies upfront so that BridK is able to extract and load them before your library:
+{{{
+@Library("MainLib", dependencies = { "Dependency1", "Dependency2"... })
+}}}
