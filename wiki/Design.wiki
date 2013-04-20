@@ -62,3 +62,5 @@ public static native int fTooManyArgs(long a, short b, int c, int d, int e, int 
 == Disabling raw optimizations ==
 
 Set the environment variable `BRIDJ_DIRECT=0` or set the Java property `bridj.direct=false`.
+
+Raw assembly optimizations are also disabled when protected mode is turned on.
