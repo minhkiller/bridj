@@ -2,6 +2,7 @@
   * [https://github.com/ochafik/nativelibs4java/blob/master/libraries/BridJ/CHANGELOG Change Log]
   * Javadoc : [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/Pointer.html Pointer] | [http://nativelibs4java.sourceforge.net/bridj/api/development/ Full]
   * [Download Download / Use]
+  * [http://groups.google.com/group/nativelibs4java/ Forum / Support]
   * [CreditsAndLicense Credits and License]
   * [WhoUsesBridJ Who's using BridJ ?]
   * Project
