@@ -61,6 +61,14 @@ Read more about :
   * [Design]
   * [BridJAndScala Using BridJ with Scala]
 
+== I found a bug in BridJ ! Where do I report it ? ==
+
+Getting lots of bug reports is crucial to making BridJ better, so we'd like to encourage you to file issues as you find them without worrying too much about the contents : it's often better for us to have an incomplete report than no report at all, and anyway we'll let you know very politely if your issue comes from a misuse rather than a bug in BridJ.
+
+Here's the issue tracker : [https://github.com/ochafik/nativelibs4java/issues NativeLibs4Java's Issues on GitHub].
+
+And here's a guide on [SubmittingBugs How to Submit Bugs].
+
 == Why another interop library ? ==
 
 In three words : [Design C++, Performance and Usability]
@@ -237,11 +245,3 @@ If BridJ fails to load a library, it can be that :
 {{{
 @Library("MainLib", dependencies = { "Dependency1", "Dependency2"... })
 }}}
-
-== I found a bug in BridJ ! Where do I report it ? ==
-
-Getting lots of bug reports is crucial to making BridJ better, so we'd like to encourage you to file issues as you find them without worrying too much about the contents : it's often better for us to have an incomplete report than no report at all, and anyway we'll let you know very politely if your issue comes from a misuse rather than a bug in BridJ.
-
-Here's the issue tracker : [https://github.com/ochafik/nativelibs4java/issues NativeLibs4Java's Issues on GitHub].
-
-And here's a guide on [SubmittingBugs How to Submit Bugs].
