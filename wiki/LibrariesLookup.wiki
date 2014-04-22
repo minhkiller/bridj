@@ -64,7 +64,6 @@ Platform names are as follows :
 || `linux_x86` || Linux x86 (32 bits) || `lib/linux_x86/libXyz.so` ||
 || `linux_x64` || Linux amd64 (64 bits) || `lib/linux_x64/libXyz.so` ||
 || `linux_armhf` || Linux arm32 hard-float || `lib/linux_armhf/libXyz.so` ||
-|| `linux_armel` || Linux amd32 soft-float || `lib/linux_armel/libXyz.so` ||
 || `sunos_x86` || Solaris x86 (32 bits) || `lib/sunos_x86/Xyz.so` ||
 || `darwin_universal` || MacOS X (x86 / x64 / ppc) || `lib/darwin_universal/libXyz.dylib` ||
 
