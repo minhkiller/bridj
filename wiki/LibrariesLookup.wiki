@@ -78,5 +78,5 @@ The exception is Android, where the only embedded resource root is 'lib' :
 
 If a shared library depends on another one, it may be useful to declare the dependencies upfront so that BridK is able to extract and load them before your library:
 {{{
-@Library("MainLib", dependencies = { "Dependency1", "Dependency2"... })
+@Library(value = "MainLib", dependencies = { "Dependency1", "Dependency2"... })
 }}}
