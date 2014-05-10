@@ -2,7 +2,7 @@
 #labels Featured
 #sidebar TOCWiki
 
-This page explains how to get and use BridJ using various build management systems and provides platform-specific notes, but you may want [http://code.google.com/p/bridj/downloads/list direct access to the downloads] page instead.
+This page explains how to get and use BridJ using various build management systems and provides platform-specific notes, but you may want [http://oss.sonatype.org/content/groups/public/com/nativelibs4java/bridj/ direct access to the binary snapshots] instead.
 
 <wiki:toc max_depth="3" />
 
