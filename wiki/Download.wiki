@@ -2,7 +2,9 @@
 #labels Featured
 #sidebar TOCWiki
 
-This page explains how to get and use BridJ using various build management systems and provides platform-specific notes, but you may want [http://oss.sonatype.org/content/groups/public/com/nativelibs4java/bridj/ direct access to the binary snapshots] instead.
+This page explains how to get and use BridJ using various build management systems and provides platform-specific notes, but you may just want a quick direct download links:
+  * Latest release: [http://search.maven.org/#artifactdetails%7Ccom.nativelibs4java%7Cbridj%7C0.6.2%7Cbundle 0.6.2]
+  * Latest snapshot: [https://oss.sonatype.org/content/groups/public/com/nativelibs4java/bridj/0.7-SNAPSHOT/ 0.7-SNAPSHOT] 
 
 <wiki:toc max_depth="3" />
 
