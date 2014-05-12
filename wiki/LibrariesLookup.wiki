@@ -80,7 +80,7 @@ If a shared library depends on another one, it may be useful to declare the depe
 @Library(value = "MainLib", dependencies = { "Dependency1", "Dependency2"... })
 }}}
 
-You can also declare these dependencies dynamically with [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/BridJ.html#addNativeLibraryDependencies(java.lang.String, java.lang.String...) BridJ.addNativeLibraryDependencies]:
+You can also declare these dependencies dynamically with [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/BridJ.html BridJ].addNativeLibraryDependencies:
 {{{
 // "MainLib.dll" / "libMainLib.so" / "libMainLib.dylib"...
 @Library("MainLib")
