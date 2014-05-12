@@ -75,7 +75,21 @@ The exception is Android, where the only embedded resource root is 'lib' :
 
 = Dependent libraries =
 
-If a shared library depends on another one, it may be useful to declare the dependencies upfront so that BridK is able to extract and load them before your library:
+If a shared library depends on another one, it may be useful to declare the dependencies upfront so that BridJ is able to extract and load them before your library:
 {{{
 @Library(value = "MainLib", dependencies = { "Dependency1", "Dependency2"... })
+}}}
+
+You can also declare these dependencies dynamically with [http://nativelibs4java.sourceforge.net/bridj/api/development/org/bridj/BridJ.html#addNativeLibraryDependencies(java.lang.String, java.lang.String...) BridJ.addNativeLibraryDependencies]:
+{{{
+// "MainLib.dll" / "libMainLib.so" / "libMainLib.dylib"...
+@Library("MainLib")
+class MainLib
+    static {
+        // Ensure "Dependency1/2.dll" / "libDependency1/2.so" are loaded before "MainLib.dll" / "libMainLib.so".
+        BridJ.addNativeLibraryDependencies("MainLib", "Dependency1", "Dependency2");
+        BridJ.register();
+    }
+    ...
+}
 }}}
