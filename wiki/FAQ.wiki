@@ -245,3 +245,17 @@ If BridJ fails to load a library, it can be that :
 {{{
 @Library("MainLib", dependencies = { "Dependency1", "Dependency2"... })
 }}}
+
+== How do I debug an `UnsatisfiedLinkError`? ==
+
+This means your native method was not successfully registered by BridJ. You should:
+  * Make sure you've added a `static { BridJ.register(); }` block in your class
+  * Inspect BridJ's verbose logs (set the `BRIDJ_VERBOSE=1` or `BRIDJ_DEBUG=1` environment variables, or the `-Dbridj.verbose=true` or `-Dbridj.debug=true` System properties through command-line flags)
+
+If the logs show that BridJ did try and register your method(s) but failed to find the relevant symbols in your shared library (.dll, .so, .dylib), then:
+  * Make sure you've got the right DLL name
+  * Inspect the library's symbols with Dependency Walker (for Windows DLLs) or `nm` / `otool` (for Unix binaries)
+
+If the (mangled) symbol is indeed present in the library, BridJ's demangler might have a bug (or two) that prevented it from matching the symbol with your signature. You can try and put the raw (mangled) symbol in a `org.bridj.ann.Symbol` annotation on the method.
+
+If none of this works, please [https://github.com/ochafik/nativelibs4java/issues file a bug] or [http://groups.google.com/group/nativelibs4java ask the mailing-list].
