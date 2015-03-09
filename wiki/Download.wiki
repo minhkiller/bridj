@@ -14,7 +14,7 @@ It is advised to use Maven or sbt to manage dependencies automatically.
 
 == Direct downloads ==
 
-  * Latest release: [http://search.maven.org/#artifactdetails%7Ccom.nativelibs4java%7Cbridj%7C0.6.2%7Cbundle 0.6.2]
+  * Latest release: [http://search.maven.org/#artifactdetails%7Ccom.nativelibs4java%7Cbridj%7C0.7.0%7Cbundle 0.7.0]
   * Latest snapshot: [https://oss.sonatype.org/content/groups/public/com/nativelibs4java/bridj/0.7-SNAPSHOT/ 0.7-SNAPSHOT]
 
 == Use with Maven ==
@@ -25,7 +25,7 @@ New releases are deployed on [http://search.maven.org/ Maven Central], so you do
   <dependency>
 	<groupId>com.nativelibs4java</groupId>
 	<artifactId>bridj</artifactId>
-	<version>0.6.2</version>
+	<version>0.7.0</version>
   </dependency>
 </dependencies>
 }}}
@@ -64,7 +64,7 @@ class Project(info: ProjectInfo) extends DefaultProject(info)
   // val sonatypeSnapshotsRepo = "Sonatype OSS Snapshots Repository" at "http://oss.sonatype.org/content/groups/public"
   // Repository for old releases <= 0.6
   // val nativelibs4javaRepo = "NativeLibs4Java Repository" at "http://nativelibs4java.sourceforge.net/maven/"
-  val bridj = "com.nativelibs4java" % "bridj" % "0.6.2"
+  val bridj = "com.nativelibs4java" % "bridj" % "0.7.0"
 }
 }}}
 
@@ -72,7 +72,7 @@ class Project(info: ProjectInfo) extends DefaultProject(info)
 
 If BridJ is too heavy for you, there are pre-packaged specialized subsets of BridJ.
 
-You can download them manually from the [http://repo1.maven.org/maven2/com/nativelibs4java/bridj/0.6.2/ Maven repository] or specify the correct _classifier_ in the Maven dependency (cf. next section).
+You can download them manually from the [http://repo1.maven.org/maven2/com/nativelibs4java/bridj/0.7.0/ Maven repository] or specify the correct _classifier_ in the Maven dependency (cf. next section).
 
 === List of prepackaged subsets ===
 
