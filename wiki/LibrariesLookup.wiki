@@ -98,4 +98,4 @@ class MainLib
 
 JNAerator can bundle embedded binaries for all architectures (with repeated `-arch` command-line flags) and even deal with dependent libraries (with `-dependencies` flags). See [https://code.google.com/p/jnaerator/wiki/CommandLineOptionsAndEnvironmentVariables JNAerator flags help].
 
-See this [http://stackoverflow.com/questions/29530261/how-to-use-jnaerator-with-multiple-dynamic-libraries-under-one-header/29549769#29549769 Stack Overflow question] (TODO expand some doc here)
+Also see this [http://stackoverflow.com/questions/29530261/how-to-use-jnaerator-with-multiple-dynamic-libraries-under-one-header/29549769#29549769 Stack Overflow question] for an example of bundling cross-platform binaries (TODO expand some doc here)
