@@ -93,3 +93,9 @@ class MainLib
     ...
 }
 }}}
+
+= JNAerator support =
+
+JNAerator can bundle embedded binaries for all architectures and even deal with dependent libraries.
+
+See this [http://stackoverflow.com/questions/29530261/how-to-use-jnaerator-with-multiple-dynamic-libraries-under-one-header/29549769#29549769 Stack Overflow question] (TODO expand some doc here)
